@@ -43,5 +43,17 @@ Un commit al final de cada fase. Estado actual en la última sección.
 ## Lo que depende del equipo (se deja listo para pegar el valor)
 Proyecto de Firebase, clave de Google Maps con SHA-1, upload preset de Cloudinary, App ID de Agora.
 
+## Ajustes frente al plan inicial
+- El compresor de video previsto (`light_compressor`) es incompatible con el Gradle actual; se usa `video_compress`.
+- Las claves de Firebase entran por `--dart-define-from-file` en vez de `firebase_options.dart`, para que no haya ninguna clave en el código.
+- El seed es un script Python (`tools/seed_demo.py`) que habla con las APIs REST de Firebase; una versión Dart dentro de la app habría obligado a distribuir una pantalla de administración.
+- La memoria de Gradle se bajó de 8 GB a 2,5 GB porque el equipo tiene 7,7 GB.
+
 ## Estado
-- [x] Fase 0
+- [x] Fase 0 Revisión
+- [x] Fase 1 Base técnica y diseño
+- [x] Fase 2 Reporte rápido
+- [x] Fase 3 Protocolo en la app
+- [x] Fase 4 Radio operador y videollamada
+- [x] Fase 5 Pruebas y documentación
+- [ ] Fase 6 APK (ver el cierre de la conversación)
