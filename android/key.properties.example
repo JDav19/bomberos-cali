@@ -1,0 +1,4 @@
+storeFile=app/bomberos-release.jks
+storePassword=CAMBIAR
+keyAlias=bomberos
+keyPassword=CAMBIAR

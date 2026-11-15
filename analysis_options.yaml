@@ -1,0 +1,18 @@
+include: package:flutter_lints/flutter.yaml
+
+analyzer:
+  exclude:
+    - build/**
+    - android/**
+    - QR/**
+    - qr_readerConRoute_20261019/**
+    - flutter_application_reader_20261026/**
+    - tools/**
+
+linter:
+  rules:
+    prefer_const_constructors: true
+    prefer_const_literals_to_create_immutables: true
+    avoid_print: true
+    always_use_package_imports: false
+    require_trailing_commas: false

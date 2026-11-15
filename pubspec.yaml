@@ -1,0 +1,86 @@
+name: bomberos_cali
+description: "Reporte de emergencias para los Bomberos Voluntarios de Cali. Complementa la linea 119."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.12.2
+
+dependencies:
+  agora_rtc_engine: ^6.6.4
+  cloud_firestore: ^7.1.0
+  connectivity_plus: 6.1.5
+  firebase_auth: ^7.0.1
+  firebase_core: ^5.1.0
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  flutter_image_compress: ^2.5.1
+  flutter_local_notifications: 19.5.0
+  geolocator: ^14.0.1
+  google_maps_flutter: ^2.19.0
+  http: ^1.6.0
+  image_picker: ^1.2.4
+  intl: ^0.20.3
+  path: ^1.9.1
+  path_provider: ^2.1.6
+  permission_handler: ^13.0.2
+  provider: ^6.1.5+1
+  shared_preferences: ^2.5.6
+  url_launcher: ^6.3.3
+  video_compress: ^3.1.4
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/protocolo/
+    - assets/brand/
+  fonts:
+    - family: BarlowCondensed
+      fonts:
+        - asset: assets/fonts/BarlowCondensed-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/BarlowCondensed-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/BarlowCondensed-Bold.ttf
+          weight: 700
+    - family: PhosphorBold
+      fonts:
+        - asset: assets/fonts/Phosphor-Bold.ttf
+    - family: PhosphorFill
+      fonts:
+        - asset: assets/fonts/Phosphor-Fill.ttf
+    - family: Barlow
+      fonts:
+        - asset: assets/fonts/Barlow-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Barlow-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Barlow-SemiBold.ttf
+          weight: 600
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  fake_cloud_firestore: ^4.5.0
+  flutter_launcher_icons: ^0.14.4
+  flutter_lints: ^6.0.0
+  flutter_native_splash: ^2.4.8
+
+flutter_launcher_icons:
+  android: true
+  ios: false
+  image_path: assets/brand/icon.png
+  adaptive_icon_background: "#E8590C"
+  adaptive_icon_foreground: assets/brand/icon_foreground.png
+
+flutter_native_splash:
+  color: "#F6EFE7"
+  image: assets/brand/splash.png
+  color_dark: "#1F1A17"
+  image_dark: assets/brand/splash_dark.png
+  android_12:
+    color: "#F6EFE7"
+    image: assets/brand/splash_android12.png
+    color_dark: "#1F1A17"
+    image_dark: assets/brand/splash_android12_dark.png
