@@ -1,0 +1,44 @@
+# Dart / Flutter
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+.pub/
+build/
+*.iml
+.idea/
+.vscode/
+.claude/
+.github/
+coverage/
+
+# Android
+android/.gradle/
+android/local.properties
+android/key.properties
+android/secrets.properties
+android/app/*.jks
+android/app/*.keystore
+*.jks
+*.keystore
+**/GeneratedPluginRegistrant.*
+
+# Claves y configuracion local (usar los .example)
+config/app_config.json
+config/*.local.json
+google-services.json
+GoogleService-Info.plist
+firebase-debug.log
+service-account*.json
+
+# Material de clases anteriores, no es parte del proyecto
+QR/
+qr_readerConRoute_20261019/
+flutter_application_reader_20261026/
+flutter_application_reader_20261026.zip
+Clase *.docx
+
+# Binarios del protocolo original se versionan en docs/ (ver docs/)
+.DS_Store
+__pycache__/

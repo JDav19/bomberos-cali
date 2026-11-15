@@ -1,0 +1,173 @@
+{
+  "codigo": "200",
+  "nombre": "Explosión o ruptura sin incendio",
+  "tarjetas": [
+    {
+      "id": "explosion_gas_vapor",
+      "categoria": "200",
+      "nombre": "Explosión de gas o vapor sin fuego sostenido",
+      "numero_tarjeta": null,
+      "diapositiva_preguntas": 189,
+      "diapositivas_pre_arribo": [
+        190
+      ],
+      "preguntas": [
+        {
+          "tipo": "texto",
+          "texto": "Explosión de gas o vapor en exterior, sin fuego sostenido. Si hay fuego ir al despacho apropiado."
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Sabe qué produjo la explosión?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Hay personas lesionadas?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "SI: ¿Cuántas?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Hay objetos o estructuras que hayan sufrido daños?"
+        }
+      ],
+      "notas": [],
+      "despacho": [
+        {
+          "codigo": "163",
+          "descripcion": "Explosión de gas o vapor en exterior sin fuego sostenido"
+        }
+      ],
+      "referencias": [],
+      "pre_arribo": [
+        {
+          "diapositiva": 190,
+          "titulo_diapositiva": "Explosión de gas o vapor sin fuego sostenido – instrucciones pre-arribo",
+          "lineas": [
+            "El Cuerpo de Bomberos está siendo despachado..",
+            "Trate de indicarme exactamente cuántos lesionados hay y en qué estado parecen estar.",
+            "Despache recursos adicionales de acuerdo con la información adicional suministrada.",
+            "Suministre información actualizada a quienes responden.",
+            "No mueva (y solicite que no lo hagan) ningún paciente a no ser que su vida esté en peligro. Hágalo solo si es seguro para usted.",
+            "Si aun hay fuga de gas, intente localizar a la persona encargada para que haga el cierre de la línea. No se acerque con el teléfono al sitio ya que puede causar una nueva explosión.",
+            "Inicie el plan de evacuación (si lo hay). No debe haber nadie no esencial en el área de la explosión.",
+            "Llame a los pacientes para ver quién puede caminar e indíquele que salga de inmediato.",
+            "Haga que alguien vaya a un lugar apropiado para que guíe a los bomberos hasta el lugar de la explosión.",
+            "Si las condiciones empeoran llámeme de nuevo."
+          ],
+          "referencias": []
+        }
+      ]
+    },
+    {
+      "id": "ruptura_explosion",
+      "categoria": "200",
+      "nombre": "Ruptura o explosión sin incendio",
+      "numero_tarjeta": null,
+      "diapositiva_preguntas": 205,
+      "diapositivas_pre_arribo": [
+        206
+      ],
+      "preguntas": [
+        {
+          "tipo": "pregunta",
+          "texto": "¿La ruptura o explosión fue en un edificio, vehículo, área abierta, un transformador o en un manhole?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "Estructura: ¿Qué tipo de estructura es?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Puede describir el daño?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Hay edificios o estructuras dañados?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "Si: ¿Hay personas atrapadas?"
+        },
+        {
+          "tipo": "texto",
+          "texto": "Si: Ir a:"
+        },
+        {
+          "tipo": "texto",
+          "texto": "No: Ir a:"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "Vehículo: ¿Qué tipo de vehículo está involucrado?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Hay alguien en peligro inmediato?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Hay alguien lesionado?"
+        }
+      ],
+      "notas": [
+        "Tipos de explosiones"
+      ],
+      "despacho": [
+        {
+          "codigo": null,
+          "descripcion": "Sin lesionados"
+        },
+        {
+          "codigo": null,
+          "descripcion": "Lesionados, daños importantes"
+        },
+        {
+          "codigo": null,
+          "descripcion": "Adicionar ambulancias al despacho de acuerdo con el número de lesionados."
+        },
+        {
+          "codigo": null,
+          "descripcion": "Lesionados, daños leves"
+        }
+      ],
+      "referencias": [
+        {
+          "texto": "Rescate en estructura colapsada",
+          "diapositiva": 134,
+          "destino": {
+            "tipo": "tarjeta",
+            "id": "rescate_estructura_colapsada"
+          }
+        },
+        {
+          "texto": "Edificación debilitada o colapsada, sin atrapados.",
+          "diapositiva": 203,
+          "destino": {
+            "tipo": "tarjeta",
+            "id": "estructura_colapsada_sin_atrapados"
+          }
+        }
+      ],
+      "pre_arribo": [
+        {
+          "diapositiva": 206,
+          "titulo_diapositiva": "Ruptura o explosión sin incendio – instrucciones pre-arribo",
+          "lineas": [
+            "El Cuerpo de Bomberos está siendo despachado, a continuación le diré qué debe hacer.",
+            "Asegúrese que todos salgan a un lugar seguro.",
+            "Si es seguro para usted donde se encuentra, permanezca allí. Si no lo es, vaya a un lugar seguro.",
+            "No intente ningún rescate si no es completamente seguro para usted hacerlo.",
+            "Inicie el plan de evacuación (si lo hay). No debe haber nadie no esencial en el área de la explosión.",
+            "Llame a los pacientes para ver quién puede caminar e indíquele que salga de inmediato.",
+            "Haga que alguien vaya a un lugar apropiado para que guíe a los bomberos hasta el lugar de la explosión.",
+            "Llámeme de nuevo si hay algún cambio de la situación."
+          ],
+          "referencias": []
+        }
+      ]
+    }
+  ]
+}

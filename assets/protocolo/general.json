@@ -1,0 +1,23 @@
+{
+  "interrogatorio_toda_llamada": [
+    "Línea 119 Bomberos Cali, ¿cuál es su emergencia?",
+    "¿De qué número me llama?",
+    "¿Dónde es su emergencia?",
+    "¿Cuál es su nombre?"
+  ],
+  "interrogatorio_medico_continuacion": [
+    "7. ¿El paciente está consciente (es capaz de hablar)?",
+    "Interrogatorio (continuación)",
+    "6. ¿Sexo y edad del paciente?",
+    "8. ¿El paciente respira de forma normal?"
+  ],
+  "despacho_medico_general": [
+    "Despache (D):",
+    "Máquina (Rescate o Bomba)",
+    "Ambulancia"
+  ],
+  "fuente_diapositivas": [
+    1,
+    5
+  ]
+}

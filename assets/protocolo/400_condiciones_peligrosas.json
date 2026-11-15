@@ -1,0 +1,634 @@
+{
+  "codigo": "400",
+  "nombre": "Condiciones peligrosas sin incendio",
+  "tarjetas": [
+    {
+      "id": "fuga_gas",
+      "categoria": "400",
+      "nombre": "Fuga de gas (GNC o GLP)",
+      "numero_tarjeta": null,
+      "diapositiva_preguntas": 191,
+      "diapositivas_pre_arribo": [
+        192
+      ],
+      "preguntas": [
+        {
+          "tipo": "pregunta",
+          "texto": "¿El problema es adentro o afuera?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Escucha la fuga o solo lo huele?"
+        },
+        {
+          "tipo": "texto",
+          "texto": "Adentro:"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Qué tipo de edificación es?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿De dónde viene el gas?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Alguien se siente mal o está lesionado?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "Si: ¿Cuántos?"
+        },
+        {
+          "tipo": "texto",
+          "texto": "Afuera:"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿De dónde viene el gas?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "Tanque: ¿De qué tamaño es el tanque?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "Línea: ¿Es una línea residencial o comercial?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Alguien se siente mal o está lesionado?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "Si: ¿Cuántos?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "GLP: ¿Qué compañía de gas le provee el servicio?"
+        }
+      ],
+      "notas": [],
+      "despacho": [
+        {
+          "codigo": "412",
+          "descripcion": "Fuga en línea o cilindro residencial"
+        },
+        {
+          "codigo": "412",
+          "descripcion": "Fuga en línea o cilindro comercial"
+        },
+        {
+          "codigo": "412",
+          "descripcion": "Fuga en línea de transmisión o de distribución o en tanque exterior"
+        },
+        {
+          "codigo": null,
+          "descripcion": "Adicionar ambulancias al despacho si hay lesionados o afectados."
+        }
+      ],
+      "referencias": [],
+      "pre_arribo": [
+        {
+          "diapositiva": 192,
+          "titulo_diapositiva": "Fuga de gas – instrucciones pre-arribo",
+          "lineas": [
+            "El Cuerpo de Bomberos está siendo despachado..",
+            "Persona en el interior:",
+            "Salga de inmediato y lleve a otros con usted.",
+            "No prenda ni apague luces ni ningún otro aparto eléctrico o electrónico.",
+            "Abra puertas y ventanas que den al exterior mientras sale.",
+            "Espere afuera la llegada del cuerpo de bombero e indíqueles dónde es la fuga.",
+            "Persona en el exterior:",
+            "Aléjese del área en favor al viento.",
+            "Evite que cerca a la fuga (donde haya olor) se prenda algún vehículo, equipo o aparato.",
+            "Haga que alguien vaya a un sitio apropiado para guiar al cuerpo de bomberos hasta el lugar de ingreso al área.",
+            "Si las condiciones empeoran vuélvame a llamar."
+          ],
+          "referencias": []
+        }
+      ]
+    },
+    {
+      "id": "olor_desconocido",
+      "categoria": "400",
+      "nombre": "Olor desconocido",
+      "numero_tarjeta": null,
+      "diapositiva_preguntas": 193,
+      "diapositivas_pre_arribo": [
+        194
+      ],
+      "preguntas": [
+        {
+          "tipo": "pregunta",
+          "texto": "¿A qué parece el olor?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Huele adentro o afuera?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Hay alguien enfermo o lesionado?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "Si: ¿Cuántos?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Ve una nube o vapor?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "Si: ¿A qué dirección se está dirigiendo?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿De qué color es?"
+        }
+      ],
+      "notas": [],
+      "despacho": [
+        {
+          "codigo": "420",
+          "descripcion": "Investigación por olor"
+        },
+        {
+          "codigo": null,
+          "descripcion": "Adicionar ambulancias al despacho si hay lesionados o afectados."
+        },
+        {
+          "codigo": "420",
+          "descripcion": "Olor con personas o animales afectados"
+        }
+      ],
+      "referencias": [],
+      "pre_arribo": [
+        {
+          "diapositiva": 194,
+          "titulo_diapositiva": "Olor desconocido – instrucciones pre-arribo",
+          "lineas": [
+            "El Cuerpo de Bomberos está siendo despachado..",
+            "Adentro o cerca del lugar peligroso: Si es seguro hacerlo, váyase del área contaminada, en lo posible a favor del viento, pero no se vaya de la escena.",
+            "Si es seguro hacerlo, mantenga a las personas afectadas aisladas en la escena.",
+            "No entre ni reingrese a ningún área peligrosa.",
+            "No use ninguna llama abierta o nada que pueda causar una chispa.",
+            "No encienda ni apague ningún aparato eléctrico o electrónico.",
+            "Espere por los bomberos.",
+            "Si las condiciones empeoran vuélvame a llamar."
+          ],
+          "referencias": []
+        }
+      ]
+    },
+    {
+      "id": "hazmat",
+      "categoria": "400",
+      "nombre": "HazMat",
+      "numero_tarjeta": null,
+      "diapositiva_preguntas": 195,
+      "diapositivas_pre_arribo": [
+        196
+      ],
+      "preguntas": [
+        {
+          "tipo": "pregunta",
+          "texto": "¿Qué tipo de sustancia/químico está involucrado?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Ve fuego?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "Si: ¿Las llamas están adentro o afuera del edificio?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿De qué tamaño es el contenedor?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Cuánto se ha fugado/derramado?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿La fuga es dentro de algún lugar cerrado o afuera?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "Afuera: ¿Está la fuga/derrame en o cerca a una fuente de agua?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿La fuga/derrame se está expandiendo?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "Si: ¿En qué dirección está fluyendo?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Hay alguien en peligro inmediato?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "Si: ¿Cuántos? ¿Exactamente dónde están localizados?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Alguien está impregnado de la sustancia?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "Si: Cuántos?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Hay alguien enfermo o lesionado?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "Si: ¿Cuántos?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Ve una nube o vapor?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "Si: ¿A qué dirección se está dirigiendo?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿De qué color es?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Hay alguna placa de color naranja con números negros?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "Si: ¿Qué número es?"
+        }
+      ],
+      "notas": [],
+      "despacho": [
+        {
+          "codigo": null,
+          "descripcion": "Incidente HazMat"
+        },
+        {
+          "codigo": null,
+          "descripcion": "Adicionar ambulancias al despacho si hay lesionados o afectados."
+        },
+        {
+          "codigo": "421",
+          "descripcion": "Riesgo químico (sin fuga o derrame). Incluye el potencial de derrames o fugas."
+        },
+        {
+          "codigo": "422",
+          "descripcion": "Derrame o fuga de químico. Incluye material inestable, reactivo y explosivo."
+        },
+        {
+          "codigo": "423",
+          "descripcion": "Fuga de refrigerante. Incluye amoniaco."
+        },
+        {
+          "codigo": "424",
+          "descripcion": "Incidente con monóxido de carbono. Excluye incidentes donde no se encontró nada (736 o 746)."
+        },
+        {
+          "codigo": "420",
+          "descripcion": "Condición con químico tóxico, otro."
+        },
+        {
+          "codigo": "431",
+          "descripcion": "Fuga de radiación, material radiactivo. Incluye liberación de radiación debido a brecha en contenedor u otra liberación accidental."
+        },
+        {
+          "codigo": "430",
+          "descripcion": "Condición radiactiva, otro."
+        }
+      ],
+      "referencias": [],
+      "pre_arribo": [
+        {
+          "diapositiva": 196,
+          "titulo_diapositiva": "HazMat – instrucciones pre-arribo",
+          "lineas": [
+            "El Cuerpo de Bomberos está siendo despachado..",
+            "Adentro o cerca del lugar peligroso: Si es seguro hacerlo, váyase del área contaminada, en lo posible a favor del viento, pero no se vaya de la escena.",
+            "1ª persona: Si usted se contaminó con los químicos no toque nada.",
+            "3ª persona: Si alguien se contaminó con los químicos que nadie lo toque.",
+            "Peligro presente:",
+            "Si es seguro hacerlo, mantenga a las personas afectadas aisladas en la escena.",
+            "No entre ni reingrese a ningún área peligrosa.",
+            "No use ninguna llama abierta o nada que pueda causar una chispa.",
+            "No encienda ni apague ningún aparato eléctrico o electrónico.",
+            "Si aplica: Si es seguro hacerlo, obtenga las hojas de seguridad del producto (MSDS) para dárselos a los bomberos.",
+            "Espere por los bomberos.",
+            "Si las condiciones empeoran vuélvame a llamar."
+          ],
+          "referencias": []
+        }
+      ]
+    },
+    {
+      "id": "derrame_liquido",
+      "categoria": "400",
+      "nombre": "Derrame de líquido combustible o inflamable",
+      "numero_tarjeta": null,
+      "diapositiva_preguntas": 197,
+      "diapositivas_pre_arribo": [
+        198
+      ],
+      "preguntas": [
+        {
+          "tipo": "pregunta",
+          "texto": "¿Qué tipo de líquido es?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿La fuga es dentro de algún lugar cerrado o es al aire libre?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿De qué tamaño es el contenedor?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Cuánto se ha fugado/derramado?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "Afuera: ¿Está la fuga/derrame en o cerca a una fuente de agua?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿El derrame se está expandiendo rápidamente?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "Si: ¿En qué dirección está fluyendo?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Hay alguien en peligro inmediato?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "Si: ¿Cuántos? ¿Exactamente dónde están localizados?"
+        },
+        {
+          "tipo": "texto",
+          "texto": "Estación de servicio: Si es seguro hacerlo, active la parada de emergencia."
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Qué número es el de la estación de servicio?"
+        }
+      ],
+      "notas": [],
+      "despacho": [
+        {
+          "codigo": "413",
+          "descripcion": "Líquido combustible\n< 55 galones"
+        },
+        {
+          "codigo": null,
+          "descripcion": "Adicionar ambulancias al despacho si hay lesionados o afectados."
+        },
+        {
+          "codigo": null,
+          "descripcion": "Líquido combustible\n> 55 galones"
+        },
+        {
+          "codigo": "411",
+          "descripcion": "Líquido inflamable\n< 55 galones"
+        },
+        {
+          "codigo": "411",
+          "descripcion": "Líquido inflamable\n> 55 galones"
+        }
+      ],
+      "referencias": [],
+      "pre_arribo": [
+        {
+          "diapositiva": 198,
+          "titulo_diapositiva": "Derrame de líquido – instrucciones pre-arribo",
+          "lineas": [
+            "El Cuerpo de Bomberos está siendo despachado..",
+            "Adentro o cerca de lugar peligroso, líquido inflamable: Si es seguro hacerlo, váyase del área contaminada, en lo posible a favor del viento, pero no se vaya de la escena.",
+            "Peligro presente líquido inflamable:",
+            "Si es seguro hacerlo, mantenga a las personas afectadas aisladas en la escena.",
+            "No entre ni reingrese a ningún área peligrosa.",
+            "No use ninguna llama abierta o nada que pueda causar una chispa.",
+            "No encienda ni apague ningún aparato eléctrico o electrónico.",
+            "Si aplica: Si es seguro hacerlo, obtenga las hojas de seguridad del producto (MSDS) para dárselos a los bomberos.",
+            "Espere por los bomberos.",
+            "Si las condiciones empeoran vuélvame a llamar."
+          ],
+          "referencias": []
+        }
+      ]
+    },
+    {
+      "id": "linea_electrica_caida",
+      "categoria": "400",
+      "nombre": "Línea eléctrica caída",
+      "numero_tarjeta": null,
+      "diapositiva_preguntas": 199,
+      "diapositivas_pre_arribo": [
+        200
+      ],
+      "preguntas": [
+        {
+          "tipo": "pregunta",
+          "texto": "¿Qué tipo de línea cayó?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿La línea es de un poste o de una torre?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Son líneas que van una al lado de la otra o una encima de la otra?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Están haciendo corto sobre lo que cayó?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Algo se está empezando a incendiar? ¿Se ve humo? ¿Se escucha algo?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Hay personas en peligro inmediato?"
+        }
+      ],
+      "notas": [],
+      "despacho": [
+        {
+          "codigo": "444",
+          "descripcion": "Línea eléctrica caída"
+        },
+        {
+          "codigo": null,
+          "descripcion": "Comunicarse inmediatamente con EMCALI Energía"
+        }
+      ],
+      "referencias": [],
+      "pre_arribo": [
+        {
+          "diapositiva": 200,
+          "titulo_diapositiva": "Línea eléctrica caída – instrucciones pre-arribo",
+          "lineas": [
+            "El Cuerpo de Bomberos está siendo despachado..",
+            "Permanezca a más de 15 metros de la línea. En lo posible evite que personas o mascotas se acerquen a la línea o a cualquier elemento que esté en contacto con ésta.",
+            "Si se inicia un incendio, en lo posible evite que se intente extinguirlo.",
+            "Si es posible, cierre la entrada a la calle, nadie debe conducir encima de la línea.",
+            "Si las condiciones empeoran llámeme de nuevo."
+          ],
+          "referencias": []
+        }
+      ]
+    },
+    {
+      "id": "corto_circuito",
+      "categoria": "400",
+      "nombre": "Corto circuito",
+      "numero_tarjeta": null,
+      "diapositiva_preguntas": 201,
+      "diapositivas_pre_arribo": [
+        202
+      ],
+      "preguntas": [
+        {
+          "tipo": "pregunta",
+          "texto": "¿En dónde se está presentando el corto?"
+        },
+        {
+          "tipo": "texto",
+          "texto": "Líneas eléctricas:"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿La línea es de un poste o de una torre?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Son líneas que van una al lado de la otra o una encima de la otra?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Están haciendo corto sobre lo que cayó?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Algo se está empezando a incendiar? ¿Se ve humo? ¿Se escucha algo?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Hay personas en peligro inmediato?"
+        }
+      ],
+      "notas": [],
+      "despacho": [
+        {
+          "codigo": "444",
+          "descripcion": "Corto circuito"
+        },
+        {
+          "codigo": null,
+          "descripcion": "Comunicarse inmediatamente con EMCALI Energía"
+        }
+      ],
+      "referencias": [],
+      "pre_arribo": [
+        {
+          "diapositiva": 202,
+          "titulo_diapositiva": "Corto circuito – instrucciones pre-arribo",
+          "lineas": [
+            "El Cuerpo de Bomberos está siendo despachado..",
+            "Considere todo lo que esté en contacto con la línea como electrificado, evite acercarse o que alguien más lo haga.",
+            "Si se inicia un incendio no se debe tratar de extinguir, es peligroso. Evite que se intente. Por ningún motivo se debe tratar de arrojar agua, así parezca que ya no hay energía.",
+            "Corto en línea eléctrica:",
+            "La línea podría desprenderse y caer, manténgase alejado. En lo posible evite que personas o mascotas se acerquen al área.",
+            "Si es posible, cierre la entrada a la calle.",
+            "Si las condiciones empeoran llámeme de nuevo."
+          ],
+          "referencias": []
+        }
+      ]
+    },
+    {
+      "id": "estructura_colapsada_sin_atrapados",
+      "categoria": "400",
+      "nombre": "Estructura colapsada o debilitada – sin atrapados",
+      "numero_tarjeta": null,
+      "diapositiva_preguntas": 203,
+      "diapositivas_pre_arribo": [
+        204
+      ],
+      "preguntas": [
+        {
+          "tipo": "pregunta",
+          "texto": "¿Hay alguien en peligro inmediato?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Hay alguien lesionado?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Qué tipo de estructura es?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Puede describir el daño?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Cuántos edificios o estructuras están involucradas?"
+        }
+      ],
+      "notas": [],
+      "despacho": [
+        {
+          "codigo": "460",
+          "descripcion": "Sin peligros"
+        },
+        {
+          "codigo": "460",
+          "descripcion": "Peligro para personas"
+        }
+      ],
+      "referencias": [],
+      "pre_arribo": [
+        {
+          "diapositiva": 204,
+          "titulo_diapositiva": "Estructura colapsada o debilitada sin atrapados – instrucciones pre-arribo",
+          "lineas": [
+            "El Cuerpo de Bomberos está siendo despachado, a continuación le diré qué debe hacer.",
+            "En terremoto: El Cuerpo de Bomberos está actualmente en modo desastre. No puedo decirle cuándo el Cuerpo de Bomberos podrá llegar allá.",
+            "Persona atrapada es la que llama:",
+            "Haga tanto ruido como pueda para ayudarnos a encontrarlo.",
+            "Si puede hacerlo sin causar ninguna chispa, encuentre un objeto y golpee en las paredes, tuberías o en cualquier otro lado.",
+            "Persona afuera es la que llama:",
+            "Estructura comprometida:",
+            "Asegúrese que todos salgan a un lugar seguro.",
+            "Si es seguro para usted donde se encuentra, permanezca allí. Si no lo es vaya a un lugar seguro.",
+            "Llámeme de nuevo si hay algún cambio de la situación.",
+            "Inicie el alistamiento del Equipo USAR",
+            "Si el incidente sobrepasa la capacidad de respuesta inicial, active el Equipo USAR."
+          ],
+          "referencias": []
+        }
+      ]
+    }
+  ]
+}

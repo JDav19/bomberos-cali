@@ -1,0 +1,2062 @@
+{
+  "grupos": [
+    {
+      "id": "rcp_adulto",
+      "nombre": "RCP adulto",
+      "entrada": 58,
+      "diapositivas": [
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67
+      ]
+    },
+    {
+      "id": "rcp_nino",
+      "nombre": "RCP niño",
+      "entrada": 68,
+      "diapositivas": [
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77
+      ]
+    },
+    {
+      "id": "rcp_infante",
+      "nombre": "RCP infante",
+      "entrada": 78,
+      "diapositivas": [
+        78,
+        79,
+        80,
+        81,
+        82,
+        83
+      ]
+    },
+    {
+      "id": "parto",
+      "nombre": "Instrucciones de parto",
+      "entrada": 88,
+      "diapositivas": [
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97
+      ]
+    },
+    {
+      "id": "via_aerea",
+      "nombre": "Control de vía aérea - inconsciente",
+      "entrada": 100,
+      "diapositivas": [
+        100,
+        101,
+        102,
+        103
+      ]
+    },
+    {
+      "id": "ovace_adulto",
+      "nombre": "OVACE adulto",
+      "entrada": 108,
+      "diapositivas": [
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115
+      ]
+    },
+    {
+      "id": "ovace_nino",
+      "nombre": "OVACE niño",
+      "entrada": 116,
+      "diapositivas": [
+        116,
+        117,
+        118,
+        119,
+        120,
+        121,
+        122,
+        123
+      ]
+    },
+    {
+      "id": "ovace_infante",
+      "nombre": "OVACE infante",
+      "entrada": 124,
+      "diapositivas": [
+        124,
+        125,
+        126,
+        127,
+        128
+      ]
+    },
+    {
+      "id": "torniquete",
+      "nombre": "Uso del torniquete",
+      "entrada": 129,
+      "diapositivas": [
+        129
+      ]
+    },
+    {
+      "id": "alertas_infecciosas",
+      "nombre": "Alertas COVID-19, dengue y tuberculosis",
+      "entrada": 138,
+      "diapositivas": [
+        138,
+        139,
+        140
+      ]
+    }
+  ],
+  "nodos": {
+    "58": {
+      "diapositiva": 58,
+      "grupo": "rcp_adulto",
+      "lineas": [
+        "¿Alguien en el sitio sabe dar RCP?"
+      ],
+      "opciones": [
+        {
+          "texto": "NO",
+          "destino": 61,
+          "volver": false,
+          "destino_info": {
+            "tipo": "procedimiento",
+            "grupo": "rcp_adulto",
+            "nodo": 61
+          }
+        },
+        {
+          "texto": "SI",
+          "destino": 59,
+          "volver": false,
+          "destino_info": {
+            "tipo": "procedimiento",
+            "grupo": "rcp_adulto",
+            "nodo": 59
+          }
+        }
+      ]
+    },
+    "59": {
+      "diapositiva": 59,
+      "grupo": "rcp_adulto",
+      "lineas": [
+        "¿Necesita ayuda para recordarle",
+        "el procedimiento de reanimación?"
+      ],
+      "opciones": [
+        {
+          "texto": "NO",
+          "destino": 60,
+          "volver": false,
+          "destino_info": {
+            "tipo": "procedimiento",
+            "grupo": "rcp_adulto",
+            "nodo": 60
+          }
+        },
+        {
+          "texto": "SI",
+          "destino": 61,
+          "volver": false,
+          "destino_info": {
+            "tipo": "procedimiento",
+            "grupo": "rcp_adulto",
+            "nodo": 61
+          }
+        }
+      ]
+    },
+    "60": {
+      "diapositiva": 60,
+      "grupo": "rcp_adulto",
+      "lineas": [
+        "Inicie RCP en el paciente ahora.",
+        "Estaré en línea si me necesita hasta que la ayude llegue."
+      ],
+      "opciones": [
+        {
+          "texto": "Instrucciones RCP - ADULTO",
+          "destino": 58,
+          "volver": false,
+          "destino_info": {
+            "tipo": "procedimiento",
+            "grupo": "rcp_adulto",
+            "nodo": 58
+          }
+        }
+      ]
+    },
+    "61": {
+      "diapositiva": 61,
+      "grupo": "rcp_adulto",
+      "lineas": [
+        "Ponga su teléfono en altavoz."
+      ],
+      "opciones": [
+        {
+          "texto": "OK",
+          "destino": 62,
+          "volver": false,
+          "destino_info": {
+            "tipo": "procedimiento",
+            "grupo": "rcp_adulto",
+            "nodo": 62
+          }
+        }
+      ]
+    },
+    "62": {
+      "diapositiva": 62,
+      "grupo": "rcp_adulto",
+      "lineas": [
+        "Escuche cuidadosamente:",
+        "Coloque al paciente sobre su espalda",
+        "en el piso."
+      ],
+      "opciones": [
+        {
+          "texto": "OK",
+          "destino": 64,
+          "volver": false,
+          "destino_info": {
+            "tipo": "procedimiento",
+            "grupo": "rcp_adulto",
+            "nodo": 64
+          }
+        },
+        {
+          "texto": "NO PUEDO",
+          "destino": 63,
+          "volver": false,
+          "destino_info": {
+            "tipo": "procedimiento",
+            "grupo": "rcp_adulto",
+            "nodo": 63
+          }
+        }
+      ]
+    },
+    "63": {
+      "diapositiva": 63,
+      "grupo": "rcp_adulto",
+      "lineas": [
+        "¿Hay alguien que pueda ayudarle",
+        "a deslizar al paciente hasta el piso?",
+        "NO: ¿Puede buscar ayuda",
+        "(y regresar al teléfono - si no es celular)?"
+      ],
+      "opciones": [
+        {
+          "texto": "OK",
+          "destino": 64,
+          "volver": false,
+          "destino_info": {
+            "tipo": "procedimiento",
+            "grupo": "rcp_adulto",
+            "nodo": 64
+          }
+        },
+        {
+          "texto": "NO PUEDO, no tengo ayuda",
+          "destino": 64,
+          "volver": false,
+          "destino_info": {
+            "tipo": "procedimiento",
+            "grupo": "rcp_adulto",
+            "nodo": 64
+          }
+        }
+      ]
+    },
+    "64": {
+      "diapositiva": 64,
+      "grupo": "rcp_adulto",
+      "lineas": [
+        "¿En el área hay un desfibrilador automático DEA?"
+      ],
+      "opciones": [
+        {
+          "texto": "NO",
+          "destino": 66,
+          "volver": false,
+          "destino_info": {
+            "tipo": "procedimiento",
+            "grupo": "rcp_adulto",
+            "nodo": 66
+          }
+        },
+        {
+          "texto": "SI",
+          "destino": 65,
+          "volver": false,
+          "destino_info": {
+            "tipo": "procedimiento",
+            "grupo": "rcp_adulto",
+            "nodo": 65
+          }
+        }
+      ]
+    },
+    "65": {
+      "diapositiva": 65,
+      "grupo": "rcp_adulto",
+      "lineas": [
+        "Instrucciones DEA",
+        "NO lo opere en o alrededor de:",
+        "Agua, bañeras, piscinas, jacuzzis, metal, materiales peligrosos o cualquier tipo de superficie conductora de electricidad.",
+        "Si está solo: vaya por el DEA y regrese al paciente rápido.",
+        "Abra el equipo y préndalo. Si está en español, siga las órdenes del equipo.",
+        "Use los parches grandes para adulto.",
+        "Si hay otras personas: que le traigan el DEA mientras inicia RCP.",
+        "Cuando llegue el DEA, instruya a la persona para que lo abra y lo prenda sin interrumpir el RCP. Use los parches grandes.",
+        "Avíseme cuando el DEA esté listo para usar.",
+        "Pare el RCP y siga las instrucciones del equipo."
+      ],
+      "opciones": [
+        {
+          "texto": "Instrucciones RCP - ADULTO",
+          "destino": 58,
+          "volver": false,
+          "destino_info": {
+            "tipo": "procedimiento",
+            "grupo": "rcp_adulto",
+            "nodo": 58
+          }
+        }
+      ]
+    },
+    "66": {
+      "diapositiva": 66,
+      "grupo": "rcp_adulto",
+      "lineas": [
+        "Póngase de rodillas al lado del pecho del paciente, descubra el pecho.",
+        "¿Ve algún cable o tubo que sale del pecho o abdomen del paciente?",
+        "SI: Pare, no inicie RCP. Ir a: .",
+        "NO:",
+        "Ponga la BASE de su mano en el centro del pecho, entre los pezones.",
+        "Ahora ponga su otra mano encima.",
+        "Con los brazos rectos empuje con la base de su mano hacia abajo,",
+        "al menos 5cm.",
+        "Empuje fuerte y rápido, entre 100 a 120 veces por minuto",
+        "Recuerde la canción Macarena, hágalo a ese ritmo / (metrónomo)",
+        "El paciente ha vomitado: .",
+        "El paciente tiene un estoma: .",
+        "Si hay un DEA disponible ir a: .",
+        "Si hay más de dos personas presentes que puedan hacer el RCP, deben rotarse cada 2 minutos.",
+        "(Considere el uso de videollamada)."
+      ],
+      "opciones": [
+        {
+          "texto": "Consideraciones especiales",
+          "destino": 67,
+          "volver": false,
+          "destino_info": {
+            "tipo": "procedimiento",
+            "grupo": "rcp_adulto",
+            "nodo": 67
+          }
+        },
+        {
+          "texto": "Consideraciones especiales",
+          "destino": 67,
+          "volver": false,
+          "destino_info": {
+            "tipo": "procedimiento",
+            "grupo": "rcp_adulto",
+            "nodo": 67
+          }
+        },
+        {
+          "texto": "Instrucciones DEA",
+          "destino": 65,
+          "volver": false,
+          "destino_info": {
+            "tipo": "procedimiento",
+            "grupo": "rcp_adulto",
+            "nodo": 65
+          }
+        }
+      ]
+    },
+    "67": {
+      "diapositiva": 67,
+      "grupo": "rcp_adulto",
+      "lineas": [
+        "El paciente tiene tubos o cables que salen del pecho o abdomen:",
+        "¿Tiene el paciente un dispositivo de asistencia ventricular? (VAD, bomba cardiaca, RVAD, LVAD, BVAD, LVAS).",
+        "SI: No le de compresiones cardiacas.",
+        "Si el paciente tiene un marcapasos o un desfibrilador interno, regresar a las instrucciones de RCP.",
+        "El paciente tiene un estoma.",
+        "Instrucciones de ventilación.",
+        "Mantenga la cabeza del paciente RECTA.",
+        "Cubra por completo el estoma con su boca.",
+        "Cubra la boca y nariz del paciente con su mano.",
+        "Dele dos insuflaciones, deben inflarse los pulmones.",
+        "Asegúrese que el pecho sube.",
+        "El paciente ha vomitado.",
+        "Gire su cabeza hacia un lado.",
+        "Limpie todo lo que tenga en la boca con sus dedos",
+        "antes de darle respiración boca a boca.",
+        "Reinicie el RCP"
+      ],
+      "opciones": [
+        {
+          "texto": "Instrucciones RCP - ADULTO",
+          "destino": 58,
+          "volver": false,
+          "destino_info": {
+            "tipo": "procedimiento",
+            "grupo": "rcp_adulto",
+            "nodo": 58
+          }
+        },
+        {
+          "texto": "Volver",
+          "destino": 66,
+          "volver": false,
+          "destino_info": {
+            "tipo": "procedimiento",
+            "grupo": "rcp_adulto",
+            "nodo": 66
+          }
+        },
+        {
+          "texto": "Volver",
+          "destino": 66,
+          "volver": false,
+          "destino_info": {
+            "tipo": "procedimiento",
+            "grupo": "rcp_adulto",
+            "nodo": 66
+          }
+        }
+      ]
+    },
+    "68": {
+      "diapositiva": 68,
+      "grupo": "rcp_nino",
+      "lineas": [
+        "¿Alguien en el sitio sabe dar RCP a niño?"
+      ],
+      "opciones": [
+        {
+          "texto": "NO",
+          "destino": 71,
+          "volver": false,
+          "destino_info": {
+            "tipo": "procedimiento",
+            "grupo": "rcp_nino",
+            "nodo": 71
+          }
+        },
+        {
+          "texto": "SI",
+          "destino": 69,
+          "volver": false,
+          "destino_info": {
+            "tipo": "procedimiento",
+            "grupo": "rcp_nino",
+            "nodo": 69
+          }
+        }
+      ]
+    },
+    "69": {
+      "diapositiva": 69,
+      "grupo": "rcp_nino",
+      "lineas": [
+        "¿Necesita ayuda para recordarle",
+        "el procedimiento de reanimación?"
+      ],
+      "opciones": [
+        {
+          "texto": "NO",
+          "destino": 70,
+          "volver": false,
+          "destino_info": {
+            "tipo": "procedimiento",
+            "grupo": "rcp_nino",
+            "nodo": 70
+          }
+        },
+        {
+          "texto": "SI",
+          "destino": 71,
+          "volver": false,
+          "destino_info": {
+            "tipo": "procedimiento",
+            "grupo": "rcp_nino",
+            "nodo": 71
+          }
+        }
+      ]
+    },
+    "70": {
+      "diapositiva": 70,
+      "grupo": "rcp_nino",
+      "lineas": [
+        "Inicie RCP en el paciente ahora.",
+        "Estaré en línea si me necesita hasta que la ayude llegue."
+      ],
+      "opciones": [
+        {
+          "texto": "Instrucciones RCP - NIÑO",
+          "destino": 68,
+          "volver": false,
+          "destino_info": {
+            "tipo": "procedimiento",
+            "grupo": "rcp_nino",
+            "nodo": 68
+          }
+        }
+      ]
+    },
+    "71": {
+      "diapositiva": 71,
+      "grupo": "rcp_nino",
+      "lineas": [
+        "Ponga su teléfono en altavoz"
+      ],
+      "opciones": [
+        {
+          "texto": "OK",
+          "destino": 72,
+          "volver": false,
+          "destino_info": {
+            "tipo": "procedimiento",
+            "grupo": "rcp_nino",
+            "nodo": 72
+          }
+        }
+      ]
+    },
+    "72": {
+      "diapositiva": 72,
+      "grupo": "rcp_nino",
+      "lineas": [
+        "Escuche cuidadosamente:",
+        "Coloque al niño sobre su espalda",
+        "en el piso."
+      ],
+      "opciones": [
+        {
+          "texto": "OK",
+          "destino": 74,
+          "volver": false,
+          "destino_info": {
+            "tipo": "procedimiento",
+            "grupo": "rcp_nino",
+            "nodo": 74
+          }
+        },
+        {
+          "texto": "NO PUEDO",
+          "destino": 73,
+          "volver": false,
+          "destino_info": {
+            "tipo": "procedimiento",
+            "grupo": "rcp_nino",
+            "nodo": 73
+          }
+        }
+      ]
+    },
+    "73": {
+      "diapositiva": 73,
+      "grupo": "rcp_nino",
+      "lineas": [
+        "¿Hay alguien que pueda ayudarle",
+        "a deslizar al niño hasta el piso?",
+        "NO: ¿Puede buscar ayuda",
+        "(y regresar al teléfono - si no es celular)?"
+      ],
+      "opciones": [
+        {
+          "texto": "OK",
+          "destino": 74,
+          "volver": false,
+          "destino_info": {
+            "tipo": "procedimiento",
+            "grupo": "rcp_nino",
+            "nodo": 74
+          }
+        },
+        {
+          "texto": "NO PUEDO, no tengo ayuda",
+          "destino": 74,
+          "volver": false,
+          "destino_info": {
+            "tipo": "procedimiento",
+            "grupo": "rcp_nino",
+            "nodo": 74
+          }
+        }
+      ]
+    },
+    "74": {
+      "diapositiva": 74,
+      "grupo": "rcp_nino",
+      "lineas": [
+        "¿Está dispuesto(a) a darle respiración boca a boca?",
+        "NO: Ir a .",
+        "SI: Póngase de rodillas al lado del pecho del niño, descubra el pecho.",
+        "Ponga la BASE de UNA mano en el centro del pecho, entre los pezones.",
+        "Empuje con la base de su mano hacia abajo, al menos 5cm.",
+        "Empuje fuerte y rápido, entre 100 a 120 veces por minuto.",
+        "Recuerde la canción Macarena, hágalo a ese ritmo / (metrónomo)",
+        "Hágalo 30 veces. Luego ciérrele la nariz y levante de la mandíbula echando la cabeza del niño para atrás.",
+        "Cubra completamente la boca del niño con la suya.",
+        "Dele dos respiraciones, cada una de un segundo, entonces vuelva a comprimir el pecho 30 veces",
+        "Continúe así hasta que llegue la ayuda o hasta cuando el niño inicie a respirar o a moverse.",
+        "Después de 2 minutos pregunte:",
+        "¿Hay un desfibrilador automático DEA en el área?",
+        "NO: Continúe con el RCP",
+        "SI: Vaya a .",
+        ".",
+        "Si el niño vomita, ir a: .",
+        "Si hay más de dos personas presentes que puedan hacer el RCP, deben rotarse cada 2 minutos.",
+        "(Considere el uso de videollamada)."
+      ],
+      "opciones": [
+        {
+          "texto": "RCP sin respiración",
+          "destino": 75,
+          "volver": false,
+          "destino_info": {
+            "tipo": "procedimiento",
+            "grupo": "rcp_nino",
+            "nodo": 75
+          }
+        },
+        {
+          "texto": "Instrucciones DEA",
+          "destino": 76,
+          "volver": false,
+          "destino_info": {
+            "tipo": "procedimiento",
+            "grupo": "rcp_nino",
+            "nodo": 76
+          }
+        },
+        {
+          "texto": "Consideraciones especiales",
+          "destino": 77,
+          "volver": false,
+          "destino_info": {
+            "tipo": "procedimiento",
+            "grupo": "rcp_nino",
+            "nodo": 77
+          }
+        }
+      ]
+    },
+    "75": {
+      "diapositiva": 75,
+      "grupo": "rcp_nino",
+      "lineas": [
+        "RCP SIN VENTILACIÓN",
+        "Póngase de rodillas al lado del pecho del niño, descubra el pecho.",
+        "Ponga la BASE de UNA mano en el centro del pecho, entre los pezones.",
+        "Empuje con la base de su mano hacia abajo, al menos 5cm.",
+        "Empuje fuerte y rápido, entre 100 a 120 veces por minuto.",
+        "Recuerde la canción Macarena, hágalo a ese ritmo / (metrónomo)",
+        "Continúe así hasta que llegue la ayuda o hasta cuando el niño inicie a respirar o a moverse.",
+        "Después de 2 minutos pregunte:",
+        "¿Hay un desfibrilador automático DEA en el área?",
+        "NO: Continúe con el RCP",
+        "SI: Vaya a .",
+        ".",
+        "Si el niño vomita, ir a: .",
+        "Si hay más de dos personas presentes que puedan hacer el RCP, deben rotarse cada 2 minutos.",
+        "(Considere el uso de videollamada)."
+      ],
+      "opciones": [
+        {
+          "texto": "Instrucciones DEA",
+          "destino": 76,
+          "volver": false,
+          "destino_info": {
+            "tipo": "procedimiento",
+            "grupo": "rcp_nino",
+            "nodo": 76
+          }
+        },
+        {
+          "texto": "Consideraciones especiales",
+          "destino": 77,
+          "volver": false,
+          "destino_info": {
+            "tipo": "procedimiento",
+            "grupo": "rcp_nino",
+            "nodo": 77
+          }
+        }
+      ]
+    },
+    "76": {
+      "diapositiva": 76,
+      "grupo": "rcp_nino",
+      "lineas": [
+        "Instrucciones DEA para niño",
+        "NO lo opere en o alrededor de:",
+        "Agua, bañeras, piscinas, jacuzzis, metal, materiales peligrosos o cualquier tipo de superficie conductora de electricidad.",
+        "Si está solo: abra el equipo y préndalo. Si está en español, siga las órdenes del equipo.",
+        "Use los parches para niño si el aparato los tiene.",
+        "NO LOS TIENE: Póngale los que tiene y como dicen las instrucciones pero asegúrese que no se toquen.",
+        "Si hay otras personas: que le traigan el DEA mientras sigue con la reanimación.",
+        "Cuando llegue el DEA, instruya a la persona para que lo abra y lo prenda sin interrumpir el RCP. Use los parches para niño si el aparato los tiene.",
+        "NO LOS TIENE: Póngale los que tiene y como dicen las instrucciones pero asegúrese que no se toquen.",
+        "Avíseme cuando el DEA esté listo para usar.",
+        "Pare el RCP y siga las instrucciones del equipo."
+      ],
+      "opciones": [
+        {
+          "texto": "Instrucciones RCP - NIÑO",
+          "destino": 68,
+          "volver": false,
+          "destino_info": {
+            "tipo": "procedimiento",
+            "grupo": "rcp_nino",
+            "nodo": 68
+          }
+        }
+      ]
+    },
+    "77": {
+      "diapositiva": 77,
+      "grupo": "rcp_nino",
+      "lineas": [
+        "El niño ha vomitado",
+        "Voltéele la cabeza hacia un lado.",
+        "Quítele todo lo que tenga en la boca con sus dedos antes de iniciar con respiración boca a boca."
+      ],
+      "opciones": [
+        {
+          "texto": "Volver",
+          "destino": 66,
+          "volver": false,
+          "destino_info": {
+            "tipo": "procedimiento",
+            "grupo": "rcp_adulto",
+            "nodo": 66
+          }
+        }
+      ]
+    },
+    "78": {
+      "diapositiva": 78,
+      "grupo": "rcp_infante",
+      "lineas": [
+        "¿Alguien en el sitio sabe dar RCP a un bebé?"
+      ],
+      "opciones": [
+        {
+          "texto": "NO",
+          "destino": 81,
+          "volver": false,
+          "destino_info": {
+            "tipo": "procedimiento",
+            "grupo": "rcp_infante",
+            "nodo": 81
+          }
+        },
+        {
+          "texto": "SI",
+          "destino": 79,
+          "volver": false,
+          "destino_info": {
+            "tipo": "procedimiento",
+            "grupo": "rcp_infante",
+            "nodo": 79
+          }
+        }
+      ]
+    },
+    "79": {
+      "diapositiva": 79,
+      "grupo": "rcp_infante",
+      "lineas": [
+        "¿Necesita ayuda para recordarle",
+        "el procedimiento de reanimación?",
+        "NO",
+        "SI"
+      ],
+      "opciones": []
+    },
+    "80": {
+      "diapositiva": 80,
+      "grupo": "rcp_infante",
+      "lineas": [
+        "Inicie RCP en el bebé ahora.",
+        "Estaré en línea si me necesita hasta que la ayude llegue."
+      ],
+      "opciones": [
+        {
+          "texto": "Instrucciones RCP - INFANTE",
+          "destino": 78,
+          "volver": false,
+          "destino_info": {
+            "tipo": "procedimiento",
+            "grupo": "rcp_infante",
+            "nodo": 78
+          }
+        }
+      ]
+    },
+    "81": {
+      "diapositiva": 81,
+      "grupo": "rcp_infante",
+      "lineas": [
+        "Ponga su teléfono en altavoz."
+      ],
+      "opciones": [
+        {
+          "texto": "OK",
+          "destino": 82,
+          "volver": false,
+          "destino_info": {
+            "tipo": "procedimiento",
+            "grupo": "rcp_infante",
+            "nodo": 82
+          }
+        }
+      ]
+    },
+    "82": {
+      "diapositiva": 82,
+      "grupo": "rcp_infante",
+      "lineas": [
+        "¿Está dispuesto(a) a darle respiración boca a boca?",
+        "NO: Ir a .",
+        "SI: Escuche con cuidado, le diré qué va a hacer.",
+        "Ponga al bebé sobre su espalda, plano, sobre una superficie dura como una mesa o el piso.",
+        "Ponga sus dedos índice y medio en el pecho, justo debajo de la línea entre los pezones.",
+        "Presione hacia abajo, unos 4 cm. Hágalo rápido y fuerte 30 veces.",
+        "Entonces, sin parar los masajes, incline la cabeza del bebé un poco hacia atrás levantando su barbilla y cubra boca y nariz del bebé con su boca.",
+        "Dele, suavemente y despacio dos respiraciones.",
+        "Asegúrese que el pecho del bebé se levanta un poco cada vez que le da respiración.",
+        "De nuevo vuelva a comprimir el pecho 30 veces y después vuelva a darle dos respiraciones.",
+        "Manténgase haciendo lo mismo hasta que llegue la ayuda o si el bebé empieza a moverse o a respirar por si solo.",
+        "(Considere el uso de videollamada)."
+      ],
+      "opciones": [
+        {
+          "texto": "RCP sin respiración",
+          "destino": 83,
+          "volver": false,
+          "destino_info": {
+            "tipo": "procedimiento",
+            "grupo": "rcp_infante",
+            "nodo": 83
+          }
+        }
+      ]
+    },
+    "83": {
+      "diapositiva": 83,
+      "grupo": "rcp_infante",
+      "lineas": [
+        "RCP SIN RESPIRACIÓN BOCA A BOCA",
+        "Escuche con cuidado, le diré qué va a hacer.",
+        "Ponga al bebé sobre su espalda, plano, sobre una superficie dura como una mesa o el piso.",
+        "Ponga sus dedos índice y medio en el pecho, justo debajo de la línea entre los pezones.",
+        "Presione hacia abajo, unos 4 cm. Hágalo rápido y fuerte 200 veces. Luego regrese al teléfono.",
+        "Si el bebé no está respirando o moviéndose, repita 200 compresiones.",
+        "Manténgase haciendo lo mismo hasta que llegue la ayuda o si el bebé empieza a moverse o a respirar por si solo.",
+        "(Considere el uso de videollamada)."
+      ],
+      "opciones": []
+    },
+    "88": {
+      "diapositiva": 88,
+      "grupo": "parto",
+      "lineas": [
+        "¿Es primeriza?"
+      ],
+      "opciones": [
+        {
+          "texto": "NO",
+          "destino": 89,
+          "volver": false,
+          "destino_info": {
+            "tipo": "procedimiento",
+            "grupo": "parto",
+            "nodo": 89
+          }
+        },
+        {
+          "texto": "SI",
+          "destino": 91,
+          "volver": false,
+          "destino_info": {
+            "tipo": "procedimiento",
+            "grupo": "parto",
+            "nodo": 91
+          }
+        }
+      ]
+    },
+    "89": {
+      "diapositiva": 89,
+      "grupo": "parto",
+      "lineas": [
+        "¿Cada cuánto son las contracciones (dolores)?"
+      ],
+      "opciones": [
+        {
+          "texto": "MENOS de 5 minutos",
+          "destino": 90,
+          "volver": false,
+          "destino_info": {
+            "tipo": "procedimiento",
+            "grupo": "parto",
+            "nodo": 90
+          }
+        },
+        {
+          "texto": "MÁS de 5 minutos",
+          "destino": 93,
+          "volver": false,
+          "destino_info": {
+            "tipo": "procedimiento",
+            "grupo": "parto",
+            "nodo": 93
+          }
+        }
+      ]
+    },
+    "90": {
+      "diapositiva": 90,
+      "grupo": "parto",
+      "lineas": [
+        "¿Tiene fuerte deseo de pujar?"
+      ],
+      "opciones": [
+        {
+          "texto": "SI",
+          "destino": 94,
+          "volver": false,
+          "destino_info": {
+            "tipo": "procedimiento",
+            "grupo": "parto",
+            "nodo": 94
+          }
+        },
+        {
+          "texto": "NO",
+          "destino": 93,
+          "volver": false,
+          "destino_info": {
+            "tipo": "procedimiento",
+            "grupo": "parto",
+            "nodo": 93
+          }
+        }
+      ]
+    },
+    "91": {
+      "diapositiva": 91,
+      "grupo": "parto",
+      "lineas": [
+        "¿Cada cuánto son las contracciones (dolores)?"
+      ],
+      "opciones": [
+        {
+          "texto": "MENOS de 2 minutos",
+          "destino": 92,
+          "volver": false,
+          "destino_info": {
+            "tipo": "procedimiento",
+            "grupo": "parto",
+            "nodo": 92
+          }
+        },
+        {
+          "texto": "MÁS de 2 minutos",
+          "destino": 93,
+          "volver": false,
+          "destino_info": {
+            "tipo": "procedimiento",
+            "grupo": "parto",
+            "nodo": 93
+          }
+        }
+      ]
+    },
+    "92": {
+      "diapositiva": 92,
+      "grupo": "parto",
+      "lineas": [
+        "¿Tiene fuerte deseo de pujar?"
+      ],
+      "opciones": [
+        {
+          "texto": "SI",
+          "destino": 94,
+          "volver": false,
+          "destino_info": {
+            "tipo": "procedimiento",
+            "grupo": "parto",
+            "nodo": 94
+          }
+        },
+        {
+          "texto": "NO",
+          "destino": 93,
+          "volver": false,
+          "destino_info": {
+            "tipo": "procedimiento",
+            "grupo": "parto",
+            "nodo": 93
+          }
+        }
+      ]
+    },
+    "93": {
+      "diapositiva": 93,
+      "grupo": "parto",
+      "lineas": [
+        "Escuche cuidadosamente, le diré que va a hacer:",
+        "Haga que se acueste en una posición cómoda",
+        "Que se recueste sobre su lado izquierdo.",
+        "Dígale que tome respiraciones profundas.",
+        "Esté pendiente de la condición de la paciente.",
+        "Si tiene un fuerte deseo de pujar el parto es inminente.",
+        "Si es así,"
+      ],
+      "opciones": [
+        {
+          "texto": "Continúe",
+          "destino": 94,
+          "volver": false,
+          "destino_info": {
+            "tipo": "procedimiento",
+            "grupo": "parto",
+            "nodo": 94
+          }
+        }
+      ]
+    },
+    "94": {
+      "diapositiva": 94,
+      "grupo": "parto",
+      "lineas": [
+        "Pídale que resista la necesidad de pujar.",
+        "Si puede, ponga el teléfono al lado de la paciente.",
+        "Pídale que se acueste sobre su espalda y que se relaje,",
+        "que respire profundamente por su boca.",
+        "Quítele la ropa interior.",
+        "Ponga toallas limpias bajo sus nalgas.",
+        "Consiga más toallas limpias y téngalas disponibles.",
+        "Si el nacimiento empieza (rompimiento de fuente, descarga de sangre,",
+        "aparece la cabeza del bebé) ."
+      ],
+      "opciones": [
+        {
+          "texto": "Continúe",
+          "destino": 95,
+          "volver": false,
+          "destino_info": {
+            "tipo": "procedimiento",
+            "grupo": "parto",
+            "nodo": 95
+          }
+        }
+      ]
+    },
+    "95": {
+      "diapositiva": 95,
+      "grupo": "parto",
+      "lineas": [
+        "La cabeza del bebé debe aparecer primero, sosténgala y a medida que el bebé sale",
+        "sosténgalo también.",
+        "NO HALE NI EMPUJE",
+        "Habrá agua y sangre, esto es normal.",
+        "Cuando el bebé salga, límpiele la boca y nariz con una tela limpia y seca.",
+        "NO intente cortar o halar el cordón umbilical.",
+        "Envuelva al bebé en una sábana seca, una toalla o lo que tenga a mano y póngalo",
+        "entre ambas piernas de la mamá.",
+        "Haga un masaje muy suave en la parte inferior del abdomen de la mamá.",
+        "Si el bebé NO inicia a respirar por su cuenta,",
+        "frótele la espalda o golpee suavemente las plantas de sus pies.",
+        "Si el bebé No inicia a respirar de INMEDIATO, regrese al teléfono."
+      ],
+      "opciones": [
+        {
+          "texto": "Complicaciones",
+          "destino": 96,
+          "volver": false,
+          "destino_info": {
+            "tipo": "procedimiento",
+            "grupo": "parto",
+            "nodo": 96
+          }
+        },
+        {
+          "texto": "Bebé nacido y RESPIRANDO",
+          "destino": 97,
+          "volver": false,
+          "destino_info": {
+            "tipo": "procedimiento",
+            "grupo": "parto",
+            "nodo": 97
+          }
+        },
+        {
+          "texto": "Bebé nacido y NO respirando",
+          "destino": 124,
+          "volver": false,
+          "destino_info": {
+            "tipo": "procedimiento",
+            "grupo": "ovace_infante",
+            "nodo": 124
+          }
+        }
+      ]
+    },
+    "96": {
+      "diapositiva": 96,
+      "grupo": "parto",
+      "lineas": [
+        "Presentación de pierna, brazo, nalgas o cordón umbilical:",
+        "Tranquilice a la mamá. Dígale que la ayuda viene en camino.",
+        "Dígale que debe permanecer acostada sobre su espalda",
+        "y con las rodillas dobladas.",
+        "Dígale que se relaje y que respire por su boca.",
+        "Dígale que no puje."
+      ],
+      "opciones": []
+    },
+    "97": {
+      "diapositiva": 97,
+      "grupo": "parto",
+      "lineas": [
+        "Cuando alumbre la placenta:",
+        "Envuelva la placenta (tejido al otro lado del cordón umbilical).",
+        "La salida de la placenta puede durar hasta 20 minutos.",
+        "Manténgala al nivel o un poco por encima del nivel del bebé"
+      ],
+      "opciones": []
+    },
+    "100": {
+      "diapositiva": 100,
+      "grupo": "via_aerea",
+      "lineas": [
+        "NO TRAUMA – RESPIRANDO NORMALMENTE",
+        "Escuche cuidadosamente, le diré que va a hacer:",
+        "Extienda uno de los brazos de paciente sobre su cabeza y gírelo de manera que quede de lado y la cabeza descanse sobre el brazo que le extendió.",
+        "Dóblele las pierna superior para estabilizarlo en esa posición.",
+        "Revise si respira normalmente hasta que llegue la ayuda.",
+        "Vea si el pecho sube y baja.",
+        "Ponga su oído cerca a la nariz y boca del paciente y escuche y sienta el movimiento del aire."
+      ],
+      "opciones": [
+        {
+          "texto": "Paciente paró de respirar normalmente",
+          "destino": 57,
+          "volver": false,
+          "destino_info": {
+            "tipo": "tarjeta",
+            "id": "ataque_cardiaco"
+          }
+        },
+        {
+          "texto": "Paciente vomitó",
+          "destino": 101,
+          "volver": false,
+          "destino_info": {
+            "tipo": "procedimiento",
+            "grupo": "via_aerea",
+            "nodo": 101
+          }
+        }
+      ]
+    },
+    "101": {
+      "diapositiva": 101,
+      "grupo": "via_aerea",
+      "lineas": [
+        "Límpiele y sáquele todo lo que tenga en la boca con sus dedos."
+      ],
+      "opciones": [
+        {
+          "texto": "Paciente comenzó a respirar normalmente",
+          "destino": 100,
+          "volver": false,
+          "destino_info": {
+            "tipo": "procedimiento",
+            "grupo": "via_aerea",
+            "nodo": 100
+          }
+        },
+        {
+          "texto": "Paciente no respira normalmente",
+          "destino": 57,
+          "volver": false,
+          "destino_info": {
+            "tipo": "tarjeta",
+            "id": "ataque_cardiaco"
+          }
+        }
+      ]
+    },
+    "102": {
+      "diapositiva": 102,
+      "grupo": "via_aerea",
+      "lineas": [
+        "TRAUMA – RESPIRANDO NORMALMENTE",
+        "Escuche cuidadosamente, le diré que va a hacer:",
+        "NO mueva al paciente, especialmente su cabeza y cuello, a no ser que haya un peligro inminente que pueda matarlo.",
+        "Manténgase revisándole la respiración hasta que llegue la ayuda.",
+        "Verifique que el pecho suba y baje.",
+        "Ponga su oído cerca a la nariz y boca del paciente y escuche y sienta el movimiento del aire."
+      ],
+      "opciones": [
+        {
+          "texto": "Paciente paró de respirar normalmente",
+          "destino": 57,
+          "volver": false,
+          "destino_info": {
+            "tipo": "tarjeta",
+            "id": "ataque_cardiaco"
+          }
+        },
+        {
+          "texto": "Paciente vomitó",
+          "destino": 103,
+          "volver": false,
+          "destino_info": {
+            "tipo": "procedimiento",
+            "grupo": "via_aerea",
+            "nodo": 103
+          }
+        }
+      ]
+    },
+    "103": {
+      "diapositiva": 103,
+      "grupo": "via_aerea",
+      "lineas": [
+        "NO mueva la cabeza del paciente",
+        "Límpiele y sáquele todo lo que tenga en la boca con sus dedos."
+      ],
+      "opciones": [
+        {
+          "texto": "Paciente comenzó a respirar normalmente",
+          "destino": 100,
+          "volver": false,
+          "destino_info": {
+            "tipo": "procedimiento",
+            "grupo": "via_aerea",
+            "nodo": 100
+          }
+        },
+        {
+          "texto": "Paciente no respira normalmente",
+          "destino": 57,
+          "volver": false,
+          "destino_info": {
+            "tipo": "tarjeta",
+            "id": "ataque_cardiaco"
+          }
+        }
+      ]
+    },
+    "108": {
+      "diapositiva": 108,
+      "grupo": "ovace_adulto",
+      "lineas": [
+        "¿El paciente puede hablar o toser?"
+      ],
+      "opciones": [
+        {
+          "texto": "NO",
+          "destino": 110,
+          "volver": false,
+          "destino_info": {
+            "tipo": "procedimiento",
+            "grupo": "ovace_adulto",
+            "nodo": 110
+          }
+        },
+        {
+          "texto": "SI",
+          "destino": 109,
+          "volver": false,
+          "destino_info": {
+            "tipo": "procedimiento",
+            "grupo": "ovace_adulto",
+            "nodo": 109
+          }
+        }
+      ]
+    },
+    "109": {
+      "diapositiva": 109,
+      "grupo": "ovace_adulto",
+      "lineas": [
+        "Si hay una obstrucción parcial la víctima toserá forzadamente. No interfiera con la tos espontánea y sus esfuerzos por respirar.",
+        "Intente aliviar la obstrucción solo si el paciente se queda callado, si se incrementa la dificultad respiratoria o si el paciente ya no responde."
+      ],
+      "opciones": [
+        {
+          "texto": "Ir a las instrucciones de OVACE",
+          "destino": 110,
+          "volver": false,
+          "destino_info": {
+            "tipo": "procedimiento",
+            "grupo": "ovace_adulto",
+            "nodo": 110
+          }
+        }
+      ]
+    },
+    "110": {
+      "diapositiva": 110,
+      "grupo": "ovace_adulto",
+      "lineas": [
+        "¿El paciente está consciente?",
+        "Si el evento no fue presenciado y el paciente está inconsciente ir a",
+        "OVACE ADULTO"
+      ],
+      "opciones": [
+        {
+          "texto": "NO",
+          "destino": 112,
+          "volver": false,
+          "destino_info": {
+            "tipo": "procedimiento",
+            "grupo": "ovace_adulto",
+            "nodo": 112
+          }
+        },
+        {
+          "texto": "SI",
+          "destino": 111,
+          "volver": false,
+          "destino_info": {
+            "tipo": "procedimiento",
+            "grupo": "ovace_adulto",
+            "nodo": 111
+          }
+        }
+      ]
+    },
+    "111": {
+      "diapositiva": 111,
+      "grupo": "ovace_adulto",
+      "lineas": [
+        "PACIENTE CONSCIENTE",
+        "Escuche atentamente, le diré que va a hacer.",
+        "Párese detrás del paciente.",
+        "Envuelva con sus brazos alrededor de la cintura del paciente*.",
+        "Empuñe una de sus manos y ponga la base de su pulgar hacia el estómago del paciente,",
+        "en el medio, un poco por encima del ombligo.",
+        "Agarre su puño con su otra mano.",
+        "Presione hacia el estómago con empujes rápidos y hacia arriba.",
+        "Repita hasta que el elemento sea expulsado.",
+        "*Si no puede alcanzar sus manos alrededor de la cintura del paciente o si es una embarazada:",
+        "Envuelva con sus brazos bajo los brazos del paciente y ponga las manos en el centro del pecho.",
+        "Presione en el pecho con empujes rápidos hasta que el elemento sea expulsado."
+      ],
+      "opciones": []
+    },
+    "112": {
+      "diapositiva": 112,
+      "grupo": "ovace_adulto",
+      "lineas": [
+        "PACIENTE INCONSCIENTE",
+        "Solo compresiones",
+        "Escuche atentamente, le diré que va a hacer.",
+        "Póngase de rodillas al lado del pecho del paciente, descubra el pecho.",
+        "¿Ve algún cable o tubo que sale del pecho o abdomen del paciente?",
+        "SI: Pare, no inicie RCP. Ir a:",
+        "NO:",
+        "Ponga la BASE de su mano en el centro del pecho, entre los pezones.",
+        "Ahora ponga su otra mano encima.",
+        "Con los brazos rectos empuje con la base de su mano hacia abajo,",
+        "al menos 5cm. Empuje fuerte y rápido, entre 100 a 120 veces por minuto",
+        "Recuerde la canción Macarena, hágalo a ese ritmo / (metrónomo). Hágalo 30 veces.",
+        "Entonces ciérrele la nariz y levántele la barbilla de modo que la cabeza se doble hacia atrás.",
+        "Busque en la boca para ver si tiene algún objeto. Si lo ve, sáquelo.",
+        "Haga esto hasta que llegue la ayuda o si el paciente empieza a respirar.",
+        "Si el paciente empieza a respirar vaya a:",
+        "Si hay un DEA disponible vaya a :"
+      ],
+      "opciones": [
+        {
+          "texto": "Consideraciones especiales",
+          "destino": 115,
+          "volver": false,
+          "destino_info": {
+            "tipo": "procedimiento",
+            "grupo": "ovace_adulto",
+            "nodo": 115
+          }
+        },
+        {
+          "texto": "Control V.A. - NO TRAUMA",
+          "destino": 100,
+          "volver": false,
+          "destino_info": {
+            "tipo": "procedimiento",
+            "grupo": "via_aerea",
+            "nodo": 100
+          }
+        },
+        {
+          "texto": "Instrucciones DEA",
+          "destino": 114,
+          "volver": false,
+          "destino_info": {
+            "tipo": "procedimiento",
+            "grupo": "ovace_adulto",
+            "nodo": 114
+          }
+        }
+      ]
+    },
+    "113": {
+      "diapositiva": 113,
+      "grupo": "ovace_adulto",
+      "lineas": [
+        "PACIENTE INCONSCIENTE",
+        "Con ventilación",
+        "Escuche atentamente, le diré que va a hacer.",
+        "Póngase de rodillas al lado del pecho del paciente, descubra el pecho.",
+        "¿Ve algún cable o tubo que sale del pecho o abdomen del paciente?",
+        "SI: Pare, no inicie RCP. Ir a:",
+        "NO:",
+        "Ponga la BASE de su mano en el centro del pecho, entre los pezones.",
+        "Ahora ponga su otra mano encima.",
+        "Con los brazos rectos empuje con la base de su mano hacia abajo, al menos 5cm.",
+        "Empuje fuerte y rápido, entre 100 a 120 veces por minuto.",
+        "Recuerde la canción Macarena, hágalo a ese ritmo / (metrónomo). Hágalo 30 veces.",
+        "Entonces ciérrele la nariz y levántele la barbilla de modo que la cabeza se doble hacia atrás.",
+        "Busque en la boca para ver si tiene algún objeto. Si lo ve, sáquelo.",
+        "Cubra la boca del paciente con la suya y sin destaparle la nariz dele 2 respiraciones, cada una de 1 segundo,",
+        "Haga esto hasta que llegue la ayuda o si el paciente empieza a respirar.",
+        "Si el paciente empieza a respirar vaya a:",
+        "Si hay un DEA disponible vaya a :"
+      ],
+      "opciones": [
+        {
+          "texto": "Consideraciones especiales",
+          "destino": 115,
+          "volver": false,
+          "destino_info": {
+            "tipo": "procedimiento",
+            "grupo": "ovace_adulto",
+            "nodo": 115
+          }
+        },
+        {
+          "texto": "Control V.A. - NO TRAUMA",
+          "destino": 100,
+          "volver": false,
+          "destino_info": {
+            "tipo": "procedimiento",
+            "grupo": "via_aerea",
+            "nodo": 100
+          }
+        },
+        {
+          "texto": "Instrucciones DEA",
+          "destino": 114,
+          "volver": false,
+          "destino_info": {
+            "tipo": "procedimiento",
+            "grupo": "ovace_adulto",
+            "nodo": 114
+          }
+        }
+      ]
+    },
+    "114": {
+      "diapositiva": 114,
+      "grupo": "ovace_adulto",
+      "lineas": [
+        "Instrucciones DEA",
+        "NO lo opere en o alrededor de:",
+        "Agua, bañeras, piscinas, jacuzzis, metal, materiales peligrosos o cualquier tipo de superficie conductora de electricidad.",
+        "Si está solo, vaya por el DEA y regrese al paciente.",
+        "Abra el equipo y préndalo. Si está en español, siga las órdenes del equipo.",
+        "Use los parches grandes para adulto.",
+        "Si hay otras personas, que le traigan el DEA mientras inicia RCP.",
+        "Cuando llegue el DEA, instruya a la persona para que lo abra y lo prenda sin interrumpir el RCP. Use los parches grandes.",
+        "Avíseme cuando el DEA esté listo para usar.",
+        "Pare el RCP y siga las instrucciones del equipo."
+      ],
+      "opciones": [
+        {
+          "texto": "Volver",
+          "destino": 112,
+          "volver": false,
+          "destino_info": {
+            "tipo": "procedimiento",
+            "grupo": "ovace_adulto",
+            "nodo": 112
+          }
+        },
+        {
+          "texto": "Volver",
+          "destino": 112,
+          "volver": false,
+          "destino_info": {
+            "tipo": "procedimiento",
+            "grupo": "ovace_adulto",
+            "nodo": 112
+          }
+        }
+      ]
+    },
+    "115": {
+      "diapositiva": 115,
+      "grupo": "ovace_adulto",
+      "lineas": [
+        "El paciente tiene tubos o cables que salen del pecho o abdomen:",
+        "¿Tiene el paciente un dispositivo de asistencia ventricular? (VAD, bomba cardiaca, RVAD, LVAD, BVAD, LVAS).",
+        "SI: No le de compresiones cardiacas.",
+        "Si el paciente tiene un marcapasos o un desfibrilador interno, regresar a las instrucciones de RCP.",
+        "El paciente tiene un estoma.",
+        "Instrucciones de ventilación.",
+        "Mantenga la cabeza del paciente RECTA.",
+        "Cubra por completo el estoma con su boca.",
+        "Cubra la boca y nariz del paciente con su mano.",
+        "Dele dos insuflaciones, deben inflarse los pulmones.",
+        "Asegúrese que el pecho sube.",
+        "El paciente ha vomitado.",
+        "Gire su cabeza hacia un lado.",
+        "Limpie todo lo que tenga en la boca con sus dedos",
+        "antes de darle respiración boca a boca.",
+        "Reinicie el RCP"
+      ],
+      "opciones": [
+        {
+          "texto": "Instrucciones RCP - ADULTO",
+          "destino": 58,
+          "volver": false,
+          "destino_info": {
+            "tipo": "procedimiento",
+            "grupo": "rcp_adulto",
+            "nodo": 58
+          }
+        },
+        {
+          "texto": "Volver",
+          "destino": 112,
+          "volver": false,
+          "destino_info": {
+            "tipo": "procedimiento",
+            "grupo": "ovace_adulto",
+            "nodo": 112
+          }
+        },
+        {
+          "texto": "Volver",
+          "destino": 112,
+          "volver": false,
+          "destino_info": {
+            "tipo": "procedimiento",
+            "grupo": "ovace_adulto",
+            "nodo": 112
+          }
+        }
+      ]
+    },
+    "116": {
+      "diapositiva": 116,
+      "grupo": "ovace_nino",
+      "lineas": [
+        "¿El niño puede hablar o toser?"
+      ],
+      "opciones": [
+        {
+          "texto": "NO",
+          "destino": 118,
+          "volver": false,
+          "destino_info": {
+            "tipo": "procedimiento",
+            "grupo": "ovace_nino",
+            "nodo": 118
+          }
+        },
+        {
+          "texto": "SI",
+          "destino": 117,
+          "volver": false,
+          "destino_info": {
+            "tipo": "procedimiento",
+            "grupo": "ovace_nino",
+            "nodo": 117
+          }
+        }
+      ]
+    },
+    "117": {
+      "diapositiva": 117,
+      "grupo": "ovace_nino",
+      "lineas": [
+        "Si hay una obstrucción parcial la víctima toserá forzadamente. No interfiera con la tos espontánea y sus esfuerzos por respirar.",
+        "Intente aliviar la obstrucción solo si el paciente se queda callado, si se incrementa la dificultad respiratoria o si el paciente ya no responde."
+      ],
+      "opciones": [
+        {
+          "texto": "Ir a las instrucciones de OVACE",
+          "destino": 118,
+          "volver": false,
+          "destino_info": {
+            "tipo": "procedimiento",
+            "grupo": "ovace_nino",
+            "nodo": 118
+          }
+        }
+      ]
+    },
+    "118": {
+      "diapositiva": 118,
+      "grupo": "ovace_nino",
+      "lineas": [
+        "¿El niño está consciente?"
+      ],
+      "opciones": [
+        {
+          "texto": "NO",
+          "destino": 120,
+          "volver": false,
+          "destino_info": {
+            "tipo": "procedimiento",
+            "grupo": "ovace_nino",
+            "nodo": 120
+          }
+        },
+        {
+          "texto": "SI",
+          "destino": 119,
+          "volver": false,
+          "destino_info": {
+            "tipo": "procedimiento",
+            "grupo": "ovace_nino",
+            "nodo": 119
+          }
+        },
+        {
+          "texto": "Si el evento no fue presenciado, y el paciente está inconsciente ir a OVACE NIÑO",
+          "destino": 120,
+          "volver": false,
+          "destino_info": {
+            "tipo": "procedimiento",
+            "grupo": "ovace_nino",
+            "nodo": 120
+          }
+        }
+      ]
+    },
+    "119": {
+      "diapositiva": 119,
+      "grupo": "ovace_nino",
+      "lineas": [
+        "PACIENTE NIÑO CONSCIENTE",
+        "Escuche atentamente, le diré que va a hacer.",
+        "Párese detrás del niño.",
+        "Envuelva con sus brazos alrededor de la cintura del paciente*.",
+        "Empuñe una de sus manos y ponga la base de su pulgar hacia el estómago del paciente,",
+        "en el medio, un poco por encima del ombligo.",
+        "Agarre su puño con su otra mano.",
+        "Presione hacia el estómago con empujes rápidos y hacia arriba.",
+        "Repita hasta que el elemento sea expulsado.",
+        "*Si no puede alcanzar sus manos alrededor de la cintura del paciente o si es una embarazada:",
+        "Envuelva con sus brazos bajo los brazos del paciente y ponga las manos en el centro del pecho.",
+        "Presione en el pecho con empujes rápidos hasta que el elemento sea expulsado."
+      ],
+      "opciones": []
+    },
+    "120": {
+      "diapositiva": 120,
+      "grupo": "ovace_nino",
+      "lineas": [
+        "PACIENTE NIÑO INCONSCIENTE",
+        "¿Está dispuesto(a) a darle respiración boca a boca?",
+        "NO: Ir a .",
+        "SI: Póngase de rodillas al lado del pecho del niño, descubra el pecho.",
+        "Ponga la BASE de UNA mano en el centro del pecho, entre los pezones.",
+        "Empuje con la base de su mano hacia abajo, al menos 5cm.",
+        "Empuje fuerte y rápido, entre 100 a 120 veces por minuto.",
+        "Recuerde la canción Macarena, hágalo a ese ritmo / (metrónomo)",
+        "Hágalo 30 veces. Luego ciérrele la nariz y levante de la mandíbula echando la cabeza del niño para atrás.",
+        "Ábrale la boca. Si ve algo, sáqueselo, trate de barrer el objeto, no lo empuje.",
+        "Cubra completamente la boca del niño con la suya.",
+        "Dele dos respiraciones, cada una de un segundo, entonces vuelva a comprimir el pecho 30 veces",
+        "Continúe así hasta que llegue la ayuda o hasta cuando el niño inicie a respirar o a moverse.",
+        "Si el niño vomita vaya a .",
+        "Después de 2 minutos pregunte:",
+        "¿Hay un desfibrilador automático DEA en el área?",
+        "NO: Continúe con el procedimiento.",
+        "SI: Vaya a .",
+        ".",
+        "Si hay más de dos personas presentes que puedan hacer el RCP, deben rotarse cada 2 minutos.",
+        "(Considere el uso de videollamada)."
+      ],
+      "opciones": [
+        {
+          "texto": "Instrucciones OVACE niño inconsciente solo compresiones",
+          "destino": 121,
+          "volver": false,
+          "destino_info": {
+            "tipo": "procedimiento",
+            "grupo": "ovace_nino",
+            "nodo": 121
+          }
+        },
+        {
+          "texto": "Consideraciones especiales",
+          "destino": 123,
+          "volver": false,
+          "destino_info": {
+            "tipo": "procedimiento",
+            "grupo": "ovace_nino",
+            "nodo": 123
+          }
+        },
+        {
+          "texto": "Instrucciones DEA",
+          "destino": 122,
+          "volver": false,
+          "destino_info": {
+            "tipo": "procedimiento",
+            "grupo": "ovace_nino",
+            "nodo": 122
+          }
+        }
+      ]
+    },
+    "121": {
+      "diapositiva": 121,
+      "grupo": "ovace_nino",
+      "lineas": [
+        "PACIENTE NIÑO INCONSCIENTE – solo compresiones",
+        ".",
+        "Póngase de rodillas al lado del pecho del niño, descubra el pecho.",
+        "Ponga la BASE de UNA mano en el centro del pecho, entre los pezones.",
+        "Empuje con la base de su mano hacia abajo, al menos 5cm.",
+        "Empuje fuerte y rápido, entre 100 a 120 veces por minuto.",
+        "Recuerde la canción Macarena, hágalo a ese ritmo / (metrónomo). Hágalo 30 veces.",
+        "Ábrale la boca. Si ve algo, sáqueselo, trate de barrer el objeto, no lo empuje.",
+        "Continúe así hasta que llegue la ayuda o hasta cuando el niño inicie a respirar o a moverse.",
+        "Después de 2 minutos pregunte:",
+        "¿Hay un desfibrilador automático DEA en el área?",
+        "NO: Continúe con el procedimiento.",
+        "SI: Vaya a .",
+        "Si el niño vomita vaya a: .",
+        ".",
+        "Si hay más de dos personas presentes que puedan hacer el RCP, deben rotarse cada 2 minutos.",
+        "(Considere el uso de videollamada)."
+      ],
+      "opciones": [
+        {
+          "texto": "Instrucciones DEA",
+          "destino": 122,
+          "volver": false,
+          "destino_info": {
+            "tipo": "procedimiento",
+            "grupo": "ovace_nino",
+            "nodo": 122
+          }
+        },
+        {
+          "texto": "Consideraciones especiales",
+          "destino": 123,
+          "volver": false,
+          "destino_info": {
+            "tipo": "procedimiento",
+            "grupo": "ovace_nino",
+            "nodo": 123
+          }
+        }
+      ]
+    },
+    "122": {
+      "diapositiva": 122,
+      "grupo": "ovace_nino",
+      "lineas": [
+        "Instrucciones DEA para niño",
+        "NO lo opere en o alrededor de:",
+        "Agua, bañeras, piscinas, jacuzzis, metal, materiales peligrosos o cualquier tipo de superficie conductora de electricidad.",
+        "Si está solo, abra el equipo y préndalo. Si está en español, siga las órdenes del equipo.",
+        "Use los parches para niño si el aparato los tiene.",
+        "NO LOS TIENE: Póngale los que tiene y como dicen las instrucciones pero asegúrese que no se toquen.",
+        "Si hay otras personas, que le traigan el DEA mientras sigue con la reanimación.",
+        "Cuando llegue el DEA, instruya a la persona para que lo abra y lo prenda sin interrumpir el RCP. Use los parches para niño si el aparato los tiene.",
+        "NO LOS TIENE: Póngale los que tiene y como dicen las instrucciones pero asegúrese que no se toquen.",
+        "Avíseme cuando el DEA esté listo para usar.",
+        "Pare el RCP y siga las instrucciones del equipo."
+      ],
+      "opciones": []
+    },
+    "123": {
+      "diapositiva": 123,
+      "grupo": "ovace_nino",
+      "lineas": [
+        "El niño ha vomitado",
+        "Voltéele la cabeza hacia un lado.",
+        "Quítele todo lo que tenga en la boca con sus dedos antes de iniciar con respiración boca a boca."
+      ],
+      "opciones": [
+        {
+          "texto": "Volver",
+          "destino": 120,
+          "volver": false,
+          "destino_info": {
+            "tipo": "procedimiento",
+            "grupo": "ovace_nino",
+            "nodo": 120
+          }
+        }
+      ]
+    },
+    "124": {
+      "diapositiva": 124,
+      "grupo": "ovace_infante",
+      "lineas": [
+        "Si está en un teléfono fijo, necesito que use",
+        "el que esté lo más cerca posible al paciente.",
+        "Si es un celular o es inalámbrico, ponga el altavoz."
+      ],
+      "opciones": [
+        {
+          "texto": "OK",
+          "destino": 128,
+          "volver": false,
+          "destino_info": {
+            "tipo": "procedimiento",
+            "grupo": "ovace_infante",
+            "nodo": 128
+          }
+        }
+      ]
+    },
+    "125": {
+      "diapositiva": 125,
+      "grupo": "ovace_infante",
+      "lineas": [
+        "¿El bebé puede llorar o toser?",
+        "NO",
+        "SI"
+      ],
+      "opciones": []
+    },
+    "126": {
+      "diapositiva": 126,
+      "grupo": "ovace_infante",
+      "lineas": [
+        "Ponga al bebé de lado y revise su respiración constantemente",
+        "hasta que la ayuda llegue"
+      ],
+      "opciones": [
+        {
+          "texto": "SI EL INFANTE NO RESPONDE: Ir a las instrucciones de OVACE",
+          "destino": 127,
+          "volver": false,
+          "destino_info": {
+            "tipo": "procedimiento",
+            "grupo": "ovace_infante",
+            "nodo": 127
+          }
+        }
+      ]
+    },
+    "127": {
+      "diapositiva": 127,
+      "grupo": "ovace_infante",
+      "lineas": [
+        "PACIENTE INFANTE CONSCIENTE",
+        "Escuche atentamente, le diré que va a hacer.",
+        "Quítele cualquier ropa que cubra el pecho del bebé, luego cárguelo.",
+        "Cuando haga esto regrese al teléfono. Si no estoy en línea, espéreme.",
+        "Voltee el bebé boca abajo y póngalo en su antebrazo.",
+        "Soporte la quijada del bebé en su mano.",
+        "Bajo su brazo hasta que la cabeza del bebé quede por debajo de su pecho.",
+        "Use la palma de su mano y golpéelo firmemente en la espalda 5 veces, justo entre los omoplatos.",
+        "Haga esto y vuelva al teléfono.",
+        "Ponga al bebé en sándwich entre sus antebrazos, soporte su cabeza y voltee al bebé para ponerlo",
+        "sobre su espalda.",
+        "Ponga sus dedos índice y medio directamente debajo de los pezones del bebé.",
+        "Empuje 5 veces de modo que el pecho del bebé baje unos 4cm. Haga esto y vuelva al teléfono",
+        "Continúe hasta que el bebé pueda respirar, toser o llorar. Revise si sigue consciente y si respira.",
+        "Si el infante no responde vaya a:"
+      ],
+      "opciones": [
+        {
+          "texto": "Instrucciones de OVACE INFANTE",
+          "destino": 128,
+          "volver": false,
+          "destino_info": {
+            "tipo": "procedimiento",
+            "grupo": "ovace_infante",
+            "nodo": 128
+          }
+        }
+      ]
+    },
+    "128": {
+      "diapositiva": 128,
+      "grupo": "ovace_infante",
+      "lineas": [
+        "PACIENTE INFANTE – INCONSCIENTE / NO RESPONDE",
+        "Escuche con cuidado, le diré qué va a hacer.",
+        "Ponga al bebé sobre su espalda, plano, sobre una superficie dura como una mesa o el piso.",
+        "Ponga sus dedos índice y medio en el pecho, justo debajo de la línea entre los pezones.",
+        "Presione hacia abajo, unos 4 cm. Hágalo rápido y fuerte 30 veces.",
+        "Entonces, sin parar los masajes, incline la cabeza del bebé un poco hacia atrás levantando su barbilla.",
+        "Mire dentro de la boca del bebé y si ve algo, retírelo con su meñique, barriéndolo, cuídese de no introducirlo de nuevo. Cubra boca y nariz del bebé con su boca.",
+        "Dele, suavemente y despacio dos respiraciones.",
+        "Asegúrese que el pecho del bebé se levanta un poco cada vez que le da respiración.",
+        "De nuevo vuelva a comprimir el pecho 30 veces y después vuelva a darle dos respiraciones.",
+        "Manténgase haciendo lo mismo hasta que llegue la ayuda o si el bebé empieza a moverse o a respirar por si solo.",
+        "(Considere el uso de videollamada).",
+        "Si el bebé inicia a respirar o moverse vaya a: ."
+      ],
+      "opciones": [
+        {
+          "texto": "Instrucciones de infante respirando o moviéndose",
+          "destino": 126,
+          "volver": false,
+          "destino_info": {
+            "tipo": "procedimiento",
+            "grupo": "ovace_infante",
+            "nodo": 126
+          }
+        }
+      ]
+    },
+    "129": {
+      "diapositiva": 129,
+      "grupo": "torniquete",
+      "lineas": [
+        "¡Este procedimiento es solo para extremidades!",
+        "Si tiene guantes de examen colóqueselos.",
+        "Quite la ropa alrededor de la herida (exponga la herida)",
+        "Aplique presión directa sobre el área herida.",
+        "Coloque el torniquete 10 centímetros antes de la herida, es decir, entre la herida y el cuerpo.",
+        "Ajuste hasta que deje de sangrar.",
+        "Vuelva a revisar signos vitales."
+      ],
+      "opciones": []
+    },
+    "138": {
+      "diapositiva": 138,
+      "grupo": "alertas_infecciosas",
+      "lineas": [
+        "La ayuda ya va en camino, a continuación le diré qué debe hacer.",
+        "Dígale al paciente que describa su respiración en sus propias palabras.",
+        "Signo de alarma: Es incapaz de completar frases estando descansado.",
+        "Considere las siguientes preguntas:",
+        "¿Está vacunado(a)? SI ¿Cuántas dosis?",
+        "¿Está corto de respiración de manera que no es capaz de hablar más que unas pocas palabras?",
+        "¿Está respirando con más fuerza o más rápido de lo normal cuando no está haciendo nada?",
+        "¿Se siente enfermo(a) cuando para de hacer sus actividades diarias normales?",
+        "Enfóquese los cambios. Algunos pacientes presentarán tos o sollozos debido a asma o EPOC, así que pregúntele:",
+        "¿qué cambios ha tenido en los últimos días? (o que le dé una idea de cómo se ha deteriorado). Un cambio significativo es un signo de alarma.",
+        "Pregúntele:",
+        "¿Tiene los labios azules? ¿silbido audible al respirar? ¿necesita inclinarse hacia adelante para respirar mejor?",
+        "Respuestas positivas son signos de alarma.",
+        "Pídale que se tome el pulso, si es posible. Taquicardia es signo de alarma.",
+        "Con signos de alarma revise la última guía para COVID-19."
+      ],
+      "opciones": [
+        {
+          "texto": "Siga a instrucciones pre-arribo",
+          "destino": 131,
+          "volver": false,
+          "destino_info": {
+            "tipo": "tarjeta",
+            "id": "enfermedad_infecciosa"
+          }
+        }
+      ]
+    },
+    "139": {
+      "diapositiva": 139,
+      "grupo": "alertas_infecciosas",
+      "lineas": [
+        "Los síntomas leves del dengue pueden confundirse con otras enfermedades que causan fiebre, molestias, dolores o sarpullido.",
+        "Fiebre (el más común), náuseas, vómito, sarpullido, molestias y dolores (dolor en los ojos, generalmente detrás de estos, dolor muscular, en articulaciones o en los huesos).",
+        "SIGNOS Y SÍNTOMAS DE DENGUE HEMORRÁGICO",
+        "Dolor o sensibilidad en el estómago.",
+        "Vómitos, al menos 3 veces en 24 horas.",
+        "Sangrado por la nariz y las encías.",
+        "Vómitos con sangre o sangre en las heces.",
+        "Sensación de cansancio, inquietud o irritabilidad."
+      ],
+      "opciones": [
+        {
+          "texto": "Siga a instrucciones pre-arribo",
+          "destino": 131,
+          "volver": false,
+          "destino_info": {
+            "tipo": "tarjeta",
+            "id": "enfermedad_infecciosa"
+          }
+        }
+      ]
+    },
+    "140": {
+      "diapositiva": 140,
+      "grupo": "alertas_infecciosas",
+      "lineas": [
+        "Tos con duración de tres semanas o más.",
+        "Tos con sangre.",
+        "Dolor en el pecho o dolor al respirar o toser.",
+        "Pérdida de peso (involuntaria).",
+        "Fatiga.",
+        "Fiebre.",
+        "Sudoraciones nocturnas.",
+        "Escalofríos.",
+        "Pérdida de apetito.",
+        "Tuberculosis en columna vertebral puede producir dolor de espalda.",
+        "Tuberculosis en los riñones puede causar presencia de sangre en la orina."
+      ],
+      "opciones": [
+        {
+          "texto": "Siga a instrucciones pre-arribo",
+          "destino": 131,
+          "volver": false,
+          "destino_info": {
+            "tipo": "tarjeta",
+            "id": "enfermedad_infecciosa"
+          }
+        }
+      ]
+    }
+  }
+}

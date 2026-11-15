@@ -1,0 +1,1434 @@
+{
+  "codigo": "100",
+  "nombre": "Incendios",
+  "tarjetas": [
+    {
+      "id": "incendio_edificacion",
+      "categoria": "100",
+      "nombre": "Incendio en edificación",
+      "numero_tarjeta": null,
+      "diapositiva_preguntas": 151,
+      "diapositivas_pre_arribo": [
+        152
+      ],
+      "preguntas": [
+        {
+          "tipo": "pregunta",
+          "texto": "¿El incendio es en una casa, apartamento o negocio?"
+        },
+        {
+          "tipo": "texto",
+          "texto": "Iglesia, Hospital, Conjunto Residencial, Hotel, Colegio, Centro Comercial ir a:"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Ve humo solamente o ve llamas también?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Cuántos pisos tiene?"
+        },
+        {
+          "tipo": "texto",
+          "texto": "7 o más ir a:"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿En qué piso es el incendio?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Usted está adentro?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Hay personas o animales atrapados?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Hay alguien lesionado?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Cuál es el nombre del edificio / conjunto?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Número del apartamento, casa, edificio?"
+        }
+      ],
+      "notas": [],
+      "despacho": [
+        {
+          "codigo": "111",
+          "descripcion": "Humo saliendo de edificación.\nHumo y llamas a través de una ventana.\nSin personas atrapadas."
+        },
+        {
+          "codigo": "114",
+          "descripcion": "Chimenea de asadero o similar, sin riesgos"
+        },
+        {
+          "codigo": "600",
+          "descripcion": "Incendio extinguido"
+        },
+        {
+          "codigo": "111",
+          "descripcion": "Incendio declarado:\nLlamas saliendo por varias partes de la edificación, personas atrapadas"
+        },
+        {
+          "codigo": "111",
+          "descripcion": "Distrito de Aguablanca o zona de desarrollo incompleto"
+        },
+        {
+          "codigo": "111",
+          "descripcion": "Contador eléctrico"
+        },
+        {
+          "codigo": "111",
+          "descripcion": "Distrito de Aguablanca o zona de desarrollo incompleto"
+        }
+      ],
+      "referencias": [
+        {
+          "texto": "Edificio alto",
+          "diapositiva": 153,
+          "destino": {
+            "tipo": "tarjeta",
+            "id": "incendio_edificio_alto"
+          }
+        },
+        {
+          "texto": "Lugar de concentración masiva",
+          "diapositiva": 158,
+          "destino": {
+            "tipo": "tarjeta",
+            "id": "incendio_concentracion_masiva"
+          }
+        }
+      ],
+      "pre_arribo": [
+        {
+          "diapositiva": 152,
+          "titulo_diapositiva": "Incendio en edificación – instrucciones pre-arribo",
+          "lineas": [
+            "El Cuerpo de Bomberos está siendo despachado, a continuación le diré qué debe hacer.",
+            "Dentro de la edificación:",
+            "Si es seguro, salga. Cierre todas las puertas detrás suyo. No trate de apagar el fuego. No trate de coger nada que esté incendiado. Una vez afuera, no vuelva a entrar. Por favor dígale al primer vehículo de bomberos que llegue e infórmeles si hay personas o animales atrapados dentro de la estructura.",
+            "Atrapado:",
+            "En lo posible vaya hacia una habitación que de hacia la calle. Cierre todas las puertas detrás suyo. Si ve que entra humo, tape con lo que tenga disponible. Prenda la luz. Abra la ventana y grite. Permanezca allí hasta que lo rescaten. Si se empieza a llenar de humo, agáchese y respire lo más cerca al piso que pueda. No vaya a saltar por la ventana a no ser que el fuego y el humo le hagan imposible permanecer allí.",
+            "Fuera de la edificación:",
+            "Si es seguro para usted hacerlo, mantenga a los curiosos alejados del área.",
+            "Dígale a alguien que vaya al mejor sitio posible para guiar a los bomberos.",
+            "NO se acerque ni ingrese.",
+            "Si algo empeora, llámeme de nuevo."
+          ],
+          "referencias": []
+        }
+      ]
+    },
+    {
+      "id": "incendio_edificio_alto",
+      "categoria": "100",
+      "nombre": "Incendio en edificio alto",
+      "numero_tarjeta": null,
+      "diapositiva_preguntas": 153,
+      "diapositivas_pre_arribo": [
+        154,
+        155,
+        156,
+        157
+      ],
+      "preguntas": [
+        {
+          "tipo": "pregunta",
+          "texto": "¿Es un edificio residencial, hotel o de solo oficinas?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Usted está adentro? ¿Exactamente dónde está usted?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Hay personas o animales atrapados? ¿Cuántas? ¿Exactamente dónde se encuentran?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Hay alguien lesionado?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Dónde está exactamente el olor/humo/llamas? ¿En qué piso?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Cuál es el nombre del edificio / conjunto?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Número del apartamento, edificio?"
+        }
+      ],
+      "notas": [],
+      "despacho": [
+        {
+          "codigo": "111",
+          "descripcion": "Humo saliendo de un edificio alto.\nHumo y llamas a través de una ventana"
+        },
+        {
+          "codigo": "111",
+          "descripcion": "Incendio declarado:\nLlamas saliendo por varias partes de la edificación, personas atrapadas"
+        }
+      ],
+      "referencias": [],
+      "pre_arribo": [
+        {
+          "diapositiva": 154,
+          "titulo_diapositiva": "Incendio en edificio alto – instrucciones pre-arribo",
+          "lineas": [
+            "Fuera de la edificación:",
+            "El Cuerpo de Bomberos está siendo despachado, a continuación le diré qué debe hacer.",
+            "Si es seguro para usted hacerlo, mantenga a los curiosos alejados del área por lo menos dos cuadras, los vidrios pueden caer y son muy peligrosos. Dígale a alguien que vaya al mejor sitio posible para guiar a los bomberos. NO se acerque ni ingrese a un área peligrosa.",
+            "Si algo empeora, llámeme de nuevo."
+          ],
+          "referencias": [
+            {
+              "texto": "Dentro de la edificación",
+              "diapositiva": 155,
+              "destino": {
+                "tipo": "tarjeta",
+                "id": "incendio_edificio_alto"
+              }
+            }
+          ]
+        },
+        {
+          "diapositiva": 155,
+          "titulo_diapositiva": "Incendio en edificio alto – instrucciones pre-arribo",
+          "lineas": [
+            "El Cuerpo de Bomberos está siendo despachado, a continuación le diré qué debe hacer.",
+            "Si tiene una mirilla en la puerta, mire por ella y dígame si ve llamas humo al otro lado:",
+            "(Humo) ¿Puede ver a través del humo?",
+            "(No tiene mirilla): Sienta la parte superior de la puerta con el dorso de su mano.",
+            "¿Está caliente o tibia?"
+          ],
+          "referencias": [
+            {
+              "texto": "No llamas o humo",
+              "diapositiva": 156,
+              "destino": {
+                "tipo": "tarjeta",
+                "id": "incendio_edificio_alto"
+              }
+            },
+            {
+              "texto": "Llamas",
+              "diapositiva": 157,
+              "destino": {
+                "tipo": "tarjeta",
+                "id": "incendio_edificio_alto"
+              }
+            },
+            {
+              "texto": "Si",
+              "diapositiva": 156,
+              "destino": {
+                "tipo": "tarjeta",
+                "id": "incendio_edificio_alto"
+              }
+            },
+            {
+              "texto": "Fría",
+              "diapositiva": 156,
+              "destino": {
+                "tipo": "tarjeta",
+                "id": "incendio_edificio_alto"
+              }
+            },
+            {
+              "texto": "Caliente o tibia",
+              "diapositiva": 157,
+              "destino": {
+                "tipo": "tarjeta",
+                "id": "incendio_edificio_alto"
+              }
+            }
+          ]
+        },
+        {
+          "diapositiva": 156,
+          "titulo_diapositiva": "Incendio en edificio alto – instrucciones pre-arribo",
+          "lineas": [
+            "Tome sus llaves, permanezca lo más agachado posible, vaya a una salida. Cierre todas las puertas detrás suyo.",
+            "Si encuentra llamas o humo espeso, regrese de inmediato a su apartamento/oficina/habitación y cierre la puerta.",
+            "No use el ascensor. Use las escaleras de evacuación.",
+            "Active la alarma de incendio. Grite “fuego” para que las demás personas inicien la evacuación.",
+            "Una vez salga del edificio/estructura, vaya hacia los bomberos o espérelos si no han llegado.",
+            "Llámeme de nuevo apenas salga."
+          ],
+          "referencias": []
+        },
+        {
+          "diapositiva": 157,
+          "titulo_diapositiva": "Incendio en edificio alto – instrucciones pre-arribo",
+          "lineas": [
+            "Tome sus llaves, cierre todas las puertas que pueda entre usted y el incendio. Si puede active la alarma de incendio.",
+            "Permanezca lo más cercano al piso que pueda.",
+            "¿Exactamente dónde está usted?",
+            "¿Cuántas personas están con usted?",
+            "Notifique al CI de la localización y número de ocupantes.",
+            "Si tiene acceso a un lavadero o lavamanos, llénelo con agua y empape toallas y ropa.",
+            "Cubra toda abertura de las puertas con toallas, ropa o trapos húmedos o cualquier cosa que tenga al alcance.",
+            "Cubra las ventilaciones del aire acondicionado.",
+            "No rompa ninguna ventana. Si necesita aire abra la ventana apenas lo necesario para respirar.",
+            "Si puede abrir ligeramente una ventana, cuelgue una sábana o una tela visible para ayudar a los bomberos a que lo encuentren.",
+            "¿Cuál es la mejor entrada del edificio para que lleguen a donde usted?",
+            "¿Alguien necesita un caminador o una silla de ruedas o alguien está postrado en cama?",
+            "Notifique al CI de la mejor entrada para llegar donde los atrapados y si hay ocupantes inmóviles."
+          ],
+          "referencias": []
+        }
+      ]
+    },
+    {
+      "id": "incendio_concentracion_masiva",
+      "categoria": "100",
+      "nombre": "Incendio en lugar de concentración masiva",
+      "numero_tarjeta": null,
+      "diapositiva_preguntas": 158,
+      "diapositivas_pre_arribo": [
+        159,
+        160,
+        161,
+        162
+      ],
+      "preguntas": [
+        {
+          "tipo": "pregunta",
+          "texto": "¿Ve humo solamente o ve llamas también?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Cuántos pisos tiene?"
+        },
+        {
+          "tipo": "texto",
+          "texto": "7 o más ir a:"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿En qué piso es el incendio?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Usted está adentro?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Hay personas atrapadas?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Hay alguien lesionado?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Cuál es el nombre del edificio?"
+        }
+      ],
+      "notas": [],
+      "despacho": [
+        {
+          "codigo": "111",
+          "descripcion": "Humo saliendo de edificación.\nHumo y llamas a través de una ventana.\nSin personas atrapadas."
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Incendio reportado como extinguido"
+        },
+        {
+          "codigo": "111",
+          "descripcion": "Incendio declarado:\nLlamas saliendo por varias partes de la edificación, personas atrapadas"
+        },
+        {
+          "codigo": "111",
+          "descripcion": "Distrito de Aguablanca o zona de desarrollo incompleto"
+        },
+        {
+          "codigo": "111",
+          "descripcion": "Distrito de Aguablanca o zona de desarrollo incompleto"
+        }
+      ],
+      "referencias": [
+        {
+          "texto": "Edificio alto",
+          "diapositiva": 153,
+          "destino": {
+            "tipo": "tarjeta",
+            "id": "incendio_edificio_alto"
+          }
+        }
+      ],
+      "pre_arribo": [
+        {
+          "diapositiva": 159,
+          "titulo_diapositiva": "Lugar de concentración masiva – instrucciones pre-arribo",
+          "lineas": [
+            "Fuera de la edificación:",
+            "El Cuerpo de Bomberos está siendo despachado, a continuación le diré qué debe hacer.",
+            "Si es seguro para usted hacerlo, mantenga a los curiosos alejados del área",
+            "Dígale a alguien que vaya al mejor sitio posible para guiar a los bomberos.",
+            "NO se acerque ni ingrese a la edificación.",
+            "Si algo empeora, llámeme de nuevo."
+          ],
+          "referencias": [
+            {
+              "texto": "Dentro de la edificación",
+              "diapositiva": 155,
+              "destino": {
+                "tipo": "tarjeta",
+                "id": "incendio_edificio_alto"
+              }
+            }
+          ]
+        },
+        {
+          "diapositiva": 160,
+          "titulo_diapositiva": "Lugar de concentración masiva – instrucciones pre-arribo",
+          "lineas": [
+            "El Cuerpo de Bomberos está siendo despachado, a continuación le diré qué debe hacer.",
+            "Si tiene una mirilla en la puerta, mire por ella y dígame si ve llamas humo al otro lado:",
+            "(Humo) ¿Puede ver a través del humo?",
+            "(No tiene mirilla): Sienta la parte superior de la puerta con el dorso de su mano.",
+            "¿Está caliente o tibia?"
+          ],
+          "referencias": [
+            {
+              "texto": "No llamas o humo",
+              "diapositiva": 161,
+              "destino": {
+                "tipo": "tarjeta",
+                "id": "incendio_concentracion_masiva"
+              }
+            },
+            {
+              "texto": "Llamas",
+              "diapositiva": 162,
+              "destino": {
+                "tipo": "tarjeta",
+                "id": "incendio_concentracion_masiva"
+              }
+            },
+            {
+              "texto": "Si",
+              "diapositiva": 161,
+              "destino": {
+                "tipo": "tarjeta",
+                "id": "incendio_concentracion_masiva"
+              }
+            },
+            {
+              "texto": "Fría",
+              "diapositiva": 161,
+              "destino": {
+                "tipo": "tarjeta",
+                "id": "incendio_concentracion_masiva"
+              }
+            },
+            {
+              "texto": "Caliente o tibia",
+              "diapositiva": 162,
+              "destino": {
+                "tipo": "tarjeta",
+                "id": "incendio_concentracion_masiva"
+              }
+            }
+          ]
+        },
+        {
+          "diapositiva": 161,
+          "titulo_diapositiva": "Lugar de concentración masiva – instrucciones pre-arribo",
+          "lineas": [
+            "Permanezca lo más agachado posible, vaya a una salida. Cierre todas las puertas detrás suyo.",
+            "Si encuentra llamas o humo espeso, regrese de inmediato a donde estaba y cierre la puerta.",
+            "No use el ascensor. Use las escaleras de evacuación.",
+            "Active la alarma de incendio. Grite “fuego” para que las demás personas inicien la evacuación.",
+            "Una vez salga del edificio/estructura, vaya hacia los bomberos o espérelos si no han llegado.",
+            "Llámeme de nuevo apenas salga."
+          ],
+          "referencias": []
+        },
+        {
+          "diapositiva": 162,
+          "titulo_diapositiva": "Lugar de concentración masiva – instrucciones pre-arribo",
+          "lineas": [
+            "Cierre todas las puertas que pueda entre usted y el incendio. Si puede active la alarma de incendio.",
+            "Permanezca lo más cercano al piso que pueda.",
+            "¿Exactamente dónde está usted?",
+            "¿Cuántas personas están con usted?",
+            "Notifique al CI de la localización y número de ocupantes.",
+            "Si tiene acceso a un lavadero o lavamanos, llénelo con agua y empape toallas y ropa.",
+            "Cubra toda abertura de las puertas con toallas, ropa o trapos húmedos o cualquier cosa que tenga al alcance.",
+            "Cubra las ventilaciones del aire acondicionado.",
+            "No rompa ninguna ventana. Si la ventana da hacia afuera ábrala pero esté listo a cerrarla si por allí entra humo. Grite y haga señales para que los bomberos sepan dónde se encuentra.",
+            "Si puede abrir ligeramente una ventana, cuelgue una sábana o una tela visible para ayudar a los bomberos a que lo encuentren.",
+            "¿Cuál es la mejor entrada del edificio para que lleguen a donde usted?",
+            "¿Alguien necesita un caminador o una silla de ruedas?",
+            "Notifique al CI de la mejor entrada para llegar donde los atrapados y si hay ocupantes inmóviles."
+          ],
+          "referencias": []
+        }
+      ]
+    },
+    {
+      "id": "incendio_no_edificacion",
+      "categoria": "100",
+      "nombre": "Incendio en no edificación",
+      "numero_tarjeta": null,
+      "diapositiva_preguntas": 163,
+      "diapositivas_pre_arribo": [
+        164
+      ],
+      "preguntas": [
+        {
+          "tipo": "pregunta",
+          "texto": "¿Usted está adentro/encima? ¿Exactamente dónde está usted?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Hay personas o animales atrapados? ¿Cuántas? ¿Exactamente dónde se encuentran?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Hay alguien lesionado?"
+        }
+      ],
+      "notas": [],
+      "despacho": [
+        {
+          "codigo": "112",
+          "descripcion": "Humo saliendo de estructura.\nSin personas atrapadas."
+        },
+        {
+          "codigo": "112",
+          "descripcion": "Humo y fuego saliendo por varias partes de la estructura. Personas atrapadas"
+        },
+        {
+          "codigo": "112",
+          "descripcion": "Incendio extinguido"
+        },
+        {
+          "codigo": "112",
+          "descripcion": "Incendio en transformador en poste, en tierra o en caja de distribución eléctrica"
+        }
+      ],
+      "referencias": [],
+      "pre_arribo": [
+        {
+          "diapositiva": 164,
+          "titulo_diapositiva": "Incendio en edificación – instrucciones pre-arribo",
+          "lineas": [
+            "El Cuerpo de Bomberos está siendo despachado, a continuación le diré qué debe hacer.",
+            "Dentro de la estructura:",
+            "Si es seguro, salga. Cierre todas las puertas detrás suyo. No trate de apagar el fuego. No trate de coger nada que esté incendiado. Una vez afuera, no vuelva a entrar. Por favor dígale al primer vehículo de bomberos que llegue e infórmeles si hay personas o animales atrapados dentro de la estructura.",
+            "Atrapado:",
+            "En lo posible vaya hacia un cuarto que quede lo más cercano posible a una salida. Cierre todas las puertas detrás suyo. Si ve que entra humo, tape con lo que tenga disponible. Prenda la luz. Permanezca allí hasta que lo rescaten. Si se empieza a llenar de humo, agáchese y respire lo más cerca al piso que pueda. No vaya a saltar de altura a no ser que el fuego y el humo le hagan imposible permanecer allí.",
+            "Fuera de la estructura:",
+            "Si es seguro para usted hacerlo, mantenga a los curiosos alejados del área.",
+            "Dígale a alguien que vaya al mejor sitio posible para guiar a los bomberos.",
+            "NO se acerque ni ingrese.",
+            "Si algo empeora, llámeme de nuevo."
+          ],
+          "referencias": []
+        }
+      ]
+    },
+    {
+      "id": "incendio_basuras_edificacion",
+      "categoria": "100",
+      "nombre": "Incendio de basuras dentro de edificación",
+      "numero_tarjeta": null,
+      "diapositiva_preguntas": 165,
+      "diapositivas_pre_arribo": [
+        166
+      ],
+      "preguntas": [
+        {
+          "tipo": "pregunta",
+          "texto": "¿Hay riesgo que el incendio se propague a vehículos o a la estructura?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿El humo está ingresando a la estructura?"
+        },
+        {
+          "tipo": "texto",
+          "texto": "APLICA PARA:"
+        },
+        {
+          "tipo": "texto",
+          "texto": "Incendio de basuras o desechos en una estructura, sin daños por llama a la estructura o sus contenidos y sin riesgo por humo o de propagación. Si no es el caso regresar y seleccionar el tipo adecuado."
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Hay alguien lesionado?"
+        }
+      ],
+      "notas": [],
+      "despacho": [
+        {
+          "codigo": "118",
+          "descripcion": "Incendio de basuras sin riesgo de propagación, sin lesionados"
+        },
+        {
+          "codigo": "118",
+          "descripcion": "Incendio de basuras sin riesgo de propagación, con lesionados"
+        }
+      ],
+      "referencias": [],
+      "pre_arribo": [
+        {
+          "diapositiva": 166,
+          "titulo_diapositiva": "Incendio en edificación – instrucciones pre-arribo",
+          "lineas": [
+            "El Cuerpo de Bomberos está siendo despachado, a continuación le diré qué debe hacer.",
+            "Si es seguro para usted hacerlo, mantenga a los curiosos alejados del área.",
+            "Dígale a alguien que vaya al mejor sitio posible para guiar a los bomberos.",
+            "NO se acerque ni ingrese.",
+            "Si algo empeora, llámeme de nuevo."
+          ],
+          "referencias": []
+        }
+      ]
+    },
+    {
+      "id": "incendio_vehiculo_pasajeros",
+      "categoria": "100",
+      "nombre": "Incendio en vehículo de pasajeros",
+      "numero_tarjeta": null,
+      "diapositiva_preguntas": 167,
+      "diapositivas_pre_arribo": [
+        168
+      ],
+      "preguntas": [
+        {
+          "tipo": "pregunta",
+          "texto": "¿Hay ocupantes atrapados?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Qué tipo de vehículo es?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Funciona con gas?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Está en la calle o en un parqueadero?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "PARQUEADERO: ¿Al aire libre o dentro de algún lugar?"
+        },
+        {
+          "tipo": "texto",
+          "texto": "PARQUEADERO: Si es cerrado , regrese y despache como incendio estructural."
+        }
+      ],
+      "notas": [],
+      "despacho": [
+        {
+          "codigo": "131",
+          "descripcion": "Automóvil, deportivo utilitario o camioneta"
+        },
+        {
+          "codigo": "131",
+          "descripcion": "Automóvil, deportivo utilitario o camioneta, personas atrapadas"
+        },
+        {
+          "codigo": "131",
+          "descripcion": "Incendio en bus, personas atrapadas"
+        },
+        {
+          "codigo": "131",
+          "descripcion": "Más de 3 vehículos"
+        },
+        {
+          "codigo": "131",
+          "descripcion": "Incendio en bus, sin riesgos adicionales"
+        }
+      ],
+      "referencias": [],
+      "pre_arribo": [
+        {
+          "diapositiva": 168,
+          "titulo_diapositiva": "Incendio de vehículo de pasajeros – instrucciones pre-arribo",
+          "lineas": [
+            "El Cuerpo de Bomberos está siendo despachado, a continuación le diré qué debe hacer.",
+            "Si decide utilizar extintor hágalo dirigiéndolo directamente al fuego pero hágalo desde una distancia segura. Si hay varias personas intentando apagarlo, organícelos para que disparen sus extintores al mismo tiempo tratando de alcanzar las llamas.",
+            "No abra el capó o la cajuela si hay fuego adentro, el fuego va a empeorar.",
+            "Si no pudo ser extinguido manténgase a usted y si puede a los curiosos alejados del vehículo, sobre todo si funciona con gas.",
+            "Llámeme de nuevo si la situación empeora."
+          ],
+          "referencias": []
+        }
+      ]
+    },
+    {
+      "id": "incendio_vehiculo_carga",
+      "categoria": "100",
+      "nombre": "Incendio en vehículo de carga",
+      "numero_tarjeta": null,
+      "diapositiva_preguntas": 169,
+      "diapositivas_pre_arribo": [
+        170
+      ],
+      "preguntas": [
+        {
+          "tipo": "pregunta",
+          "texto": "¿Hay ocupantes atrapados?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Qué tipo de vehículo es?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Hay riesgo de propagación del incendio a otro lugar?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Está en la calle o en un parqueadero?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "PARQUEADERO: ¿Al aire libre o dentro de algún lugar?"
+        },
+        {
+          "tipo": "texto",
+          "texto": "Si es cerrado , regrese y despache como incendio estructural."
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Qué carga lleva?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "NO SABE: ¿Tiene un rombo con algún color?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿De qué color es el rombo y qué imagen tiene?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Tiene número de material peligroso?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "NO SABE: ¿Tiene un número dentro de un rectángulo color naranja?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "SI: ¿Qué número es?"
+        }
+      ],
+      "notas": [],
+      "despacho": [
+        {
+          "codigo": "132",
+          "descripcion": "Vehículo de carga"
+        },
+        {
+          "codigo": "132",
+          "descripcion": "En carretera"
+        },
+        {
+          "codigo": "132",
+          "descripcion": "HazMat involucrado, en carretera"
+        },
+        {
+          "codigo": "132",
+          "descripcion": "HazMat involucrado"
+        }
+      ],
+      "referencias": [],
+      "pre_arribo": [
+        {
+          "diapositiva": 170,
+          "titulo_diapositiva": "Incendio de vehículo de carga – instrucciones pre-arribo",
+          "lineas": [
+            "El Cuerpo de Bomberos está siendo despachado, a continuación le diré qué debe hacer.",
+            "Si el fuego es en el compartimiento de carga y es cerrado, no lo abra, el fuego va a empeorar.",
+            "Si el fuego o el humo son de un color raro, aléjese lo más pronto posible, es tóxico. Aléjese en favor del viento, no vaya a atravesar la nube de humo.",
+            "Si decide utilizar extintor hágalo dirigiéndolo directamente al fuego pero hágalo desde una distancia segura. Si hay varias personas intentando apagarlo, organícelos para que disparen sus extintores al mismo tiempo tratando de alcanzar las llamas.",
+            "Si no pudo ser extinguido en el primer intento manténgase a usted y si puede a los curiosos, alejados del vehículo, sobre todo si lleva carga desconocida o si tiene rombos con color.",
+            "Llámeme de nuevo si la situación empeora."
+          ],
+          "referencias": []
+        }
+      ]
+    },
+    {
+      "id": "incendio_tren",
+      "categoria": "100",
+      "nombre": "Incendio en tren",
+      "numero_tarjeta": null,
+      "diapositiva_preguntas": 171,
+      "diapositivas_pre_arribo": [
+        172
+      ],
+      "preguntas": [
+        {
+          "tipo": "pregunta",
+          "texto": "¿Qué tipo de tren está involucrado?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿El tren se está moviendo aun?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "SI: ¿En qué dirección va?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿El fuego del tren ha iniciado algún otro incendio?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Exactamente dónde está el tren?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Cuál es el número del tren?"
+        },
+        {
+          "tipo": "texto",
+          "texto": "Obtener información de Ferrocarriles del Pacífico"
+        }
+      ],
+      "notas": [],
+      "despacho": [
+        {
+          "codigo": "133",
+          "descripcion": "Incendio en tren"
+        }
+      ],
+      "referencias": [],
+      "pre_arribo": [
+        {
+          "diapositiva": 172,
+          "titulo_diapositiva": "Incendio en tren – instrucciones pre-arribo",
+          "lineas": [
+            "El Cuerpo de Bomberos está siendo despachado.. ¿Algo más que quiera informarme?",
+            "Llámeme de nuevo si la situación empeora."
+          ],
+          "referencias": []
+        }
+      ]
+    },
+    {
+      "id": "incendio_aeronave",
+      "categoria": "100",
+      "nombre": "Incendio en aeronave",
+      "numero_tarjeta": null,
+      "diapositiva_preguntas": 173,
+      "diapositivas_pre_arribo": [
+        174
+      ],
+      "preguntas": [
+        {
+          "tipo": "texto",
+          "texto": "Contactar inmediatamente con la torre de control de la base aérea e informar el incidente."
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Qué tipo de aeronave es?"
+        },
+        {
+          "tipo": "texto",
+          "texto": "Determinar si es un avión grande o pequeño, helicóptero, globo, dirigible u otro."
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Está en vuelo o aterrizada? ¿Se estrelló?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Dónde se encuentra la aeronave?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Se observan personas atrapadas?"
+        },
+        {
+          "tipo": "texto",
+          "texto": "Si la llamada proviene de la base aérea, coordinar los recursos necesarios, la entrada a utilizar y la guía para ingreso."
+        },
+        {
+          "tipo": "texto",
+          "texto": "TODO INCIDENTE EN AERONAVE SE CONSIDERA CON MATERIALES PELIGROSOS."
+        }
+      ],
+      "notas": [],
+      "despacho": [
+        {
+          "codigo": "133",
+          "descripcion": "Incendio en aeronave"
+        }
+      ],
+      "referencias": [],
+      "pre_arribo": [
+        {
+          "diapositiva": 174,
+          "titulo_diapositiva": "Incendio en aeronave – instrucciones pre-arribo",
+          "lineas": [
+            "El Cuerpo de Bomberos está siendo despachado.. ¿Algo más que quiera informarme?",
+            "Llámeme de nuevo si la situación empeora."
+          ],
+          "referencias": []
+        }
+      ]
+    },
+    {
+      "id": "incendio_bosque",
+      "categoria": "100",
+      "nombre": "Incendio en bosque",
+      "numero_tarjeta": null,
+      "diapositiva_preguntas": 175,
+      "diapositivas_pre_arribo": [
+        176
+      ],
+      "preguntas": [
+        {
+          "tipo": "texto",
+          "texto": "Dígame exactamente qué se está quemando."
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿El fuego va por la copa de los árboles?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Qué tan grande es el incendio?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿El fuego está amenazando algo?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿El incendio se está propagando rápidamente?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Hay personas atrapadas o en peligro inmediato?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "SI: ¿Cuántas? ¿Exactamente dónde están localizadas?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Hay alguien lesionado?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Cuál es la mejor ruta para llegar al sitio?"
+        }
+      ],
+      "notas": [],
+      "despacho": [
+        {
+          "codigo": "141",
+          "descripcion": "Incendio en bosque"
+        }
+      ],
+      "referencias": [],
+      "pre_arribo": [
+        {
+          "diapositiva": 176,
+          "titulo_diapositiva": "Incendio en bosque – instrucciones pre-arribo",
+          "lineas": [
+            "El Cuerpo de Bomberos está siendo despachado..",
+            "Sin necesidad de evacuación:",
+            "Si usted siente que está en peligro váyase del área inmediatamente y llévese a otros con usted.",
+            "Evacuación requerida:",
+            "Deje el área inmediatamente y lleve a otros con usted. Siga las rutas de evacuación más lógicas y recomendadas.",
+            "Aléjese de la ruta del fuego si es posible.",
+            "No trate de apagar el incendio.",
+            "Llámeme de nuevo si la situación empeora.",
+            "Determine un punto de reunión específico y claro para el personal de emergencia.",
+            "(Vía afectada) Notifique a movilidad.",
+            "Notifique al personal que responde de peligros y eléctricos y otros conocidos.",
+            "Proporcione a los respondientes con cualquier información sobre la localización y número de personas atrapadas o en peligro."
+          ],
+          "referencias": []
+        }
+      ]
+    },
+    {
+      "id": "incendio_arbustos_pastos",
+      "categoria": "100",
+      "nombre": "Incendio en arbustos y pastos",
+      "numero_tarjeta": null,
+      "diapositiva_preguntas": 177,
+      "diapositivas_pre_arribo": [
+        178
+      ],
+      "preguntas": [
+        {
+          "tipo": "texto",
+          "texto": "Dígame exactamente qué se está quemando."
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Qué tan grande es el incendio?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿El fuego está amenazando algo?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿El incendio se está propagando rápidamente?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Hay personas atrapadas o en peligro inmediato?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "SI: ¿Cuántas? ¿Exactamente dónde están localizadas?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Hay alguien lesionado?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Cuál es la mejor ruta para llegar al sitio?"
+        }
+      ],
+      "notas": [],
+      "despacho": [
+        {
+          "codigo": "142",
+          "descripcion": "Incendio en arbustos y pastos"
+        }
+      ],
+      "referencias": [],
+      "pre_arribo": [
+        {
+          "diapositiva": 178,
+          "titulo_diapositiva": "Incendio en arbustos y pastos – instrucciones pre-arribo",
+          "lineas": [
+            "El Cuerpo de Bomberos está siendo despachado..",
+            "Sin necesidad de evacuación:",
+            "Si usted siente que está en peligro váyase del área inmediatamente y llévese a otros con usted.",
+            "Evacuación requerida:",
+            "Deje el área inmediatamente y lleve a otros con usted. Siga las rutas de evacuación más lógicas y recomendadas.",
+            "Aléjese de la ruta del fuego si es posible.",
+            "No trate de apagar el incendio.",
+            "Llámeme de nuevo si la situación empeora.",
+            "Determine un punto de reunión específico y claro para el personal de emergencia.",
+            "(Vía afectada) Notifique a movilidad.",
+            "Notifique al personal que responde de peligros y eléctricos y otros conocidos.",
+            "Proporcione a los respondientes con cualquier información sobre la localización y número de personas atrapadas o en peligro."
+          ],
+          "referencias": []
+        }
+      ]
+    },
+    {
+      "id": "incendio_lote_urbano",
+      "categoria": "100",
+      "nombre": "Incendio en lote urbano",
+      "numero_tarjeta": null,
+      "diapositiva_preguntas": 179,
+      "diapositivas_pre_arribo": [
+        180
+      ],
+      "preguntas": [
+        {
+          "tipo": "texto",
+          "texto": "Dígame exactamente qué se está quemando."
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Qué tan grande es el incendio?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿El fuego está amenazando algo?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿El incendio se está propagando rápidamente?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Hay personas atrapadas o en peligro inmediato?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "SI: ¿Cuántas? ¿Exactamente dónde están localizadas?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Hay alguien lesionado?"
+        }
+      ],
+      "notas": [],
+      "despacho": [
+        {
+          "codigo": "143",
+          "descripcion": "Incendio en lote urbano"
+        }
+      ],
+      "referencias": [],
+      "pre_arribo": [
+        {
+          "diapositiva": 180,
+          "titulo_diapositiva": "Incendio en lote urbano – instrucciones pre-arribo",
+          "lineas": [
+            "El Cuerpo de Bomberos está siendo despachado..",
+            "Llámeme de nuevo si la situación empeora.",
+            "(Vía afectada) Notifique a movilidad.",
+            "Notifique al personal que responde de peligros y eléctricos y otros conocidos.",
+            "Proporcione a los respondientes con cualquier información sobre la localización y número de personas atrapadas o en peligro."
+          ],
+          "referencias": []
+        }
+      ]
+    },
+    {
+      "id": "incendio_basuras_exterior",
+      "categoria": "100",
+      "nombre": "Incendio de basuras en exterior",
+      "numero_tarjeta": null,
+      "diapositiva_preguntas": 181,
+      "diapositivas_pre_arribo": [
+        182
+      ],
+      "preguntas": [
+        {
+          "tipo": "texto",
+          "texto": "Dígame exactamente qué se está quemando."
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Qué tan grande es el incendio?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿El fuego está amenazando algo?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿El incendio se está propagando rápidamente?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Hay personas atrapadas o en peligro inmediato?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "SI: ¿Cuántas? ¿Exactamente dónde están localizadas?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Hay alguien lesionado?"
+        }
+      ],
+      "notas": [],
+      "despacho": [
+        {
+          "codigo": "151",
+          "descripcion": "Basuras en exterior"
+        },
+        {
+          "codigo": "152",
+          "descripcion": "En botadero o relleno sanitario"
+        },
+        {
+          "codigo": "153",
+          "descripcion": "Desechos de construcción o demolición"
+        },
+        {
+          "codigo": "155",
+          "descripcion": "En compactador o basura compactada"
+        },
+        {
+          "codigo": "154",
+          "descripcion": "Confinado en contenedor de basura u otro receptáculo"
+        }
+      ],
+      "referencias": [],
+      "pre_arribo": [
+        {
+          "diapositiva": 182,
+          "titulo_diapositiva": "Incendio de basuras en exterior – instrucciones pre-arribo",
+          "lineas": [
+            "El Cuerpo de Bomberos está siendo despachado..",
+            "Llámeme de nuevo si la situación empeora.",
+            "(Vía afectada) Notifique a movilidad.",
+            "Notifique al personal que responde de peligros y eléctricos y otros conocidos.",
+            "Proporcione a los respondientes con cualquier información sobre la localización y número de personas atrapadas o en peligro."
+          ],
+          "referencias": []
+        }
+      ]
+    },
+    {
+      "id": "incendio_cultivos",
+      "categoria": "100",
+      "nombre": "Incendio en cultivos",
+      "numero_tarjeta": null,
+      "diapositiva_preguntas": 183,
+      "diapositivas_pre_arribo": [
+        184
+      ],
+      "preguntas": [
+        {
+          "tipo": "texto",
+          "texto": "Dígame exactamente qué se está quemando."
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Qué tan grande es el incendio?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿El fuego está amenazando algo?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿El incendio se está propagando rápidamente?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Hay personas atrapadas o en peligro inmediato?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "SI: ¿Cuántas? ¿Exactamente dónde están localizadas?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Hay alguien lesionado?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Cuál es la mejor ruta para llegar al sitio?"
+        }
+      ],
+      "notas": [],
+      "despacho": [
+        {
+          "codigo": null,
+          "descripcion": "Incendio en cultivos"
+        },
+        {
+          "codigo": "171",
+          "descripcion": "Incendio de cultivos de granos o cereales. Incluye incendios que involucren maíz, trigo, soya, arroz y otras plantas antes de la cosecha."
+        },
+        {
+          "codigo": "172",
+          "descripcion": "Incendio en huertas o viñedos."
+        },
+        {
+          "codigo": "173",
+          "descripcion": "Incendio en cultivos de árboles o viveros. Incluye incendios de plantas para transportar fuera del sitio para uso ornamental."
+        },
+        {
+          "codigo": "170",
+          "descripcion": "Incendio de cultivos, otros."
+        }
+      ],
+      "referencias": [],
+      "pre_arribo": [
+        {
+          "diapositiva": 184,
+          "titulo_diapositiva": "Incendio en cultivos – instrucciones pre-arribo",
+          "lineas": [
+            "El Cuerpo de Bomberos está siendo despachado..",
+            "Sin necesidad de evacuación:",
+            "Si usted siente que está en peligro váyase del área inmediatamente y llévese a otros con usted.",
+            "Evacuación requerida:",
+            "Deje el área inmediatamente y lleve a otros con usted. Siga las rutas de evacuación más lógicas y recomendadas.",
+            "Aléjese de la ruta del fuego si es posible.",
+            "No trate de apagar el incendio.",
+            "Llámeme de nuevo si la situación empeora.",
+            "Determine un punto de reunión específico y claro para el personal de emergencia.",
+            "(Vía afectada) Notifique a movilidad.",
+            "Notifique al personal que responde de peligros y eléctricos y otros conocidos.",
+            "Proporcione a los respondientes con cualquier información sobre la localización y número de personas atrapadas o en peligro."
+          ],
+          "referencias": []
+        }
+      ]
+    },
+    {
+      "id": "incendio_almacenaje_exterior",
+      "categoria": "100",
+      "nombre": "Incendio de almacenaje en exterior",
+      "numero_tarjeta": null,
+      "diapositiva_preguntas": 185,
+      "diapositivas_pre_arribo": [
+        186
+      ],
+      "preguntas": [
+        {
+          "tipo": "pregunta",
+          "texto": "¿En qué lugar es el incendio?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Es un lugar residencial, comercial o industrial?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Exactamente qué se está quemando?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Qué tan grande es el incendio?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿El fuego está amenazando algo?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿El incendio se está propagando rápidamente?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Hay personas atrapadas o en peligro inmediato?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "SI: ¿Cuántas? ¿Exactamente dónde están localizadas?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Hay alguien lesionado?"
+        }
+      ],
+      "notas": [],
+      "despacho": [
+        {
+          "codigo": "161",
+          "descripcion": "Almacenaje en exterior"
+        }
+      ],
+      "referencias": [],
+      "pre_arribo": [
+        {
+          "diapositiva": 186,
+          "titulo_diapositiva": "Incendio de almacenaje en exterior – instrucciones pre-arribo",
+          "lineas": [
+            "El Cuerpo de Bomberos está siendo despachado..",
+            "Sin necesidad de evacuación:",
+            "Si usted siente que está en peligro váyase del área inmediatamente y llévese a otros con usted.",
+            "Evacuación requerida:",
+            "Deje el área inmediatamente y lleve a otros con usted. Siga las rutas de evacuación más lógicas y recomendadas.",
+            "Aléjese de la ruta del fuego si es posible.",
+            "No trate de apagar el incendio.",
+            "Llámeme de nuevo si la situación empeora.",
+            "(Vía afectada) Notifique a movilidad.",
+            "Notifique al personal que responde de peligros y eléctricos y otros conocidos.",
+            "Proporcione a los respondientes con cualquier información sobre la localización y número de personas atrapadas o en peligro."
+          ],
+          "referencias": []
+        }
+      ]
+    },
+    {
+      "id": "incendio_equipos_exterior",
+      "categoria": "100",
+      "nombre": "Incendio de equipos en exterior",
+      "numero_tarjeta": null,
+      "diapositiva_preguntas": 187,
+      "diapositivas_pre_arribo": [
+        188
+      ],
+      "preguntas": [
+        {
+          "tipo": "pregunta",
+          "texto": "¿En qué lugar es el incendio?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Es un lugar residencial, comercial o industrial?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Exactamente qué se está quemando?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Qué tan grande es el incendio?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿El fuego está amenazando algo?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿El incendio se está propagando rápidamente?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Hay personas atrapadas o en peligro inmediato?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "SI: ¿Cuántas? ¿Exactamente dónde están localizadas?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Hay alguien lesionado?"
+        }
+      ],
+      "notas": [],
+      "despacho": [
+        {
+          "codigo": "162",
+          "descripcion": "Equipos en exterior"
+        },
+        {
+          "codigo": "162",
+          "descripcion": "Incendio de equipo en exterior. Incluye compactadores de basuras en exterior, unidades de aire acondicionado en exterior, generadores eléctricos en exterior y bombas de irrigación."
+        },
+        {
+          "codigo": "164",
+          "descripcion": "Incendio en buzón de correo. Incluye cajas de entrega de paquetes para servicios de mensajería."
+        }
+      ],
+      "referencias": [],
+      "pre_arribo": [
+        {
+          "diapositiva": 188,
+          "titulo_diapositiva": "Incendio de almacenaje en exterior – instrucciones pre-arribo",
+          "lineas": [
+            "El Cuerpo de Bomberos está siendo despachado..",
+            "Sin necesidad de evacuación:",
+            "Si usted siente que está en peligro váyase del área inmediatamente y llévese a otros con usted.",
+            "Evacuación requerida:",
+            "Deje el área inmediatamente y lleve a otros con usted. Siga las rutas de evacuación más lógicas y recomendadas.",
+            "Aléjese de la ruta del fuego si es posible.",
+            "No trate de apagar el incendio.",
+            "Llámeme de nuevo si la situación empeora.",
+            "(Vía afectada) Notifique a movilidad.",
+            "Notifique al personal que responde de peligros y eléctricos y otros conocidos.",
+            "Proporcione a los respondientes con cualquier información sobre la localización y número de personas atrapadas o en peligro."
+          ],
+          "referencias": []
+        }
+      ]
+    }
+  ]
+}

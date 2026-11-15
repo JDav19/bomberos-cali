@@ -1,0 +1,5322 @@
+{
+  "codigo": "300",
+  "nombre": "Rescates y emergencias médicas",
+  "tarjetas": [
+    {
+      "id": "accidente_transito",
+      "categoria": "300",
+      "nombre": "Accidente de tránsito",
+      "numero_tarjeta": 29,
+      "diapositiva_preguntas": 6,
+      "diapositivas_pre_arribo": [
+        7
+      ],
+      "preguntas": [
+        {
+          "tipo": "pregunta",
+          "texto": "Entiendo que esté nervioso. Primero, dígame, ¿usted se encuentra en un lugar seguro? ¿Está lejos del accidente y del tráfico?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "Ahora, mirando el lugar del accidente, ¿hay algún peligro que usted pueda ver? ¿Hay humo o fuego? ¿Hay líquidos saliendo de los carros? ¿Ve cables de energía caídos?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Cuántas personas ve que están heridas? ¿Solo una o más de una?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "Ahora, dígame, ¿alguien está atrapado en el vehículo? ¿Ve a alguien que esté sangrando mucho o que no se mueva?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Qué tipos de vehículos estuvieron involucrados?"
+        }
+      ],
+      "notas": [],
+      "despacho": [
+        {
+          "codigo": null,
+          "descripcion": "Si hay Hazmat involucrado, despachar Hazmat 8 y Bomba 8"
+        },
+        {
+          "codigo": "322",
+          "descripcion": "Aeronave"
+        },
+        {
+          "codigo": "322",
+          "descripcion": "Bus"
+        },
+        {
+          "codigo": "322",
+          "descripcion": "Incidente mayor"
+        },
+        {
+          "codigo": "322",
+          "descripcion": "Pacientes múltiples"
+        },
+        {
+          "codigo": "322",
+          "descripcion": "Tren"
+        },
+        {
+          "codigo": "322",
+          "descripcion": "Carro vs Bicicleta"
+        },
+        {
+          "codigo": "322",
+          "descripcion": "Carro vs Moto"
+        },
+        {
+          "codigo": "322",
+          "descripcion": "Peatón Atropellado"
+        },
+        {
+          "codigo": "322",
+          "descripcion": "Eyectado"
+        },
+        {
+          "codigo": "322",
+          "descripcion": "Moto vs Moto"
+        },
+        {
+          "codigo": "352",
+          "descripcion": "Atrapado"
+        },
+        {
+          "codigo": "352",
+          "descripcion": "Vehículo colgando"
+        },
+        {
+          "codigo": "352",
+          "descripcion": "Vehículo rodó por abismo"
+        }
+      ],
+      "referencias": [
+        {
+          "texto": "Si reconoce tipos de lesiones o condiciones médicas vaya a la guía apropiada.",
+          "diapositiva": 3,
+          "destino": {
+            "tipo": "diapositiva",
+            "numero": 3
+          }
+        }
+      ],
+      "pre_arribo": [
+        {
+          "diapositiva": 7,
+          "titulo_diapositiva": "Accidente de tránsito: instrucciones pre-arribo",
+          "lineas": [
+            "Ya enviamos la ayuda. Ahora, por favor, escúcheme con atención, le voy a dar algunas instrucciones muy importantes mientras llegan los equipos de emergencia.",
+            "Lo más importante es que usted y la persona herida estén a salvo.",
+            "Primero, por favor, manténgase a una distancia segura del accidente. No se acerque al vehículo si ve fuego, humo, líquidos saliendo o cables de energía en el suelo.",
+            "Si la persona herida está en un lugar seguro y usted puede acercarse sin riesgo, no la mueva. Es muy importante para evitar lesiones graves. Dígale a las personas alrededor que la ayuda viene en camino y que, por favor, no muevan al paciente.",
+            "Por favor, observe a la persona herida. ¿Está consciente? ¿Respira con normalidad? Si la persona está consciente, hable con ella para mantenerla despierta y tranquila.",
+            "No le dé nada de comer o beber a la persona herida, ni siquiera agua.",
+            "Si ve que la persona está sangrando mucho y puede hacerlo de manera segura, use un trapo limpio o una prenda de vestir para hacer presión sobre la herida, sin tocar la sangre directamente.",
+            "Monitoreo por choque, ir a:",
+            "Vehículo incendiándose: Trate de apagar el incendio, proteja a los ocupantes con extintores. Si no pudo controlar el incendio trate de sacarlos del vehículo.",
+            "Si la condición del paciente(s) cambia, llámeme de nuevo."
+          ],
+          "referencias": [
+            {
+              "texto": "Trauma",
+              "diapositiva": 26,
+              "destino": {
+                "tipo": "tarjeta",
+                "id": "trauma"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "accidente_industrial",
+      "categoria": "300",
+      "nombre": "Accidente industrial",
+      "numero_tarjeta": 22,
+      "diapositiva_preguntas": 8,
+      "diapositivas_pre_arribo": [
+        9
+      ],
+      "preguntas": [
+        {
+          "tipo": "pregunta",
+          "texto": "¿El sitio es seguro o hay algún peligro (máquinas encendidas, fuego, químico, electricidad)?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Qué pasó exactamente?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿La persona está atrapada en o bajo algún objeto?¿En qué parte del cuerpo?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Qué lesiones observa?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿El paciente mueve los dedos de manos y pies? No hacer mover ninguna otra parte del cuerpo."
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Hay alguna amputación? ¿Tiene la parte desprendida para entregarla al personal médico?"
+        },
+        {
+          "tipo": "texto",
+          "texto": "Si hay hemorragia grave:"
+        },
+        {
+          "tipo": "texto",
+          "texto": "Si hay quemaduras:"
+        },
+        {
+          "tipo": "texto",
+          "texto": "Si hay electrocución"
+        }
+      ],
+      "notas": [],
+      "despacho": [
+        {
+          "codigo": "357",
+          "descripcion": "Atrapado por maquinaria o equipo"
+        },
+        {
+          "codigo": "355",
+          "descripcion": "Espacio Confinado"
+        },
+        {
+          "codigo": "354",
+          "descripcion": "Solo atrapamiento periférico"
+        },
+        {
+          "codigo": "354",
+          "descripcion": "Colapso de zanja o excavación"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Ya no está atrapado"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Estado desconocido, sin información clara"
+        }
+      ],
+      "referencias": [
+        {
+          "texto": "Hemorragia / laceración",
+          "diapositiva": 16,
+          "destino": {
+            "tipo": "tarjeta",
+            "id": "hemorragia"
+          }
+        },
+        {
+          "texto": "Quemaduras",
+          "diapositiva": 24,
+          "destino": {
+            "tipo": "tarjeta",
+            "id": "quemaduras"
+          }
+        },
+        {
+          "texto": "Electrocución",
+          "diapositiva": 84,
+          "destino": {
+            "tipo": "tarjeta",
+            "id": "electrocucion"
+          }
+        }
+      ],
+      "pre_arribo": [
+        {
+          "diapositiva": 9,
+          "titulo_diapositiva": "Accidente industrial: instrucciones pre-arribo",
+          "lineas": [
+            "El cuerpo de bomberos ya fue despachado, la ayuda va en camino.",
+            "Si hay una máquina encendida apáguela si es seguir hacerlo (o busque a la persona de mantenimiento).",
+            "No entre a lugares cerrados o con gases (espacios confinados).",
+            "No mueva al paciente, a menos que haya un peligro inmediato.",
+            "Dígale al paciente que permanezca quieto y tranquilo. Si es posible acuéstelo y cúbralo con una sábana para mantenerlo abrigado.",
+            "No le dé comida ni bebida.",
+            "AMPUTACIONES",
+            "Si hay una parte amputada, guárdela en una bolsa limpia dentro de otra bolsa con agua fría. NO la ponga en hielo.",
+            "Haga que alguien salga a la entrada y guíe a los bomberos hasta el lugar exacto.",
+            "Para manejo adicional",
+            "Si está inconsciente y",
+            "respira, ir a:",
+            "Si está inconsciente y",
+            "no respira, ir a:",
+            "Si la condición del paciente cambia llámeme de inmediato."
+          ],
+          "referencias": [
+            {
+              "texto": "Trauma",
+              "diapositiva": 26,
+              "destino": {
+                "tipo": "tarjeta",
+                "id": "trauma"
+              }
+            },
+            {
+              "texto": "Control V.A. - NO TRAUMA",
+              "diapositiva": 100,
+              "destino": {
+                "tipo": "procedimiento",
+                "grupo": "via_aerea",
+                "nodo": 100
+              }
+            },
+            {
+              "texto": "Control V.A. - TRAUMA",
+              "diapositiva": 102,
+              "destino": {
+                "tipo": "procedimiento",
+                "grupo": "via_aerea",
+                "nodo": 102
+              }
+            },
+            {
+              "texto": "Instrucciones RCP - ADULTO",
+              "diapositiva": 58,
+              "destino": {
+                "tipo": "procedimiento",
+                "grupo": "rcp_adulto",
+                "nodo": 58
+              }
+            },
+            {
+              "texto": "Instrucciones RCP - NIÑO",
+              "diapositiva": 68,
+              "destino": {
+                "tipo": "procedimiento",
+                "grupo": "rcp_nino",
+                "nodo": 68
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "asalto_violencia",
+      "categoria": "300",
+      "nombre": "Asalto / Violencia Doméstica o Sexual",
+      "numero_tarjeta": 4,
+      "diapositiva_preguntas": 10,
+      "diapositivas_pre_arribo": [
+        11
+      ],
+      "preguntas": [
+        {
+          "tipo": "pregunta",
+          "texto": "Tranquilo(a), soy [Nombre del operador], estoy aquí para ayudarlo(a). ¿Me escucha? Siga conmigo por favor, no cuelgue."
+        },
+        {
+          "tipo": "texto",
+          "texto": "Entiendo que esto es muy difícil, tómese un momento para respirar conmigo. Vamos a ir despacio."
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "Mientras llega la ayuda, dígame si usted o alguien más se encuentra en peligro en este momento. ¿Está el agresor cerca de usted o en el lugar?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Hay alguien herido? ¿Cómo se encuentra la persona afectada?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Qué tipo de agresión ocurrió?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "Ahora, si la situación es segura para usted, dígame si la persona herida presenta alguna lesión visible. ¿Hay sangrado? ¿En qué parte del cuerpo?"
+        },
+        {
+          "tipo": "texto",
+          "texto": "Respuesta positiva ir a:"
+        }
+      ],
+      "notas": [],
+      "despacho": [
+        {
+          "codigo": "321",
+          "descripcion": "Paciente grave:\nInconsciente o en paro.\nNo alerta.\nLesión en pecho o cuello con dificultad respiratoria.\nLesión en área peligrosa.\nHemorragia grave."
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Estado desconocido"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Lesión en área no peligrosa"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Lesiones no recientes (>6h) sin síntomas prioritarios"
+        }
+      ],
+      "referencias": [
+        {
+          "texto": "Hemorragia / laceración",
+          "diapositiva": 16,
+          "destino": {
+            "tipo": "tarjeta",
+            "id": "hemorragia"
+          }
+        }
+      ],
+      "pre_arribo": [
+        {
+          "diapositiva": 11,
+          "titulo_diapositiva": "Asalto: instrucciones pre-arribo",
+          "lineas": [
+            "Ahora, por favor, escúcheme con atención, le voy a dar algunas instrucciones mientras llega la ayuda. ¿Me puede escuchar bien?",
+            "Primero, asegúrese de que usted y la persona herida están en un lugar seguro, lejos del agresor. Por favor, no se acerque a ninguna arma.",
+            "Para mantener a la persona lo más tranquila posible, si puede, pídale que se acueste y cúbrala con una manta o una toalla, lo que tenga a mano. Esto la ayudará a mantenerse caliente.",
+            "Monitoreo de choque, ir a:",
+            "Muy bien, ahora vamos a prepararnos para la llegada de los bomberos.",
+            "Para que los profesionales puedan ayudar mejor, es muy importante que la persona no se cambie de ropa, ni se bañe, ni se duche.",
+            "Si es posible y si la persona toma algún medicamento, por favor, tenga los empaques a la mano para cuando lleguen.",
+            "Por favor, no permita que la persona tome o coma nada, ni siquiera agua. Es muy importante.",
+            "Excelente, ya casi llegan. Por favor, no cuelgue, yo me quedo con usted en la línea. Si la situación de la persona cambia (se desmaya, empieza a sangrar más, etc.), avíseme de inmediato."
+          ],
+          "referencias": [
+            {
+              "texto": "Trauma",
+              "diapositiva": 26,
+              "destino": {
+                "tipo": "tarjeta",
+                "id": "trauma"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "caidas",
+      "categoria": "300",
+      "nombre": "Caídas",
+      "numero_tarjeta": 17,
+      "diapositiva_preguntas": 12,
+      "diapositivas_pre_arribo": [
+        13
+      ],
+      "preguntas": [
+        {
+          "tipo": "pregunta",
+          "texto": "Dígame, por favor, ¿qué pasó y dónde se encuentra el paciente?"
+        },
+        {
+          "tipo": "texto",
+          "texto": "Entiendo, es un momento de angustia. Por favor, mantenga la calma y yo le iré haciendo unas preguntas para poder enviar la ayuda de la forma más rápida."
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "Para poder enviar a los bomberos / ambulancia, necesito que me diga dónde se encuentra. ¿La persona está en un lugar de fácil acceso o se cayó en una zona difícil?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿De qué altura aproximadamente cayó?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Sobre qué tipo de superficie cayó?"
+        },
+        {
+          "tipo": "texto",
+          "texto": "Paciente en altura:"
+        },
+        {
+          "tipo": "texto",
+          "texto": "Hemorragia"
+        },
+        {
+          "tipo": "texto",
+          "texto": "CAÍDAS EN ZONA RURAL"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Qué tan lejos está de la carretera más cercana?"
+        },
+        {
+          "tipo": "texto",
+          "texto": "> 400m ir a:"
+        }
+      ],
+      "notas": [],
+      "despacho": [
+        {
+          "codigo": "321",
+          "descripcion": "Caída extrema (≥10m)"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "No alerta"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Área del cuerpo peligrosa"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Estado desconocido"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Área del cuerpo no peligrosa"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Dificultad respiratoria"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Dolor o malestar previo"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Fractura de fémur"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Hemorragia grave"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "No reciente >6h sin síntomas prioritarios"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Terreno inaccesible"
+        }
+      ],
+      "referencias": [
+        {
+          "texto": "Hemorragia / laceración",
+          "diapositiva": 16,
+          "destino": {
+            "tipo": "tarjeta",
+            "id": "hemorragia"
+          }
+        },
+        {
+          "texto": "Rescate en alturas",
+          "diapositiva": 16,
+          "destino": {
+            "tipo": "tarjeta",
+            "id": "hemorragia"
+          }
+        },
+        {
+          "texto": "Extraviado o requiriendo ayuda en zona rural",
+          "diapositiva": 145,
+          "destino": {
+            "tipo": "tarjeta",
+            "id": "extraviado_zona_rural"
+          }
+        }
+      ],
+      "pre_arribo": [
+        {
+          "diapositiva": 13,
+          "titulo_diapositiva": "Caídas: instrucciones pre-arribo",
+          "lineas": [
+            "El Cuerpo de Bomberos está siendo despachado, a continuación le diré qué debe hacer.",
+            "No mueva al paciente si no hay peligros que pongan en peligro su vida.",
+            "Indíquele al paciente que no se mueva.",
+            "Monitoreo por choque, ir a:",
+            "Haga que el paciente de recueste, cúbralo con una sábana y trate de mantenerlo calmado.",
+            "El paciente no debe tomar ni comer nada.",
+            "Reúna los medicamentos del paciente, si es posible.",
+            "Si está inconsciente y",
+            "respira, ir a:",
+            "Si está inconsciente y",
+            "no respira, ir a:"
+          ],
+          "referencias": [
+            {
+              "texto": "Trauma",
+              "diapositiva": 26,
+              "destino": {
+                "tipo": "tarjeta",
+                "id": "trauma"
+              }
+            },
+            {
+              "texto": "Control V.A. - NO TRAUMA",
+              "diapositiva": 100,
+              "destino": {
+                "tipo": "procedimiento",
+                "grupo": "via_aerea",
+                "nodo": 100
+              }
+            },
+            {
+              "texto": "Control V.A. - TRAUMA",
+              "diapositiva": 102,
+              "destino": {
+                "tipo": "procedimiento",
+                "grupo": "via_aerea",
+                "nodo": 102
+              }
+            },
+            {
+              "texto": "Instrucciones RCP - ADULTO",
+              "diapositiva": 58,
+              "destino": {
+                "tipo": "procedimiento",
+                "grupo": "rcp_adulto",
+                "nodo": 58
+              }
+            },
+            {
+              "texto": "Instrucciones RCP - NIÑO",
+              "diapositiva": 68,
+              "destino": {
+                "tipo": "procedimiento",
+                "grupo": "rcp_nino",
+                "nodo": 68
+              }
+            },
+            {
+              "texto": "Instrucciones RCP - INFANTE",
+              "diapositiva": 78,
+              "destino": {
+                "tipo": "procedimiento",
+                "grupo": "rcp_infante",
+                "nodo": 78
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "exposicion_calor_frio",
+      "categoria": "300",
+      "nombre": "Exposición a calor o frío",
+      "numero_tarjeta": 20,
+      "diapositiva_preguntas": 14,
+      "diapositivas_pre_arribo": [
+        15
+      ],
+      "preguntas": [
+        {
+          "tipo": "pregunta",
+          "texto": "¿Qué pasó exactamente?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿La persona estuvo expuesta a calor o a frío? ¿Por cuánto tiempo?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Dónde ocurrió la exposición (calle, trabajo, montaña, casa)?"
+        },
+        {
+          "tipo": "texto",
+          "texto": "Relacionado con calor"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿La persona está sangrando?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Está despierto y responde bien a las preguntas, o se ve confundido/actúa extraño?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Ha perdido el conocimiento en algún momento?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Se queja de mareo, debilidad intensa o dolor de cabeza fuerte?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Tiene fiebre o la piel muy caliente al tacto?"
+        },
+        {
+          "tipo": "texto",
+          "texto": "Relacionado con frío"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "La persona puede moverse a un lugar más cálido o está inmóvil?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Cuánto tiempo lleva expuesto al frío?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿La persona tiembla mucho o ya no tiembla (rigidez)?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿La piel está muy pálida, azulada o con manchas?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Se queja de dolor en manos, pies o cara? ¿Ve zonas entumecidas o con ampollas?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿El paciente toma algún medicamento o tiene enfermedades como presión alta, diabetes o problemas del corazón?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Hay niños pequeños, adultos mayores o embarazadas involucrados?"
+        }
+      ],
+      "notas": [],
+      "despacho": [
+        {
+          "codigo": "321",
+          "descripcion": "No alerta"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Confuso, desorientado"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Golpe de calor (náuseas, vómito, fatiga, dolor de cabeza, calambres, mareo)"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Alucinaciones, síncope"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Escalofrío descontrolado"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Antecedente de ataque cardiaco o angina"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Hipertermia sin sudor"
+        }
+      ],
+      "referencias": [],
+      "pre_arribo": [
+        {
+          "diapositiva": 15,
+          "titulo_diapositiva": "Exposición a calor o frío: instrucciones pre-arribo",
+          "lineas": [
+            "El Cuerpo de Bomberos ya está en camino. A continuación, le diré qué hacer:",
+            "Retire al paciente del lugar de exposición, si es posible y seguro.",
+            "(Tenga en cuenta: algunos medicamentos como tranquilizantes, narcóticos o psiquiátricos pueden empeorar o disfrazar los síntomas).",
+            "Si es por calor:",
+            "Coloque al paciente en un sitio fresco y con sombra.",
+            "Afloje o quite la ropa ajustada para ayudar a enfriarlo.",
+            "Si está consciente y puede tragar, dele sorbos de agua fresca.",
+            "No le dé nada por la boca si está desorientado o inconsciente.",
+            "Si es por frío:",
+            "Si la ropa está seca: llévelo a un lugar cálido y cúbralo.",
+            "Si la ropa está mojada: quítesela, séquelo y cúbralo con ropa o cobijas secas.",
+            "No frote la piel congelada.",
+            "Si tiene mantas, cubra también la cabeza y el cuello.",
+            "Reúna los medicamentos del paciente, si los hay.",
+            "Vigile de cerca su estado: si empeora o cambia, llámeme de nuevo de inmediato."
+          ],
+          "referencias": []
+        }
+      ]
+    },
+    {
+      "id": "hemorragia",
+      "categoria": "300",
+      "nombre": "Hemorragia / laceración",
+      "numero_tarjeta": 21,
+      "diapositiva_preguntas": 16,
+      "diapositivas_pre_arribo": [
+        17
+      ],
+      "preguntas": [
+        {
+          "tipo": "pregunta",
+          "texto": "¿Dónde es la hemorragia?"
+        },
+        {
+          "tipo": "texto",
+          "texto": "Si es paciente femenina con hemorragia vaginal"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Podría estar embarazada?"
+        },
+        {
+          "tipo": "texto",
+          "texto": "Si la respuesta es SI, ir a:"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Ha tenido dolor abdominal?"
+        },
+        {
+          "tipo": "texto",
+          "texto": "Si la respuesta es SI considere:"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Cuánta sangre ve?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Cuánto lleva sangrando?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿La hemorragia es pulsante? (arterial)"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿El paciente es hemofílico?"
+        }
+      ],
+      "notas": [],
+      "despacho": [
+        {
+          "codigo": "321",
+          "descripcion": "Hemorragia arterial"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Historial de hemofilia"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Sangrado abundante por cuello, ingle o axila"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Hemorragia menor controlable por presión directa"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Sangrado rectal abundante"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Sangre en vómito"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Hemorragia menor ya controlada, paciente estable"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Dificultad respiratoria"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Vaginal con más de 20 semanas de embarazo asociado con dolor abdominal o síncope"
+        }
+      ],
+      "referencias": [
+        {
+          "texto": "Embarazo / parto",
+          "diapositiva": 86,
+          "destino": {
+            "tipo": "tarjeta",
+            "id": "embarazo_parto"
+          }
+        },
+        {
+          "texto": "Dolor abdominal",
+          "diapositiva": 36,
+          "destino": {
+            "tipo": "tarjeta",
+            "id": "dolor_abdominal"
+          }
+        }
+      ],
+      "pre_arribo": [
+        {
+          "diapositiva": 17,
+          "titulo_diapositiva": "Hemorragia / laceración: instrucciones pre-arribo",
+          "lineas": [
+            "El Cuerpo de Bomberos está siendo despachado, a continuación le diré qué debe hacer.",
+            "Hemorragia: use ropa limpia y aplique presión directa sobre la herida. No la quite. Si se empapa, ponga más encima sin quitar la empapada. Eleve la extremidad que sangra. Si hay un torniquete disponible aplíquelo siguiendo las instrucciones del empaque.",
+            "Hemorragia nasal: dígale al paciente que aplique presión directa apretándose la nariz con sus dedos índice y pulgar, que se siente hacia adelante y que se mantenga así hasta que llegue la ayuda. Dígale que intente escupir la sangre, si la traga le pueden dar náuseas.",
+            "Amputación: localice cualquier parte amputada y colóquela en una bolsa plástica limpia. NO USE HIELO.",
+            "Dientes: localícelos, no toque la raíz, póngalos en un frasco limpio con leche o agua limpia.",
+            "Monitoreo por choque, ir a:",
+            "Indíquele al paciente que no debe tomar ni comer nada.",
+            "Reúna los medicamentos del paciente, se es posible.",
+            "Si la condición del paciente cambia, llámeme de nuevo."
+          ],
+          "referencias": [
+            {
+              "texto": "Uso del torniquete",
+              "diapositiva": 129,
+              "destino": {
+                "tipo": "procedimiento",
+                "grupo": "torniquete",
+                "nodo": 129
+              }
+            },
+            {
+              "texto": "Trauma",
+              "diapositiva": 26,
+              "destino": {
+                "tipo": "tarjeta",
+                "id": "trauma"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mordedura_animal",
+      "categoria": "300",
+      "nombre": "Mordedura de animal",
+      "numero_tarjeta": 3,
+      "diapositiva_preguntas": 18,
+      "diapositivas_pre_arribo": [
+        19
+      ],
+      "preguntas": [
+        {
+          "tipo": "pregunta",
+          "texto": "¿El animal está encerrado o contenido?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Qué tipo de animal mordió al paciente?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Qué parte del cuerpo fue mordida?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿El paciente respira mal o le duele al respirar?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿El paciente está sangrando mucho?"
+        },
+        {
+          "tipo": "texto",
+          "texto": "Si la respuesta es SI, ir a :"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Hace cuánto tiempo fue mordido?"
+        }
+      ],
+      "notas": [],
+      "despacho": [
+        {
+          "codigo": null,
+          "descripcion": "Para mordedura de animales silvestres informar al DAGMA.\nPara mordedura de animales domésticos o introducidos informar a la Secretaría de Salud."
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Hemorragia no controlada después de algunos intentos de controlarla"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Hinchazón del área mordida"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Mordeduras de animal venenoso conocido"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Mordeduras serias en cuello o cara"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Hemorragia controlada"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Mordedura por debajo del nivel del cuello"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Dificultad respiratoria"
+        }
+      ],
+      "referencias": [
+        {
+          "texto": "Hemorragia / laceración",
+          "diapositiva": 16,
+          "destino": {
+            "tipo": "tarjeta",
+            "id": "hemorragia"
+          }
+        }
+      ],
+      "pre_arribo": [
+        {
+          "diapositiva": 19,
+          "titulo_diapositiva": "Mordedura de animal: instrucciones pre-arribo",
+          "lineas": [
+            "El Cuerpo de Bomberos está siendo despachado, a continuación le diré qué debe hacer.",
+            "Contenga al animal, si es posible. Encierre cualquier mascota para que no tenga contacto con el animal.",
+            "Si hay hemorragia severa vaya a:",
+            "Poco o ningún sangrado: irrigue las mordeduras humanas y de animales con abundante agua.",
+            "Haga que el paciente se recueste, cúbralo con una sábana y trate de mantenerlo calmado.",
+            "Para mordedura de serpientes: aplique presión directa a la herida, no eleve la extremidad, no use hielo, no intente remover el veneno.",
+            "Si la condición del paciente cambia, llámeme de nuevo.",
+            "Monitoreo de choque, ir a:"
+          ],
+          "referencias": [
+            {
+              "texto": "Hemorragia/laceración: instrucciones pre-arribo.",
+              "diapositiva": 17,
+              "destino": {
+                "tipo": "tarjeta",
+                "id": "hemorragia"
+              }
+            },
+            {
+              "texto": "Trauma",
+              "diapositiva": 26,
+              "destino": {
+                "tipo": "tarjeta",
+                "id": "trauma"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ojos",
+      "categoria": "300",
+      "nombre": "Ojos: lesiones o problemas",
+      "numero_tarjeta": 16,
+      "diapositiva_preguntas": 20,
+      "diapositivas_pre_arribo": [
+        21
+      ],
+      "preguntas": [
+        {
+          "tipo": "pregunta",
+          "texto": "¿Qué causó la lesión?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿El globo ocular tiene un corte abierto o está saliendo líquido?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿El paciente tiene otras lesiones?"
+        },
+        {
+          "tipo": "texto",
+          "texto": "Si la respuesta es SI ir a la guía apropiada."
+        }
+      ],
+      "notas": [],
+      "despacho": [
+        {
+          "codigo": "321",
+          "descripcion": "Alteración del nivel de consciencia"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Lesión en ojo"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Hemorragia no controlada"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Dificultad respiratoria"
+        }
+      ],
+      "referencias": [],
+      "pre_arribo": [
+        {
+          "diapositiva": 21,
+          "titulo_diapositiva": "Ojos: lesiones o problemas. Instrucciones pre-arribo",
+          "lineas": [
+            "El Cuerpo de Bomberos está siendo despachado, a continuación le diré qué debe hacer.",
+            "No remueva ningún objeto penetrante, le puede causar más daño.",
+            "Si el globo ocular está cortado o lesionado, no lo toque, irrigue o vende, le puede causar más daño.",
+            "Si fue una lesión por químico, enjuague inmediatamente con agua. Quite los lentes de contacto.",
+            "Indíquele al paciente que no se mueva.",
+            "Haga que el paciente se siente.",
+            "Cubra al paciente con una sábana y trate de mantenerlo calmado.",
+            "No le de nada de comer o tomar.",
+            "Reúna los medicamentos del paciente, si es posible.",
+            "Si la condición del paciente cambia, llámeme de nuevo.",
+            "Para monitoreo por choque, ir a:"
+          ],
+          "referencias": [
+            {
+              "texto": "Trauma",
+              "diapositiva": 26,
+              "destino": {
+                "tipo": "tarjeta",
+                "id": "trauma"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "punalada_arma_fuego",
+      "categoria": "300",
+      "nombre": "Puñalada / lesión por arma de fuego",
+      "numero_tarjeta": 27,
+      "diapositiva_preguntas": 22,
+      "diapositivas_pre_arribo": [
+        23
+      ],
+      "preguntas": [
+        {
+          "tipo": "pregunta",
+          "texto": "¿Qué parte o partes del cuerpo están lesionadas?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Cuándo ocurrió?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Qué sucedió?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Fue intencional o un accidente?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "Si fue intencional: ¿el atacante aun está allí?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿El arma utilizada todavía está en el sitio?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Hay más lesionados?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Está sangrando mucho?"
+        },
+        {
+          "tipo": "texto",
+          "texto": "Si la respuesta es SI, ir a:"
+        }
+      ],
+      "notas": [],
+      "despacho": [
+        {
+          "codigo": "321",
+          "descripcion": "Alteración del nivel de consciencia"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Lesión en Tórax"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "En muslo o por encima del nivel de la rodilla"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Hemorragia no controlada"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Lesión en cabeza o cuello"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Brazo, por debajo del nivel del codo"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Dificultad respiratoria"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Pierna, por debajo del nivel de la rodilla"
+        }
+      ],
+      "referencias": [
+        {
+          "texto": "Hemorragia / laceración",
+          "diapositiva": 16,
+          "destino": {
+            "tipo": "tarjeta",
+            "id": "hemorragia"
+          }
+        }
+      ],
+      "pre_arribo": [
+        {
+          "diapositiva": 23,
+          "titulo_diapositiva": "Puñalada / lesión por arma de fuego: instrucciones pre-arribo",
+          "lineas": [
+            "El Cuerpo de Bomberos está siendo despachado, a continuación le diré qué debe hacer.",
+            "Manténgase seguro (cuídese del atacante), escóndase si necesita hacerlo.",
+            "No toque nada en la escena ni mueva ningún arma.",
+            "No hale ningún arma penetrante.",
+            "Monitoreo de choque, ir a:",
+            "Haga que el paciente se recueste, cúbralo con una sábana y trate de mantenerlo calmado.",
+            "Si la condición del paciente cambia, llámeme de nuevo.",
+            "Si está inconsciente y",
+            "respira, ir a:",
+            "Si está inconsciente y",
+            "no respira, ir a:"
+          ],
+          "referencias": [
+            {
+              "texto": "Trauma",
+              "diapositiva": 26,
+              "destino": {
+                "tipo": "tarjeta",
+                "id": "trauma"
+              }
+            },
+            {
+              "texto": "Control V.A. - NO TRAUMA",
+              "diapositiva": 100,
+              "destino": {
+                "tipo": "procedimiento",
+                "grupo": "via_aerea",
+                "nodo": 100
+              }
+            },
+            {
+              "texto": "Control V.A. - TRAUMA",
+              "diapositiva": 102,
+              "destino": {
+                "tipo": "procedimiento",
+                "grupo": "via_aerea",
+                "nodo": 102
+              }
+            },
+            {
+              "texto": "Instrucciones RCP - ADULTO",
+              "diapositiva": 58,
+              "destino": {
+                "tipo": "procedimiento",
+                "grupo": "rcp_adulto",
+                "nodo": 58
+              }
+            },
+            {
+              "texto": "Instrucciones RCP - NIÑO",
+              "diapositiva": 68,
+              "destino": {
+                "tipo": "procedimiento",
+                "grupo": "rcp_nino",
+                "nodo": 68
+              }
+            },
+            {
+              "texto": "Instrucciones RCP - INFANTE",
+              "diapositiva": 78,
+              "destino": {
+                "tipo": "procedimiento",
+                "grupo": "rcp_infante",
+                "nodo": 78
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "quemaduras",
+      "categoria": "300",
+      "nombre": "Quemaduras",
+      "numero_tarjeta": 7,
+      "diapositiva_preguntas": 24,
+      "diapositivas_pre_arribo": [
+        25
+      ],
+      "preguntas": [
+        {
+          "tipo": "pregunta",
+          "texto": "¿Cómo se quemó el paciente?"
+        },
+        {
+          "tipo": "texto",
+          "texto": "TÉRMICA"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Algo en el paciente está ardiendo todavía?"
+        },
+        {
+          "tipo": "texto",
+          "texto": "Si la respuesta es SI indíquele que lo apague."
+        },
+        {
+          "tipo": "texto",
+          "texto": "ELÉCTRICA Ir a:"
+        },
+        {
+          "tipo": "texto",
+          "texto": "QUÍMICA"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Qué químico causó la quemadura?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Qué parte se quemó el paciente?"
+        },
+        {
+          "tipo": "texto",
+          "texto": "EN CABEZA O CARA:"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿El paciente está respirando con dificultad, tosiendo o le duele al respirar?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿El paciente tiene dificultad para tragar?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Hay quemaduras alrededor de la boca y nariz?"
+        }
+      ],
+      "notas": [],
+      "despacho": [
+        {
+          "codigo": "321",
+          "descripcion": "Alteración del nivel de consciencia"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Dificultad para hablar o tragar"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "2° y 3° superficiales o profundas en palmas, plantas o ingle"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Química"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Pequeña por cigarrillo o encendedor"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "> 20% del cuerpo"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Eléctricas o electrocución con 220V o más"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Eléctrico 110V"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Con líneas o cajas eléctricas"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "<20% del cuerpo"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "En vía aérea, nariz o boca"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Por congelador casero"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Por líquido caliente derramado"
+        }
+      ],
+      "referencias": [
+        {
+          "texto": "Electrocución",
+          "diapositiva": 84,
+          "destino": {
+            "tipo": "tarjeta",
+            "id": "electrocucion"
+          }
+        }
+      ],
+      "pre_arribo": [
+        {
+          "diapositiva": 25,
+          "titulo_diapositiva": "Quemaduras: instrucciones pre-arribo",
+          "lineas": [
+            "El Cuerpo de Bomberos está siendo despachado, a continuación le diré qué debe hacer.",
+            "TÉRMICA",
+            "Ponga el área quemada en agua fría (no hielo), si es conveniente.",
+            "QUÍMICA",
+            "Haga que el paciente se quite la ropa contaminada, si es posible.",
+            "Obtenga la información del químico si le es posible (hoja de seguridad).",
+            "Si el químico es un polvo, cepíllelo, no le eche agua.",
+            "Lave los ojos con quemaduras químicas con abundante agua.",
+            "Remueva los lentes de contacto, si los tiene.",
+            "Reúna los medicamentos del paciente, si es posible.",
+            "Si la condición del paciente cambia, llámeme de nuevo.",
+            "Regla de los nueves",
+            "1 año",
+            "5 años",
+            "Adulto"
+          ],
+          "referencias": []
+        }
+      ]
+    },
+    {
+      "id": "trauma",
+      "categoria": "300",
+      "nombre": "Trauma",
+      "numero_tarjeta": 30,
+      "diapositiva_preguntas": 26,
+      "diapositivas_pre_arribo": [
+        27
+      ],
+      "preguntas": [
+        {
+          "tipo": "pregunta",
+          "texto": "¿Cómo se lesionó el paciente?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Dónde está lesionado el paciente?"
+        },
+        {
+          "tipo": "texto",
+          "texto": "Describa qué pasó."
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "El paciente está sangrando mucho?"
+        },
+        {
+          "tipo": "texto",
+          "texto": "Si la respuesta es SI, ir a:"
+        },
+        {
+          "tipo": "texto",
+          "texto": "Indicadores de choque:"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿El paciente tiene la piel fría, pegajosa, moteada o sudando profusamente?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Está respirando rápida y superficialmente?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Tiene las pupilas dilatadas?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Parece estar confundido?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Se siente débil o fatigado?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Tiene la boca seca o se siente con sed?"
+        }
+      ],
+      "notas": [],
+      "despacho": [
+        {
+          "codigo": "321",
+          "descripcion": "Alteración del nivel de consciencia"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Hemorragia no controlable"
+        },
+        {
+          "codigo": null,
+          "descripcion": "Penetrante en mano o pie"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Lesión menor"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Lesión penetrante o aplastante en cabeza, cuello o tórax"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Fracturas múltiples"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Lesiones internas desconocidas sin indicadores de choque"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Lesión en pierna por encima del nivel de la rodilla"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Indicaciones de choque"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Dificultad respiratoria"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Fractura aislada en extremidad"
+        }
+      ],
+      "referencias": [
+        {
+          "texto": "Hemorragia / laceración",
+          "diapositiva": 16,
+          "destino": {
+            "tipo": "tarjeta",
+            "id": "hemorragia"
+          }
+        }
+      ],
+      "pre_arribo": [
+        {
+          "diapositiva": 27,
+          "titulo_diapositiva": "Trauma: instrucciones pre-arribo",
+          "lineas": [
+            "El Cuerpo de Bomberos está siendo despachado, a continuación le diré qué debe hacer.",
+            "No mueva al paciente a no ser que haya un peligro que ponga en riesgo su vida.",
+            "Si tiene un objeto empalado no lo toque ni intente quitarlo.",
+            "Monitoreo de choque:",
+            "Piel fría y pegajosa, respiración rápida y superficial, estado mental alterado, pupilas dilatadas.",
+            "Verificar que nada obstruya la vía aérea o la respiración.",
+            "Mantenga al paciente acostado, cúbralo con una sábana y trate de mantenerlo calmado.",
+            "Reúna los medicamentos del paciente, si es posible.",
+            "Localice cualquier parte amputada y póngala en una bolsa plástica limpia, NO EN HIELO.",
+            "Si son dientes, localícelos, NO toque la raíz, colóquelos en leche o agua limpia.",
+            "Si está inconsciente y",
+            "respira, ir a:",
+            "Si está inconsciente y",
+            "no respira, ir a:"
+          ],
+          "referencias": [
+            {
+              "texto": "Control V.A. - NO TRAUMA",
+              "diapositiva": 100,
+              "destino": {
+                "tipo": "procedimiento",
+                "grupo": "via_aerea",
+                "nodo": 100
+              }
+            },
+            {
+              "texto": "Control V.A. - TRAUMA",
+              "diapositiva": 102,
+              "destino": {
+                "tipo": "procedimiento",
+                "grupo": "via_aerea",
+                "nodo": 102
+              }
+            },
+            {
+              "texto": "Instrucciones RCP - ADULTO",
+              "diapositiva": 58,
+              "destino": {
+                "tipo": "procedimiento",
+                "grupo": "rcp_adulto",
+                "nodo": 58
+              }
+            },
+            {
+              "texto": "Instrucciones RCP - NIÑO",
+              "diapositiva": 68,
+              "destino": {
+                "tipo": "procedimiento",
+                "grupo": "rcp_nino",
+                "nodo": 68
+              }
+            },
+            {
+              "texto": "Instrucciones RCP - INFANTE",
+              "diapositiva": 78,
+              "destino": {
+                "tipo": "procedimiento",
+                "grupo": "rcp_infante",
+                "nodo": 78
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "acv",
+      "categoria": "300",
+      "nombre": "ACV",
+      "numero_tarjeta": 28,
+      "diapositiva_preguntas": 28,
+      "diapositivas_pre_arribo": [
+        29
+      ],
+      "preguntas": [
+        {
+          "tipo": "pregunta",
+          "texto": "¿Cuándo comenzó?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Presenta entumecimiento o debilidad repentina de la cara, brazo o pierna? (especialmente en un lado del cuerpo)."
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Confusión repentina, problemas para hablar (arrastra las palabras) o para comprender?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Problemas repentinos para ver por uno o ambos ojos?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Problemas repentinos para caminar, mareos, pérdida de equilibrio o coordinación?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Repentino dolor de cabeza?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Ha tenido alguna vez el paciente un derrame cerebral?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Ha tenido alguna lesión o trauma reciente?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Historial de diabetes?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Algún otro historial médico o quirúrgico?"
+        }
+      ],
+      "notas": [],
+      "despacho": [
+        {
+          "codigo": "321",
+          "descripcion": "Alteración del nivel de consciencia"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Cefalea intensa"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Nuevo inicio de debilidad unilateral con parálisis facial"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Dificultad para hablar"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Confusión, pérdida de visión, pérdida de coordinación"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Historial de ACV sin nuevos cambios"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Dificultad respiratoria"
+        }
+      ],
+      "referencias": [],
+      "pre_arribo": [
+        {
+          "diapositiva": 29,
+          "titulo_diapositiva": "ACV – Instrucciones pre-arribo",
+          "lineas": [
+            "El Cuerpo de Bomberos está siendo despachado, a continuación le diré qué debe hacer.",
+            "Mantenga al paciente calmado.",
+            "No permita que el paciente se mueva.",
+            "Si está inconsciente o tiene dificultad para respirar vaya a:",
+            "No debe tomar ni comer nada.",
+            "Reúna los medicamentos del paciente, si es posible.",
+            "Si la condición del paciente cambia, llámeme de nuevo.",
+            "Si está inconsciente y",
+            "respira, ir a:",
+            "Si está inconsciente y",
+            "no respira, ir a:"
+          ],
+          "referencias": [
+            {
+              "texto": "Inconsciente / desmayado",
+              "diapositiva": 98,
+              "destino": {
+                "tipo": "tarjeta",
+                "id": "inconsciente"
+              }
+            },
+            {
+              "texto": "Control V.A. - NO TRAUMA",
+              "diapositiva": 100,
+              "destino": {
+                "tipo": "procedimiento",
+                "grupo": "via_aerea",
+                "nodo": 100
+              }
+            },
+            {
+              "texto": "Control V.A. - TRAUMA",
+              "diapositiva": 102,
+              "destino": {
+                "tipo": "procedimiento",
+                "grupo": "via_aerea",
+                "nodo": 102
+              }
+            },
+            {
+              "texto": "Instrucciones RCP - ADULTO",
+              "diapositiva": 58,
+              "destino": {
+                "tipo": "procedimiento",
+                "grupo": "rcp_adulto",
+                "nodo": 58
+              }
+            },
+            {
+              "texto": "Instrucciones RCP - NIÑO",
+              "diapositiva": 68,
+              "destino": {
+                "tipo": "procedimiento",
+                "grupo": "rcp_nino",
+                "nodo": 68
+              }
+            },
+            {
+              "texto": "Instrucciones RCP - INFANTE",
+              "diapositiva": 78,
+              "destino": {
+                "tipo": "procedimiento",
+                "grupo": "rcp_infante",
+                "nodo": 78
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "convulsiones",
+      "categoria": "300",
+      "nombre": "Ataques / convulsiones",
+      "numero_tarjeta": 12,
+      "diapositiva_preguntas": 30,
+      "diapositivas_pre_arribo": [
+        31
+      ],
+      "preguntas": [
+        {
+          "tipo": "pregunta",
+          "texto": "¿El paciente está convulsionando en este momento?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "SI: ¿Hace cuánto está convulsionando?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Ha sufrido convulsiones antes?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿El paciente está tomando medicamentos o es un usuario de drogas recreativas?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Ha tenido una lesión reciente en la cabeza?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Es diabético?"
+        },
+        {
+          "tipo": "texto",
+          "texto": "Considere ir a:"
+        },
+        {
+          "tipo": "texto",
+          "texto": "SI EL PACIENTE ES UN NIÑO:"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Ha estado enfermo?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Ha tenido fiebre o se siente caliente?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "SI EL PACIENTE ES MUJER: ¿Está embarazada?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Tiene algún brazalete de alerta médica? SI: ¿Qué dice?"
+        }
+      ],
+      "notas": [],
+      "despacho": [
+        {
+          "codigo": "321",
+          "descripcion": "Alteración del nivel de consciencia"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Convulsiones > 5 min"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Historia desconocida"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Embarazada"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Convulsión anormal"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Ataques múltiples"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Convulsiones febriles"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Lesión reciente en cabeza"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Primera vez"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Después de sobredosis"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "No respira después de la convulsión"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Convulsión con historial de trastorno convulsivo"
+        }
+      ],
+      "referencias": [
+        {
+          "texto": "Diabetes",
+          "diapositiva": 34,
+          "destino": {
+            "tipo": "tarjeta",
+            "id": "diabetes"
+          }
+        }
+      ],
+      "pre_arribo": [
+        {
+          "diapositiva": 31,
+          "titulo_diapositiva": "Ataques / convulsiones – instrucciones pre-arribo",
+          "lineas": [
+            "El Cuerpo de Bomberos está siendo despachado, a continuación le diré qué debe hacer.",
+            "Despeje el área alrededor del paciente.",
+            "En lo posible proteja la cabeza del paciente, permita que convulsione, no lo restrinja.",
+            "No coloque nada en la boca del paciente.",
+            "PACIENTE NIÑO:",
+            "Si el niño está caliente o tiene fiebre quítele la ropa.",
+            "Luego que el ataque se detenga revise si el paciente respira.",
+            "Si el paciente respira:",
+            "Ponga al paciente de lado, manténgase revisando su respiración.",
+            "Reúna los medicamentos del paciente, si es posible.",
+            "Si las condiciones del paciente cambian, llámeme de nuevo.",
+            "Si está inconsciente y",
+            "respira, ir a:",
+            "Si está inconsciente y",
+            "no respira, ir a:"
+          ],
+          "referencias": [
+            {
+              "texto": "Control V.A. - NO TRAUMA",
+              "diapositiva": 100,
+              "destino": {
+                "tipo": "procedimiento",
+                "grupo": "via_aerea",
+                "nodo": 100
+              }
+            },
+            {
+              "texto": "Control V.A. - TRAUMA",
+              "diapositiva": 102,
+              "destino": {
+                "tipo": "procedimiento",
+                "grupo": "via_aerea",
+                "nodo": 102
+              }
+            },
+            {
+              "texto": "Instrucciones RCP - ADULTO",
+              "diapositiva": 58,
+              "destino": {
+                "tipo": "procedimiento",
+                "grupo": "rcp_adulto",
+                "nodo": 58
+              }
+            },
+            {
+              "texto": "Instrucciones RCP - NIÑO",
+              "diapositiva": 68,
+              "destino": {
+                "tipo": "procedimiento",
+                "grupo": "rcp_nino",
+                "nodo": 68
+              }
+            },
+            {
+              "texto": "Instrucciones RCP - INFANTE",
+              "diapositiva": 78,
+              "destino": {
+                "tipo": "procedimiento",
+                "grupo": "rcp_infante",
+                "nodo": 78
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "alergias_picaduras",
+      "categoria": "300",
+      "nombre": "Alergias / picaduras",
+      "numero_tarjeta": 2,
+      "diapositiva_preguntas": 32,
+      "diapositivas_pre_arribo": [
+        33
+      ],
+      "preguntas": [
+        {
+          "tipo": "pregunta",
+          "texto": "¿El paciente ha tenido reacciones alérgicas a algo anteriormente?"
+        },
+        {
+          "tipo": "texto",
+          "texto": "SI: Descríbame la reacción que tuvo antes y por qué razón le sucedió."
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿El paciente tiene dificultad para tragar, para respirar o ambas?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Se queja de picazón, urticaria o sarpullido?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Han empeorado los síntomas?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Tiene algún brazalete de alerta médica?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "SI: ¿Qué dice?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Cómo actúa cuando se sienta?"
+        }
+      ],
+      "notas": [],
+      "despacho": [
+        {
+          "codigo": "321",
+          "descripcion": "Alteración del nivel de consciencia"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Picazón o urticaria en múltiples áreas"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Llamada demorada >30 min con historial de reacción alérgica"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Reacción presente durante mucho tiempo (horas)"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "No puede pronunciar oraciones completas"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Preocupación por la reacción pero sin historial"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Historial de reacción severa"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Ataque de enjambre"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Dificultad respiratoria"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Sin dificultad respiratoria"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Picazón o urticaria en solo un área"
+        }
+      ],
+      "referencias": [],
+      "pre_arribo": [
+        {
+          "diapositiva": 33,
+          "titulo_diapositiva": "Alergias / picaduras – instrucciones pre-arribo",
+          "lineas": [
+            "El Cuerpo de Bomberos está siendo despachado, a continuación le diré qué debe hacer.",
+            "PICADURAS:",
+            "Cepille el aguijón con una tarjeta o retírelo con cinta pegante, si es posible. No intente agarrar ningún aguijón.",
+            "Aplique hielo en el sitio de la picadura.",
+            "Coloque al paciente descansando en la posición más cómoda.",
+            "Mantenga el cuello recto, quite cualquier almohada.",
+            "Indíquele al paciente que debe estar lo más tranquilo posible de manera que su corazón lata lentamente.",
+            "Observe la respiración, busque señales de dificultad para respirar.",
+            "Reúna los medicamentos del paciente, si es posible.",
+            "Si la condición del paciente cambia, llámeme de nuevo.",
+            "Si está inconsciente y",
+            "respira, ir a:",
+            "Si está inconsciente y",
+            "no respira, ir a:"
+          ],
+          "referencias": [
+            {
+              "texto": "Control V.A. - NO TRAUMA",
+              "diapositiva": 100,
+              "destino": {
+                "tipo": "procedimiento",
+                "grupo": "via_aerea",
+                "nodo": 100
+              }
+            },
+            {
+              "texto": "Instrucciones RCP - ADULTO",
+              "diapositiva": 58,
+              "destino": {
+                "tipo": "procedimiento",
+                "grupo": "rcp_adulto",
+                "nodo": 58
+              }
+            },
+            {
+              "texto": "Instrucciones RCP - NIÑO",
+              "diapositiva": 68,
+              "destino": {
+                "tipo": "procedimiento",
+                "grupo": "rcp_nino",
+                "nodo": 68
+              }
+            },
+            {
+              "texto": "Instrucciones RCP - INFANTE",
+              "diapositiva": 78,
+              "destino": {
+                "tipo": "procedimiento",
+                "grupo": "rcp_infante",
+                "nodo": 78
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "diabetes",
+      "categoria": "300",
+      "nombre": "Diabetes",
+      "numero_tarjeta": 13,
+      "diapositiva_preguntas": 34,
+      "diapositivas_pre_arribo": [
+        35
+      ],
+      "preguntas": [
+        {
+          "tipo": "pregunta",
+          "texto": "¿El paciente requiere insulina?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "SI: ¿Cuándo se medicó por última vez?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Cuándo comió por última vez?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Tiene un glucómetro?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "SI: ¿Tiene el nivel actual? (usualmente entre 70 y 180)"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Está actuando de manera normal?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "NO: ¿Qué es diferente en su forma de actuar?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Está mareado, débil o se sin fuerza?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Se queja de algún dolor?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "SI: ¿Dónde?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Está sudando mucho?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Ha tenido algún ataque?"
+        }
+      ],
+      "notas": [],
+      "despacho": [
+        {
+          "codigo": "321",
+          "descripcion": "Alteración del nivel de consciencia"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Convulsiones"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Comportamiento inusual"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Sudoración profusa"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Despierto, alerta, no se siente bien"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Dificultad respiratoria"
+        }
+      ],
+      "referencias": [],
+      "pre_arribo": [
+        {
+          "diapositiva": 35,
+          "titulo_diapositiva": "Diabetes – instrucciones pre-arribo",
+          "lineas": [
+            "El Cuerpo de Bomberos está siendo despachado, a continuación le diré qué debe hacer.",
+            "No permita que el paciente tenga nada en la boca si no es capaz de tomarlo por sí mismo.",
+            "CONSCIENTE:",
+            "Si puede tragar y el nivel de glucosa sanguínea está por debajo de 70 mg/dl, o si no se conoce y el paciente está actuando de manera inapropiada dele jugo con 2 o 3 cucharaditas de azúcar (darle esta cantidad de azúcar a una persona hiperglucémica no le hará mayor daño pero si puede ayudar a una persona hipoglicémica).",
+            "Permita que el paciente encuentre una posición cómoda.",
+            "Reúna los medicamentos del paciente, si es posible.",
+            "Si la condición del paciente cambia, llámeme de nuevo.",
+            "Si está inconsciente y",
+            "respira, ir a:",
+            "Si está inconsciente y",
+            "no respira, ir a:"
+          ],
+          "referencias": [
+            {
+              "texto": "Control V.A. - NO TRAUMA",
+              "diapositiva": 100,
+              "destino": {
+                "tipo": "procedimiento",
+                "grupo": "via_aerea",
+                "nodo": 100
+              }
+            },
+            {
+              "texto": "Instrucciones RCP - ADULTO",
+              "diapositiva": 58,
+              "destino": {
+                "tipo": "procedimiento",
+                "grupo": "rcp_adulto",
+                "nodo": 58
+              }
+            },
+            {
+              "texto": "Instrucciones RCP - NIÑO",
+              "diapositiva": 68,
+              "destino": {
+                "tipo": "procedimiento",
+                "grupo": "rcp_nino",
+                "nodo": 68
+              }
+            },
+            {
+              "texto": "Instrucciones RCP - INFANTE",
+              "diapositiva": 78,
+              "destino": {
+                "tipo": "procedimiento",
+                "grupo": "rcp_infante",
+                "nodo": 78
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dolor_abdominal",
+      "categoria": "300",
+      "nombre": "Dolor abdominal",
+      "numero_tarjeta": 1,
+      "diapositiva_preguntas": 36,
+      "diapositivas_pre_arribo": [
+        37
+      ],
+      "preguntas": [
+        {
+          "tipo": "pregunta",
+          "texto": "¿El dolor se debe a una lesión?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Cómo se siente el paciente cuando se sienta?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿El dolor está por debajo o por encima del ombligo?"
+        },
+        {
+          "tipo": "texto",
+          "texto": "FEMENINA ENTRE 12 Y 50 AÑOS:"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Podría estar embarazada?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Ha tenido sangrado vaginal? SI: ¿Cuánto?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Se ha sentido mareada?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Materia fecal negra y con apariencia a alquitrán?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Tiene un brazalete de alerta médica?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "SI: ¿Qué dice?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Tiene enfermedad de Addison (o Insuficiencia corticosuprarrenal crónica)?"
+        },
+        {
+          "tipo": "texto",
+          "texto": "Síntomas de crisis de Addison o de insuficiencia suprarrenal: vómito y diarrea severos, deshidratación, hipotensión, bajo nivel de consciencia."
+        }
+      ],
+      "notas": [],
+      "despacho": [
+        {
+          "codigo": "321",
+          "descripcion": "Hematemesis"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Heces negras y alquitranosas"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Dolor abdominal alto com historial previo de problemas cardíacos"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Empeora al sentarse – hipotensión"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Dolor en el costado"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Síncope"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Vómito asociado"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Dolor abdominal bajo (mujer 12 a 50 años asociado con mareos o desmayos o sangrado vaginal abundante)"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "> 50 años"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Historia previa de enfermedad de Addison o insuficiencia suprarrenal"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "No traumático"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "No especificado"
+        }
+      ],
+      "referencias": [],
+      "pre_arribo": [
+        {
+          "diapositiva": 37,
+          "titulo_diapositiva": "Dolor abdominal – instrucciones pre-arribo",
+          "lineas": [
+            "El Cuerpo de Bomberos está siendo despachado, a continuación le diré qué debe hacer.",
+            "El paciente no debe tomar o comer nada.",
+            "Monitorear por choque:",
+            "Reúna los medicamentos del paciente, si es posible.",
+            "Si la condición del paciente cambia, llámeme de nuevo.",
+            "Síntomas de crisis de Addison o de insuficiencia suprarrenal: vómito y diarrea severos, deshidratación, hipotensión, bajo nivel de consciencia. SI NO SE TRATA PUEDE SER FATAL.",
+            "Si está inconsciente y",
+            "respira, ir a:",
+            "Si está inconsciente y",
+            "no respira, ir a:"
+          ],
+          "referencias": [
+            {
+              "texto": "Trauma",
+              "diapositiva": 26,
+              "destino": {
+                "tipo": "tarjeta",
+                "id": "trauma"
+              }
+            },
+            {
+              "texto": "Control V.A. - NO TRAUMA",
+              "diapositiva": 100,
+              "destino": {
+                "tipo": "procedimiento",
+                "grupo": "via_aerea",
+                "nodo": 100
+              }
+            },
+            {
+              "texto": "Instrucciones RCP - ADULTO",
+              "diapositiva": 58,
+              "destino": {
+                "tipo": "procedimiento",
+                "grupo": "rcp_adulto",
+                "nodo": 58
+              }
+            },
+            {
+              "texto": "Instrucciones RCP - NIÑO",
+              "diapositiva": 68,
+              "destino": {
+                "tipo": "procedimiento",
+                "grupo": "rcp_nino",
+                "nodo": 68
+              }
+            },
+            {
+              "texto": "Instrucciones RCP - INFANTE",
+              "diapositiva": 78,
+              "destino": {
+                "tipo": "procedimiento",
+                "grupo": "rcp_infante",
+                "nodo": 78
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dolor_cabeza",
+      "categoria": "300",
+      "nombre": "Dolor de cabeza",
+      "numero_tarjeta": 18,
+      "diapositiva_preguntas": 38,
+      "diapositivas_pre_arribo": [
+        39
+      ],
+      "preguntas": [
+        {
+          "tipo": "pregunta",
+          "texto": "¿Tiene el paciente historial de dolores de cabeza?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Es diferente a los que ha sufrido en el pasado?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Apareció repentinamente o gradualmente?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Qué estaba haciendo cuando le dio el dolor?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Cómo está actuando? Si es inusual: ¿Cómo?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Toma diluyentes de la sangre?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿El paciente sabe dónde está y quiénes son?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Le duele algo más? SI: ¿Dónde?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Ha tenido recientemente malestares, lesiones o le ha tocado ir a urgencias? SI: ¿Por qué razón?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Tiene un brazalete de alerta médica? SI: ¿Qué dice?"
+        }
+      ],
+      "notas": [],
+      "despacho": [
+        {
+          "codigo": "321",
+          "descripcion": "Disminución del nivel de consciencia"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Paciente indica que es su peor cefalea"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Transtorno visual"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Sin síntomas críticos"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Aparición repentina"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Sin antecedentes de migrañas"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Cambios de estado mental"
+        }
+      ],
+      "referencias": [],
+      "pre_arribo": [
+        {
+          "diapositiva": 39,
+          "titulo_diapositiva": "Dolor de cabeza – instrucciones pre-arribo",
+          "lineas": [
+            "El Cuerpo de Bomberos está siendo despachado, a continuación le diré qué debe hacer.",
+            "El paciente no debe tomar ni comer nada.",
+            "Permita que el paciente encuentre una posición cómoda.",
+            "Reúna los medicamentos del paciente, si es posible.",
+            "Si la condición del paciente cambia, llámeme de nuevo.",
+            "Si está inconsciente y",
+            "respira, ir a:",
+            "Si está inconsciente y",
+            "no respira, ir a:"
+          ],
+          "referencias": [
+            {
+              "texto": "Control V.A. - NO TRAUMA",
+              "diapositiva": 100,
+              "destino": {
+                "tipo": "procedimiento",
+                "grupo": "via_aerea",
+                "nodo": 100
+              }
+            },
+            {
+              "texto": "Instrucciones RCP - ADULTO",
+              "diapositiva": 58,
+              "destino": {
+                "tipo": "procedimiento",
+                "grupo": "rcp_adulto",
+                "nodo": 58
+              }
+            },
+            {
+              "texto": "Instrucciones RCP - NIÑO",
+              "diapositiva": 68,
+              "destino": {
+                "tipo": "procedimiento",
+                "grupo": "rcp_nino",
+                "nodo": 68
+              }
+            },
+            {
+              "texto": "Instrucciones RCP - INFANTE",
+              "diapositiva": 78,
+              "destino": {
+                "tipo": "procedimiento",
+                "grupo": "rcp_infante",
+                "nodo": 78
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dolor_espalda",
+      "categoria": "300",
+      "nombre": "Dolor de espalda",
+      "numero_tarjeta": 5,
+      "diapositiva_preguntas": 40,
+      "diapositivas_pre_arribo": [
+        41
+      ],
+      "preguntas": [
+        {
+          "tipo": "pregunta",
+          "texto": "¿El paciente se ha sentido mareado o se ha desmayado?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Tiene algún historial médico o de cirugías?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿El dolor se debe a una lesión o caída reciente?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Tiene incontinencia urinaria o retención urinaria?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Tiene un brazalete de alerta médica? SI: ¿Qué dice?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Toma diluyentes de la sangre?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Tiene enfermedad de Addison (o Insuficiencia corticosuprarrenal crónica)?"
+        },
+        {
+          "tipo": "texto",
+          "texto": "Síntomas de crisis de Addison o de insuficiencia suprarrenal: vómito y diarrea severos, deshidratación, hipotensión, bajo nivel de consciencia."
+        }
+      ],
+      "notas": [],
+      "despacho": [
+        {
+          "codigo": "321",
+          "descripcion": "Disminución del nivel de consciencia"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "No traumático con historial de problemas cardiacos"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "En el costado"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "No especificado"
+        },
+        {
+          "codigo": "321",
+          "descripcion": ">50 años y síncope"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "No traumático"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "No traumático con historial de enfermedad de Addison o insuficiencia suprarrenal"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Crónico"
+        }
+      ],
+      "referencias": [],
+      "pre_arribo": [
+        {
+          "diapositiva": 41,
+          "titulo_diapositiva": "Dolor de espalda – instrucciones pre-arribo",
+          "lineas": [
+            "El Cuerpo de Bomberos está siendo despachado, a continuación le diré qué debe hacer.",
+            "Si el dolor se debe a una lesión dígale al paciente que no se mueva (a no ser que haya algún peligro que ponga en peligro su vida).",
+            "El paciente no debe tomar ni comer nada.",
+            "Haga que el paciente descanse en la posición más cómoda que encuentre.",
+            "Reúna los medicamentos del paciente, si es posible.",
+            "Si la condición del paciente cambia, llámeme de nuevo.",
+            "Síntomas de crisis de Addison o de insuficiencia suprarrenal: vómito y diarrea severos, deshidratación, hipotensión, bajo nivel de consciencia. SI NO SE TRATA PUEDE SER FATAL.",
+            "Si está inconsciente y",
+            "respira, ir a:",
+            "Si está inconsciente y",
+            "no respira, ir a:"
+          ],
+          "referencias": [
+            {
+              "texto": "Control V.A. - NO TRAUMA",
+              "diapositiva": 100,
+              "destino": {
+                "tipo": "procedimiento",
+                "grupo": "via_aerea",
+                "nodo": 100
+              }
+            },
+            {
+              "texto": "Control V.A. - TRAUMA",
+              "diapositiva": 102,
+              "destino": {
+                "tipo": "procedimiento",
+                "grupo": "via_aerea",
+                "nodo": 102
+              }
+            },
+            {
+              "texto": "Instrucciones RCP - ADULTO",
+              "diapositiva": 58,
+              "destino": {
+                "tipo": "procedimiento",
+                "grupo": "rcp_adulto",
+                "nodo": 58
+              }
+            },
+            {
+              "texto": "Instrucciones RCP - NIÑO",
+              "diapositiva": 68,
+              "destino": {
+                "tipo": "procedimiento",
+                "grupo": "rcp_nino",
+                "nodo": 68
+              }
+            },
+            {
+              "texto": "Instrucciones RCP - INFANTE",
+              "diapositiva": 78,
+              "destino": {
+                "tipo": "procedimiento",
+                "grupo": "rcp_infante",
+                "nodo": 78
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dolor_pecho",
+      "categoria": "300",
+      "nombre": "Dolor en pecho / problemas cardiacos",
+      "numero_tarjeta": 10,
+      "diapositiva_preguntas": 42,
+      "diapositivas_pre_arribo": [
+        43
+      ],
+      "preguntas": [
+        {
+          "tipo": "pregunta",
+          "texto": "¿En qué parte del pecho está localizado el dolor?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Siente dolor en alguna otra parte? SI: ¿dónde?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Hace cuánto tiene el dolor?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Está sudando mucho?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Tiene náuseas o ha vomitado?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿El paciente está débil o mareado?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Qué le pasa cuando se para?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿El dolor cambia cuando respira o se mueve?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Ha tenido un problema cardiaco, cirugía de corazón o tiene marcapasos?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Tiene el pulso acelerado con dolor en el pecho?"
+        }
+      ],
+      "notas": [],
+      "despacho": [
+        {
+          "codigo": null,
+          "descripcion": "Si el paciente tiene un dispositivo de asistencia ventricular (VAD, RVAD, LVAD, BVAD, LVAS o bomba) indíquele a la ambulancia. No se deben hacer compresiones cardiacas.\nSi el paciente tiene un marcapaso o desfibrilador interno se podrá hacer RCP si fuera necesario."
+        },
+        {
+          "codigo": "321",
+          "descripcion": "> 35 años con síntomas críticos"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Cualquiera de los siguientes: falta de aliento, náuseas, diaforético, taquicardia, síncope o uso de cocaína/crack"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "<35 años sin síntomas críticos"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Disminución del nivel de consciencia"
+        }
+      ],
+      "referencias": [],
+      "pre_arribo": [
+        {
+          "diapositiva": 43,
+          "titulo_diapositiva": "Dolor en pecho / problemas cardiacos – instrucciones pre-arribo",
+          "lineas": [
+            "El Cuerpo de Bomberos está siendo despachado, a continuación le diré qué debe hacer.",
+            "¿Tiene aspirina? SI: ¿Puede el paciente tomar aspirina?",
+            "SI: ¿Tiene alguna hemorragia por boca o recto? NO: ¿Qué presentación de aspirina tiene? Dígale que se tome:",
+            "3 Cardioaspirina de 100mg / 4 Cardioaspirina de 81mg / 1 Aspirina Efervescente / 1 Cafiaspirina Forte / 3 Aspirina de 100mg / 1 Aspirina Ultra.",
+            "Haga que el paciente las mastique antes de que las trague.",
+            "Haga que el paciente se siente o se acueste, lo que le parezca más cómodo.",
+            "Mantenga al paciente calmado, indíquele que respire profundo y descansadamente.",
+            "Aflójele la ropa.",
+            "Reúna los medicamentos del paciente, si es posible.",
+            "Si la condición del paciente cambia, llámeme de nuevo.",
+            "Si está inconsciente y",
+            "respira, ir a:",
+            "Si está inconsciente y",
+            "no respira, ir a:"
+          ],
+          "referencias": [
+            {
+              "texto": "Control V.A. - NO TRAUMA",
+              "diapositiva": 100,
+              "destino": {
+                "tipo": "procedimiento",
+                "grupo": "via_aerea",
+                "nodo": 100
+              }
+            },
+            {
+              "texto": "Control V.A. - TRAUMA",
+              "diapositiva": 102,
+              "destino": {
+                "tipo": "procedimiento",
+                "grupo": "via_aerea",
+                "nodo": 102
+              }
+            },
+            {
+              "texto": "Instrucciones RCP - ADULTO",
+              "diapositiva": 58,
+              "destino": {
+                "tipo": "procedimiento",
+                "grupo": "rcp_adulto",
+                "nodo": 58
+              }
+            },
+            {
+              "texto": "Instrucciones RCP - NIÑO",
+              "diapositiva": 68,
+              "destino": {
+                "tipo": "procedimiento",
+                "grupo": "rcp_nino",
+                "nodo": 68
+              }
+            },
+            {
+              "texto": "Instrucciones RCP - INFANTE",
+              "diapositiva": 78,
+              "destino": {
+                "tipo": "procedimiento",
+                "grupo": "rcp_infante",
+                "nodo": 78
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "enfermo",
+      "categoria": "300",
+      "nombre": "Enfermo",
+      "numero_tarjeta": 26,
+      "diapositiva_preguntas": 44,
+      "diapositivas_pre_arribo": [
+        45
+      ],
+      "preguntas": [
+        {
+          "tipo": "pregunta",
+          "texto": "¿El paciente tiene dolor en algún lugar?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "SI: ¿Dónde? (Considere ir a la tarjeta apropiada: espalda, pecho, abdomen)."
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Se siente mareado?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Tiene enfermedad de Addison o cualquier otro historial médico o de cirugía?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿De qué se queja?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Cómo se ve el paciente?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Tiene algún brazalete de alerta médico? SI: ¿Qué dice?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Tiene insulina en la nevera?"
+        },
+        {
+          "tipo": "texto",
+          "texto": "POSIBLE ENFERMEDAD INFECCIOSA"
+        },
+        {
+          "tipo": "texto",
+          "texto": "Ir a:"
+        }
+      ],
+      "notas": [],
+      "despacho": [
+        {
+          "codigo": "321",
+          "descripcion": "Disminución del nivel de consciencia"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Múltiples episodios de síncope"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Hipertensión sin signos críticos"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Forúnculos, hematomas no traumáticos, no puede dormir, no puede orinar sin dolor abdominal, problemas con catéter sin hemorragia, estreñimiento, calambres o espasmos o dolor articular en extremidades no traumáticos, solicitud de corte de anillo (512 sin lesiones), sordera, diarrea, dolor de oído, enema, gota, hemorroides, hepatitis, hipo, picazón, nervioso, objeto atascado en nariz u oreja o vagina o recto o pene, objeto ingerido sin atragantamiento ni dificultad respiratoria, micción dolorosa, problemas o dolor en pene, erupción cutánea o trastorno de la piel sin dificultad respiratoria, enfermedad de transmisión sexual, dolor en garganta sin dificultad respiratoria o para tragar, dolor de muelas sin dolor en mandíbula, herida infectada focal o superficial)"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Debilidad general"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Síntomas de gripe sin signos críticos"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Fiebre, náuseas, malestar general o vómitos"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Historia previa de enfermedad de Addison o insuficiencia suprarrenal con deshidratación, vómito severo y diarrea o hipotensión"
+        }
+      ],
+      "referencias": [
+        {
+          "texto": "Enfermedad infecciosa",
+          "diapositiva": 130,
+          "destino": {
+            "tipo": "tarjeta",
+            "id": "enfermedad_infecciosa"
+          }
+        }
+      ],
+      "pre_arribo": [
+        {
+          "diapositiva": 45,
+          "titulo_diapositiva": "Enfermo – instrucciones pre-arribo",
+          "lineas": [
+            "El Cuerpo de Bomberos está siendo despachado, a continuación le diré qué debe hacer.",
+            "Reúna los medicamentos del paciente, si es posible.",
+            "Si la condición del paciente cambia, llámeme de nuevo.",
+            "Síntomas de crisis por enfermedad de Addison o de insuficiencia suprarrenal:",
+            "Vómito severo, diarrea, deshidratación, hipotensión, pérdida de consciencia. Si no se trata puede ser fatal.",
+            "Si está inconsciente y",
+            "respira, ir a:",
+            "Si está inconsciente y",
+            "no respira, ir a:"
+          ],
+          "referencias": [
+            {
+              "texto": "Control V.A. - NO TRAUMA",
+              "diapositiva": 100,
+              "destino": {
+                "tipo": "procedimiento",
+                "grupo": "via_aerea",
+                "nodo": 100
+              }
+            },
+            {
+              "texto": "Control V.A. - TRAUMA",
+              "diapositiva": 102,
+              "destino": {
+                "tipo": "procedimiento",
+                "grupo": "via_aerea",
+                "nodo": 102
+              }
+            },
+            {
+              "texto": "Instrucciones RCP - ADULTO",
+              "diapositiva": 58,
+              "destino": {
+                "tipo": "procedimiento",
+                "grupo": "rcp_adulto",
+                "nodo": 58
+              }
+            },
+            {
+              "texto": "Instrucciones RCP - NIÑO",
+              "diapositiva": 68,
+              "destino": {
+                "tipo": "procedimiento",
+                "grupo": "rcp_nino",
+                "nodo": 68
+              }
+            },
+            {
+              "texto": "Instrucciones RCP - INFANTE",
+              "diapositiva": 78,
+              "destino": {
+                "tipo": "procedimiento",
+                "grupo": "rcp_infante",
+                "nodo": 78
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "envenenamiento",
+      "categoria": "300",
+      "nombre": "Envenenamiento / sobredosis / ingestión",
+      "numero_tarjeta": 23,
+      "diapositiva_preguntas": 46,
+      "diapositivas_pre_arribo": [
+        47
+      ],
+      "preguntas": [
+        {
+          "tipo": "pregunta",
+          "texto": "¿Tiene idea de qué tomó el paciente?"
+        },
+        {
+          "tipo": "texto",
+          "texto": "Obtenga el nombre de la sustancia o producto. Contacte la línea de toxicología (602) 554-3543"
+        },
+        {
+          "tipo": "texto",
+          "texto": "018000-916012 línea nacional"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Fue un medicamento prescrito, una sobre medicación de un medicamento de venta libre, un suplemento herbal, una droga recreativa o una combinación de medicamentos?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Ha consumido alcohol?"
+        },
+        {
+          "tipo": "texto",
+          "texto": "Si es cocaína o crack"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Se está quejando de algún dolor?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Tiene dificultad para respirar o tragar?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Está actuando de manera normal?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "NO: ¿Qué es diferente en su forma de actuar?"
+        }
+      ],
+      "notas": [],
+      "despacho": [
+        {
+          "codigo": "321",
+          "descripcion": "Alteración de la consciencia"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Dificultad para tragar"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Combinación de alcohol con otras drogas"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Reporte por tercero que no se encuentra en la escena"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Cocaína o crack con dolor en tórax"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Ingestión intencional o accidental de drogas sin signos críticos"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Ingestión de limpiadores domésticos, refrigerante, solventes, metanol, cianuro, insecticida"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Intoxicación con alcohol, el paciente no despierta"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Dificultad respiratoria"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Sobredosis reportada pero el paciente niega haber tomado medicamentos o desconoce si tomó medicamentos o sustancias."
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Intoxicación por alcohol conocida, sin otras drogas, puede ser despertado"
+        }
+      ],
+      "referencias": [],
+      "pre_arribo": [
+        {
+          "diapositiva": 47,
+          "titulo_diapositiva": "Envenenamiento / sobredosis / ingestión – instrucciones pre-arribo",
+          "lineas": [
+            "El Cuerpo de Bomberos está siendo despachado, a continuación le diré qué debe hacer.",
+            "Determine si la sustancia puede ser identificada como heroína u otro opioide:",
+            "Heroína, codeína (Pycdol, Paracetamol, Winadol), morfina (Apokinon, Dacepton), fentanil (Diopal), hidrocodona (Doliren, Sinalgen, Nodolplus, Fenalgex, Doxu, Doloff, Sinalgen), Oxicodona (Dolzac, Targin, Oxycontin, Oxyrapid, Oxidona, Senidol), hidromorfona, metadona (ABL Metapadd, Methadose), tramadol (Tramfast, Auromyotram-P, Dor-2, Adorlan Forte, Tracedol, Durapain, Dolotrin Flash, Dicasen, Acetadol, Carmucol, Combiforte, Ketal, Tradiol, Tramacontin, Tridural), buprenorfina (Norspan, Transtec, Subitex, Bupradex, Temgesic).",
+            "Obtenga el frasco de la sustancia, si está en la escena.",
+            "El paciente no debe tomar café ni ducharse.",
+            "No debe tomar ni comer nada, incluyendo jarabe de ipecacuana (a no ser que haya sido indicado por la línea de toxicología de la Secretaría de Salud Municipal).",
+            "Manténgase pendiente de la respiración y el nivel de",
+            "consciencia del paciente.",
+            "Si la condición del paciente cambia, llámeme de nuevo.",
+            "Si está inconsciente y",
+            "respira, ir a:",
+            "Si está inconsciente y",
+            "no respira, ir a:"
+          ],
+          "referencias": [
+            {
+              "texto": "Control V.A. - NO TRAUMA",
+              "diapositiva": 100,
+              "destino": {
+                "tipo": "procedimiento",
+                "grupo": "via_aerea",
+                "nodo": 100
+              }
+            },
+            {
+              "texto": "Instrucciones RCP - ADULTO",
+              "diapositiva": 58,
+              "destino": {
+                "tipo": "procedimiento",
+                "grupo": "rcp_adulto",
+                "nodo": 58
+              }
+            },
+            {
+              "texto": "Instrucciones RCP - NIÑO",
+              "diapositiva": 68,
+              "destino": {
+                "tipo": "procedimiento",
+                "grupo": "rcp_nino",
+                "nodo": 68
+              }
+            },
+            {
+              "texto": "Instrucciones RCP - INFANTE",
+              "diapositiva": 78,
+              "destino": {
+                "tipo": "procedimiento",
+                "grupo": "rcp_infante",
+                "nodo": 78
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "persona_caida",
+      "categoria": "300",
+      "nombre": "Persona caída / desconocido",
+      "numero_tarjeta": 32,
+      "diapositiva_preguntas": 48,
+      "diapositivas_pre_arribo": [
+        49
+      ],
+      "preguntas": [
+        {
+          "tipo": "pregunta",
+          "texto": "¿El paciente tiene alguna lesión obvia?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Puede ver sangre o cualquier otro fluido alrededor?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Tiene algún brazalete de alerta médica? SI: ¿Qué dice?"
+        },
+        {
+          "tipo": "texto",
+          "texto": "Si el que llama conoce al paciente:"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Tiene historial de enfermedad de Addison o cualquier historial médico o quirúrgico que conozca?"
+        }
+      ],
+      "notas": [],
+      "despacho": [
+        {
+          "codigo": "321",
+          "descripcion": "Alteración de la consciencia"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Paciente hablando, moviéndose, sentado o parado"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Llamada de un tercero que no está en la escena, sin indicaciones de inconsciencia"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Dificultad respiratoria"
+        }
+      ],
+      "referencias": [],
+      "pre_arribo": [
+        {
+          "diapositiva": 49,
+          "titulo_diapositiva": "Persona / desconocido – instrucciones pre-arribo",
+          "lineas": [
+            "El Cuerpo de Bomberos está siendo despachado, a continuación le diré qué debe hacer.",
+            "Si no evidencia algún peligro para usted, acérquese al paciente para ver si está despierto, respirando normalmente o si se mueve.",
+            "Hágase en un punto visible para los bomberos y diríjalos hacia donde se encuentra el paciente.",
+            "Si la condición del paciente cambia, llámeme de nuevo.",
+            "Si está inconsciente y",
+            "respira, ir a:",
+            "Si está inconsciente y",
+            "no respira, ir a:"
+          ],
+          "referencias": [
+            {
+              "texto": "Control V.A. - NO TRAUMA",
+              "diapositiva": 100,
+              "destino": {
+                "tipo": "procedimiento",
+                "grupo": "via_aerea",
+                "nodo": 100
+              }
+            },
+            {
+              "texto": "Control V.A. - TRAUMA",
+              "diapositiva": 102,
+              "destino": {
+                "tipo": "procedimiento",
+                "grupo": "via_aerea",
+                "nodo": 102
+              }
+            },
+            {
+              "texto": "Instrucciones RCP - ADULTO",
+              "diapositiva": 58,
+              "destino": {
+                "tipo": "procedimiento",
+                "grupo": "rcp_adulto",
+                "nodo": 58
+              }
+            },
+            {
+              "texto": "Instrucciones RCP - NIÑO",
+              "diapositiva": 68,
+              "destino": {
+                "tipo": "procedimiento",
+                "grupo": "rcp_nino",
+                "nodo": 68
+              }
+            },
+            {
+              "texto": "Instrucciones RCP - INFANTE",
+              "diapositiva": 78,
+              "destino": {
+                "tipo": "procedimiento",
+                "grupo": "rcp_infante",
+                "nodo": 78
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "problemas_respiratorios",
+      "categoria": "300",
+      "nombre": "Problemas respiratorios",
+      "numero_tarjeta": 6,
+      "diapositiva_preguntas": 50,
+      "diapositivas_pre_arribo": [
+        51
+      ],
+      "preguntas": [
+        {
+          "tipo": "pregunta",
+          "texto": "¿El paciente está utilizando medicación para asma o la ha utilizado antes?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Es capaz de hablar frases completas?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Está babeando o tiene dificultades para tragar?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Qué ha cambiado en su respiración para que le dijera que llamara?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Ha tenido este problema antes?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Hace cuánto está así?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Tiene que sentarse para respirar?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Qué estaba haciendo justo antes del problema respiratorio?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Tiene historial médico o quirúrgico?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Tiene alguna alergia?"
+        },
+        {
+          "tipo": "texto",
+          "texto": "Si aparece repentinamente:"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "Mujer: ¿La paciente ha sido hospitalizada recientemente por parto?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Ha sufrido recientemente de una fractura en una pierna?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "Mujer: ¿Está tomando medicamentos para planificar?"
+        }
+      ],
+      "notas": [],
+      "despacho": [
+        {
+          "codigo": "321",
+          "descripcion": "No alerta"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Historial de asma u otros problemas respiratorios"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Parto reciente < 3 meses"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Babeando"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Hormigueo o entumecimiento en las extremidades o alrededor de la boca > 35 años de edad"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Por inhalación de sustancias"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Dificultad para tragar"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Fractura reciente de pierna"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Hospitalización reciente"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Incapaz de hablar frases completas"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Síntomas de resfriado, nariz tapada o congestión."
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Cilindro de oxígeno vacío"
+        }
+      ],
+      "referencias": [],
+      "pre_arribo": [
+        {
+          "diapositiva": 51,
+          "titulo_diapositiva": "Problemas respiratorios – instrucciones pre-arribo",
+          "lineas": [
+            "El Cuerpo de Bomberos está siendo despachado, a continuación le diré qué debe hacer.",
+            "Mantenga al paciente calmado.",
+            "Puede ser que el paciente se sienta más cómodo sentado, dígale que lo intente.",
+            "Indíquele al paciente que no se esfuerce.",
+            "Reúna los medicamentos del paciente, si es posible.",
+            "Si la condición del paciente cambia, llámeme de nuevo.",
+            "Si está inconsciente y",
+            "respira, ir a:",
+            "Si está inconsciente y",
+            "no respira, ir a:"
+          ],
+          "referencias": [
+            {
+              "texto": "Control V.A. - NO TRAUMA",
+              "diapositiva": 100,
+              "destino": {
+                "tipo": "procedimiento",
+                "grupo": "via_aerea",
+                "nodo": 100
+              }
+            },
+            {
+              "texto": "Control V.A. - TRAUMA",
+              "diapositiva": 102,
+              "destino": {
+                "tipo": "procedimiento",
+                "grupo": "via_aerea",
+                "nodo": 102
+              }
+            },
+            {
+              "texto": "Instrucciones RCP - ADULTO",
+              "diapositiva": 58,
+              "destino": {
+                "tipo": "procedimiento",
+                "grupo": "rcp_adulto",
+                "nodo": 58
+              }
+            },
+            {
+              "texto": "Instrucciones RCP - NIÑO",
+              "diapositiva": 68,
+              "destino": {
+                "tipo": "procedimiento",
+                "grupo": "rcp_nino",
+                "nodo": 68
+              }
+            },
+            {
+              "texto": "Instrucciones RCP - INFANTE",
+              "diapositiva": 78,
+              "destino": {
+                "tipo": "procedimiento",
+                "grupo": "rcp_infante",
+                "nodo": 78
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "psiquiatrico",
+      "categoria": "300",
+      "nombre": "Psiquiátrico / conductual",
+      "numero_tarjeta": 25,
+      "diapositiva_preguntas": 52,
+      "diapositivas_pre_arribo": [
+        53
+      ],
+      "preguntas": [
+        {
+          "tipo": "pregunta",
+          "texto": "¿Conoce al paciente?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "SI: ¿Está actuando de manera normal?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "NO, no está actuando normal: ¿Qué es diferente o inusual?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Está actuando violento, agresivo o gritando?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Se está quitando la ropa o está desnudo?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Está sudando mucho?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Respirando rápidamente o babeando? (Delirio excitado)"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Es diabético? Considere:"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Se ha lesionado a sí mismo?"
+        },
+        {
+          "tipo": "texto",
+          "texto": "SI: Considere"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "NO: ¿Piensa que puede lesionarse a sí mismo?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Tiene historial de depresión?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Tiene historial de lesionarse a sí mismo o a otros?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Ha intentado suicidarse?"
+        }
+      ],
+      "notas": [],
+      "despacho": [
+        {
+          "codigo": null,
+          "descripcion": "Paciente agresivo"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Probable Delirio Excitado"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Intoxicación conocida con alcohol con otras drogas (puede despertarse)"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Muñecas laceradas con hemorragia controlada"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Disminución del nivel de consciencia"
+        }
+      ],
+      "referencias": [
+        {
+          "texto": "Diabetes",
+          "diapositiva": 34,
+          "destino": {
+            "tipo": "tarjeta",
+            "id": "diabetes"
+          }
+        },
+        {
+          "texto": "Trauma",
+          "diapositiva": 26,
+          "destino": {
+            "tipo": "tarjeta",
+            "id": "trauma"
+          }
+        }
+      ],
+      "pre_arribo": [
+        {
+          "diapositiva": 53,
+          "titulo_diapositiva": "Psiquiátrico / conductual – instrucciones pre-arribo",
+          "lineas": [
+            "La ayuda ya va en camino, a continuación le diré qué debe hacer.",
+            "Mantenga al paciente en el área, si es seguro para usted.",
+            "Mantenga al paciente calmado, si es posible.",
+            "Si siente que se encuentra en peligro, aléjese del área.",
+            "Reúna los medicamentos del paciente, si es posible.",
+            "Si la condición del paciente cambia, llámeme de nuevo.",
+            "Si hay amenaza de suicidio, trate de determinar el medio. Intente ayudar al paciente usando la guía apropiada. Alerta a los respondedores por peligros como gas, químicos, armas, etc.",
+            "Los suicidas que llaman podrían estar reacios a dar información de su localización. Utilice sus técnicas de interrogación y todos los medios disponibles para intentar localizar a la persona.",
+            "Los problemas psiquiátricos usualmente no son peligrosos para la vida. Sin embargo esto puede cambiar rápidamente si el paciente no es tratado apropiadamente.",
+            "Línea de atención psicológica 486-5555 extensión 9"
+          ],
+          "referencias": []
+        }
+      ]
+    },
+    {
+      "id": "ahogamiento",
+      "categoria": "300",
+      "nombre": "Ahogamiento (posible)",
+      "numero_tarjeta": 14,
+      "diapositiva_preguntas": 54,
+      "diapositivas_pre_arribo": [
+        55
+      ],
+      "preguntas": [
+        {
+          "tipo": "pregunta",
+          "texto": "¿El paciente ya fue sacado del agua?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Cuánto estuvo bajo el agua?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Qué estaba haciendo el paciente antes del accidente?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Es un accidente de buceo?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Se necesitan botes o buzos?"
+        },
+        {
+          "tipo": "texto",
+          "texto": "Si la persona que llama está en un automóvil que se hunde en el agua o está atascada en agua creciente, vaya a:"
+        }
+      ],
+      "notas": [],
+      "despacho": [
+        {
+          "codigo": "361",
+          "descripcion": "Accidente de natación (probable fractura de columna)"
+        },
+        {
+          "codigo": "363",
+          "descripcion": "Accidente de buceo"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Fractura de fémur"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Paciente no sumergido"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Lesiones menores, laceraciones, fracturas"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Dificultad respiratoria"
+        }
+      ],
+      "referencias": [
+        {
+          "texto": "Vehículo en el agua",
+          "diapositiva": 148,
+          "destino": {
+            "tipo": "tarjeta",
+            "id": "vehiculo_en_agua"
+          }
+        }
+      ],
+      "pre_arribo": [
+        {
+          "diapositiva": 55,
+          "titulo_diapositiva": "Ahogamiento (posible) – instrucciones pre-arribo",
+          "lineas": [
+            "El Cuerpo de Bomberos está siendo despachado, a continuación le diré qué debe hacer.",
+            "No intente el rescate a no ser que esté entrenado para eso.",
+            "No mueva al paciente.",
+            "Reúne los medicamentos que usa, si es posible.",
+            "Mantenga al paciente cálido.",
+            "Si la condición del paciente cambia, llámeme de nuevo.",
+            "Si está inconsciente y",
+            "respira, ir a:",
+            "Si está inconsciente y",
+            "no respira, ir a:"
+          ],
+          "referencias": [
+            {
+              "texto": "Control V.A. - NO TRAUMA",
+              "diapositiva": 100,
+              "destino": {
+                "tipo": "procedimiento",
+                "grupo": "via_aerea",
+                "nodo": 100
+              }
+            },
+            {
+              "texto": "Control V.A. - TRAUMA",
+              "diapositiva": 102,
+              "destino": {
+                "tipo": "procedimiento",
+                "grupo": "via_aerea",
+                "nodo": 102
+              }
+            },
+            {
+              "texto": "Instrucciones RCP - ADULTO",
+              "diapositiva": 58,
+              "destino": {
+                "tipo": "procedimiento",
+                "grupo": "rcp_adulto",
+                "nodo": 58
+              }
+            },
+            {
+              "texto": "Instrucciones RCP - NIÑO",
+              "diapositiva": 68,
+              "destino": {
+                "tipo": "procedimiento",
+                "grupo": "rcp_nino",
+                "nodo": 68
+              }
+            },
+            {
+              "texto": "Instrucciones RCP - INFANTE",
+              "diapositiva": 78,
+              "destino": {
+                "tipo": "procedimiento",
+                "grupo": "rcp_infante",
+                "nodo": 78
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ataque_cardiaco",
+      "categoria": "300",
+      "nombre": "Ataque cardiaco",
+      "numero_tarjeta": 19,
+      "diapositiva_preguntas": 56,
+      "diapositivas_pre_arribo": [
+        57
+      ],
+      "preguntas": [
+        {
+          "tipo": "pregunta",
+          "texto": "¿Está seguro si el paciente está inconsciente?"
+        },
+        {
+          "tipo": "texto",
+          "texto": "NO, NO SABE:"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿El paciente le responde? ¿Le habla? ¿Le responde preguntas? ¿Lo escucha? ¿Se mueve? ¿Mueve brazos o piernas?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "Mírele los ojos: ¿Las pupilas están fijas y dilatadas?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Puede decirme si respira?"
+        },
+        {
+          "tipo": "texto",
+          "texto": "NO, NO SABE:"
+        },
+        {
+          "tipo": "texto",
+          "texto": "Mire si el pecho sube y baja."
+        },
+        {
+          "tipo": "texto",
+          "texto": "Escúchelo. Descríbame lo que escucha."
+        },
+        {
+          "tipo": "texto",
+          "texto": "Las respiraciones agónicas generalmente son reportadas como: jadeo, ronquidos, apenas respirando, gimiendo"
+        },
+        {
+          "tipo": "texto",
+          "texto": "debilmente, respiración ocasional."
+        }
+      ],
+      "notas": [],
+      "despacho": [
+        {
+          "codigo": "321",
+          "descripcion": "No respira adecuadamente (agónico o ausente)"
+        }
+      ],
+      "referencias": [],
+      "pre_arribo": [
+        {
+          "diapositiva": 57,
+          "titulo_diapositiva": "Ataque cardiaco – instrucciones pre-arribo",
+          "lineas": [
+            "El Cuerpo de Bomberos está siendo despachado, a continuación le diré qué debe hacer.",
+            "Vaya a la tarjeta de RCP apropiada según el grupo de edad.",
+            "Mayor de 8 años",
+            "Entre 1 y 8 años",
+            "Menor a 1 año",
+            "Las respiraciones agónicas son respiraciones inefectivas que ocurren luego de un paro cardiaco. Indica la necesidad de iniciar RCP.",
+            "Convulsiones breves generalizadas pueden ser indicación de paro cardiaco."
+          ],
+          "referencias": [
+            {
+              "texto": "Instrucciones RCP - ADULTO",
+              "diapositiva": 58,
+              "destino": {
+                "tipo": "procedimiento",
+                "grupo": "rcp_adulto",
+                "nodo": 58
+              }
+            },
+            {
+              "texto": "Instrucciones RCP - NIÑO",
+              "diapositiva": 68,
+              "destino": {
+                "tipo": "procedimiento",
+                "grupo": "rcp_nino",
+                "nodo": 68
+              }
+            },
+            {
+              "texto": "Instrucciones RCP - INFANTE",
+              "diapositiva": 78,
+              "destino": {
+                "tipo": "procedimiento",
+                "grupo": "rcp_infante",
+                "nodo": 78
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "electrocucion",
+      "categoria": "300",
+      "nombre": "Electrocución",
+      "numero_tarjeta": 15,
+      "diapositiva_preguntas": 84,
+      "diapositivas_pre_arribo": [
+        85
+      ],
+      "preguntas": [
+        {
+          "tipo": "pregunta",
+          "texto": "¿Cuál fue la fuente de la electricidad?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Electrodoméstico a 110V, estufa a 110V o a 220V o equipo industrial (alto voltaje)?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿El paciente aun está en contacto con la electricidad?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "SI: ¿Sabe cómo quitar la electricidad?"
+        },
+        {
+          "tipo": "texto",
+          "texto": "Después de asegurarse que el paciente ha sido removido del circuito eléctrico:"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Respira? ¿Cómo está actuando?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Hay otras lesiones?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "SI: ¿Cuáles? Vaya a la guía apropiada."
+        },
+        {
+          "tipo": "texto",
+          "texto": "Si tiene quemaduras visibles ir a"
+        }
+      ],
+      "notas": [],
+      "despacho": [
+        {
+          "codigo": "371",
+          "descripcion": "Disminución del nivel de consciencia"
+        },
+        {
+          "codigo": "371",
+          "descripcion": "Quemaduras en vía aérea, nariz o boca"
+        },
+        {
+          "codigo": "371",
+          "descripcion": "Quemaduras por 220V o más"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Por electrodoméstico, sin signos críticos"
+        },
+        {
+          "codigo": "371",
+          "descripcion": "> 20% de superficie corporal"
+        },
+        {
+          "codigo": "371",
+          "descripcion": "2° o 3° parciales o profundas en las palmas, plantas o ingle"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Por rayo"
+        },
+        {
+          "codigo": "371",
+          "descripcion": "Incapaz de retirar al paciente del circuito eléctrico"
+        }
+      ],
+      "referencias": [
+        {
+          "texto": "Quemaduras",
+          "diapositiva": 24,
+          "destino": {
+            "tipo": "tarjeta",
+            "id": "quemaduras"
+          }
+        }
+      ],
+      "pre_arribo": [
+        {
+          "diapositiva": 85,
+          "titulo_diapositiva": "Electrocución – instrucciones pre-arribo",
+          "lineas": [
+            "El Cuerpo de Bomberos está siendo despachado, a continuación le diré qué debe hacer.",
+            "Cuidado con líquidos o humedad en el piso que pueda conducir la electricidad.",
+            "No toque al paciente si está en contacto con la fuente eléctrica.",
+            "Si es seguro hacerlo, desconecte la electricidad.",
+            "Si la condición del paciente cambia, llámeme de nuevo.",
+            "Si está inconsciente y",
+            "respira, ir a:",
+            "Si está inconsciente y",
+            "no respira, ir a:"
+          ],
+          "referencias": [
+            {
+              "texto": "Control V.A. - NO TRAUMA",
+              "diapositiva": 100,
+              "destino": {
+                "tipo": "procedimiento",
+                "grupo": "via_aerea",
+                "nodo": 100
+              }
+            },
+            {
+              "texto": "Control V.A. - TRAUMA",
+              "diapositiva": 102,
+              "destino": {
+                "tipo": "procedimiento",
+                "grupo": "via_aerea",
+                "nodo": 102
+              }
+            },
+            {
+              "texto": "Instrucciones RCP - ADULTO",
+              "diapositiva": 58,
+              "destino": {
+                "tipo": "procedimiento",
+                "grupo": "rcp_adulto",
+                "nodo": 58
+              }
+            },
+            {
+              "texto": "Instrucciones RCP - NIÑO",
+              "diapositiva": 68,
+              "destino": {
+                "tipo": "procedimiento",
+                "grupo": "rcp_nino",
+                "nodo": 68
+              }
+            },
+            {
+              "texto": "Instrucciones RCP - INFANTE",
+              "diapositiva": 78,
+              "destino": {
+                "tipo": "procedimiento",
+                "grupo": "rcp_infante",
+                "nodo": 78
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "embarazo_parto",
+      "categoria": "300",
+      "nombre": "Embarazo / parto",
+      "numero_tarjeta": 24,
+      "diapositiva_preguntas": 86,
+      "diapositivas_pre_arribo": [
+        87
+      ],
+      "preguntas": [
+        {
+          "tipo": "pregunta",
+          "texto": "¿Es primeriza?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "NO: ¿Hace cuánto fue el último parto?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Tuvo complicaciones?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Fue vaginal o por cesárea?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Cuánto tiempo de embarazo tiene?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "Menos de 20 semanas: ¿Ha tenido sangrado o ha expulsado algún tejido?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Ha tenido algún problema durante el embarazo o antes de éste?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Ha tenido cólicos que vienen y van?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "SI: ¿Qué tan seguidos?"
+        },
+        {
+          "tipo": "texto",
+          "texto": "(Tiempo del inicio de la contracción al inicio de la siguiente)."
+        }
+      ],
+      "notas": [],
+      "despacho": [
+        {
+          "codigo": "321",
+          "descripcion": "Parto inminente o realizado"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Síncope al sentarse"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Hemorragia, más de 20 semanas de gestación"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Convulsiones"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Sangrado vaginal sin síncope, menos de 20 semanas de gestación"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Historial de parto con complicaciones"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Nacimientos múltiples"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Labor de parto, más de 4 semanas de gestación"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Lesión abdominal, más de 20 semanas de gestación"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Hemorragia vaginal con síncope"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Lesión abdominal con menos de 20 semanas de gestación"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Rompimiento de fuente"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Dolor tipo cólico, pélvico o punzadas, menos de 20 semanas de gestación"
+        }
+      ],
+      "referencias": [],
+      "pre_arribo": [
+        {
+          "diapositiva": 87,
+          "titulo_diapositiva": "Embarazo parto – instrucciones pre-arribo",
+          "lineas": [
+            "El Cuerpo de Bomberos está siendo despachado, a continuación le diré qué debe hacer.",
+            "Mantenga a la paciente acostada sobre su lado izquierdo.",
+            "Manténgala cálida.",
+            "Mire para buscar si se ve la cabeza del bebé.",
+            "Si a la paciente le urge ir al baño no le permita que use el inodoro.",
+            "Si la paciente estaba en el baño y ha notado descarga de sangre o tejido dígale que no suelte ni que deseche las toallas higiénicas.",
+            "POST-PARTO",
+            "¿Está el bebé respirando?",
+            "NO: Ir a",
+            "Reúna los medicamentos de la paciente, si es posible.",
+            "Si la condición de la paciente (o del bebé) cambia, llámeme de nuevo.",
+            "PARTO INMINENTE",
+            "Contracciones con intervalos entre 1 a 2 minutos y urgencia de pujar. Ir a",
+            "ABORTO ESPONTÁNEO",
+            "Pérdida de feto antes de las 20 semanas de gestación. Puede incluir hemorragia, cólicos abdominales, dolor en región lumbar o descarga de tejidos."
+          ],
+          "referencias": [
+            {
+              "texto": "Instrucciones de parto",
+              "diapositiva": 88,
+              "destino": {
+                "tipo": "procedimiento",
+                "grupo": "parto",
+                "nodo": 88
+              }
+            },
+            {
+              "texto": "Instrucciones RCP - INFANTE",
+              "diapositiva": 78,
+              "destino": {
+                "tipo": "procedimiento",
+                "grupo": "rcp_infante",
+                "nodo": 78
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "inconsciente",
+      "categoria": "300",
+      "nombre": "Inconsciente / desmayado",
+      "numero_tarjeta": 31,
+      "diapositiva_preguntas": 98,
+      "diapositivas_pre_arribo": [
+        99
+      ],
+      "preguntas": [
+        {
+          "tipo": "pregunta",
+          "texto": "¿Qué estaba haciendo el paciente antes de desmayarse?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Es la primera vez que se desmaya hoy?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Ha consumido alcohol, algún medicamento o alguna droga recreativa?"
+        },
+        {
+          "tipo": "texto",
+          "texto": "SI, ir a"
+        },
+        {
+          "tipo": "texto",
+          "texto": "Desmayándose:"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Qué sucede si se sienta?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Es capaz de responder y de seguir si usted le da órdenes simples?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Tiene algún historial médico o de alguna cirugía?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Tiene algún brazalete de alerta médica? SI: ¿Qué dice?"
+        }
+      ],
+      "notas": [],
+      "despacho": [
+        {
+          "codigo": "321",
+          "descripcion": "No responde"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Múltiples síncopes el mismo día"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Intoxicación con alcohol, no puede despertarse"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Relacionado con diabetes"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Relacionado con hemorragia vaginal"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Sobredosis con combinación de drogas y alcohol"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Relacionado con hemorragia gastrointestinal"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Relacionado con dolor de cabeza"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Relacionado con dolor, molestia o palpitaciones en pecho"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Dificultad respiratoria"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Al pararse o sentarse"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Disminución continua del estado de consciencia"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Ahora consciente"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Sobre timón no confirmado"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Intoxicación con alcohol, puede ser despertado"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Cerca de desmayarse sin signos críticos"
+        }
+      ],
+      "referencias": [
+        {
+          "texto": "Envenenamiento / sobredosis / ingestión",
+          "diapositiva": 46,
+          "destino": {
+            "tipo": "tarjeta",
+            "id": "envenenamiento"
+          }
+        }
+      ],
+      "pre_arribo": [
+        {
+          "diapositiva": 99,
+          "titulo_diapositiva": "Inconsciente / desmayado – instrucciones pre-arribo",
+          "lineas": [
+            "El Cuerpo de Bomberos está siendo despachado, a continuación le diré qué debe hacer.",
+            "Haga que el paciente se acueste.",
+            "Si empieza a vomitar, póngalo de lado.",
+            "Revise la respiración del paciente.",
+            "No lo deje solo, esté preparado, puede ser necesario que deba reanimarlo.",
+            "Reúna los medicamentos del paciente, si es posible.",
+            "Si la condición del paciente cambia, llámeme de nuevo.",
+            "Las respiraciones agónicas generalmente son reportadas como: jadeo, ronquidos, apenas respirando, gimiendo débil o pesado, ocasional.",
+            "Las convulsiones breves generalizadas pueden ser un indicador de un ataque cardiaco.",
+            "Si está inconsciente y",
+            "respira, ir a:",
+            "Si está inconsciente y",
+            "no respira, ir a:"
+          ],
+          "referencias": [
+            {
+              "texto": "Control V.A. - NO TRAUMA",
+              "diapositiva": 100,
+              "destino": {
+                "tipo": "procedimiento",
+                "grupo": "via_aerea",
+                "nodo": 100
+              }
+            },
+            {
+              "texto": "Control V.A. - TRAUMA",
+              "diapositiva": 102,
+              "destino": {
+                "tipo": "procedimiento",
+                "grupo": "via_aerea",
+                "nodo": 102
+              }
+            },
+            {
+              "texto": "Instrucciones RCP - ADULTO",
+              "diapositiva": 58,
+              "destino": {
+                "tipo": "procedimiento",
+                "grupo": "rcp_adulto",
+                "nodo": 58
+              }
+            },
+            {
+              "texto": "Instrucciones RCP - NIÑO",
+              "diapositiva": 68,
+              "destino": {
+                "tipo": "procedimiento",
+                "grupo": "rcp_nino",
+                "nodo": 68
+              }
+            },
+            {
+              "texto": "Instrucciones RCP - INFANTE",
+              "diapositiva": 78,
+              "destino": {
+                "tipo": "procedimiento",
+                "grupo": "rcp_infante",
+                "nodo": 78
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "inhalaciones",
+      "categoria": "300",
+      "nombre": "Inhalaciones HazMat, CO, QBRN",
+      "numero_tarjeta": 8,
+      "diapositiva_preguntas": 104,
+      "diapositivas_pre_arribo": [
+        105
+      ],
+      "preguntas": [
+        {
+          "tipo": "pregunta",
+          "texto": "¿Se activó algún detector de CO?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿El paciente se está quejando de dolor de cabeza, confusión, debilidad, fatiga, náuseas, vómito o mareo?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Está respirando normalmente?"
+        },
+        {
+          "tipo": "texto",
+          "texto": "NO, ir a:"
+        },
+        {
+          "tipo": "texto",
+          "texto": "Inhalaciones"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Cuál es el nombre de la sustancia que inhaló?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿De dónde salió la sustancia que inhaló?"
+        },
+        {
+          "tipo": "texto",
+          "texto": "Si es una propiedad comercial o industrial:"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Esta disponible la hoja de seguridad del producto?"
+        }
+      ],
+      "notas": [],
+      "despacho": [
+        {
+          "codigo": "321",
+          "descripcion": "Activación de detector de CO, signos críticos"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "No respira normalmente"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Inhalación de limpiador doméstico, refrigerante, solvente, metanol, cianuro o insecticida com dificultad para tragar o respirar"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Disminución del nivel de consciencia"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Químico en piel o ropa, sin signos críticos"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Reporte de un tercero que no está con el paciente"
+        }
+      ],
+      "referencias": [
+        {
+          "texto": "Problemas respiratorios",
+          "diapositiva": 50,
+          "destino": {
+            "tipo": "tarjeta",
+            "id": "problemas_respiratorios"
+          }
+        }
+      ],
+      "pre_arribo": [
+        {
+          "diapositiva": 105,
+          "titulo_diapositiva": "Inhalaciones HazMat, CO, QBRN– instrucciones pre-arribo",
+          "lineas": [
+            "El Cuerpo de Bomberos está siendo despachado, a continuación le diré qué debe hacer.",
+            "Haga que el paciente esté al aire fresco inmediatamente.",
+            "Si se activó un detector de CO: haga que todos salgan de la casa.",
+            "Si no es posible que vaya al exterior, abra todas las puertas y ventanas.",
+            "Si usted no puede mover al paciente o abrir las ventanas permanezca afuera y espere por la ayuda.",
+            "Apague cualquier aparato o elemento que tenga una llama abierta (estufas, mecheros, etc.)",
+            "Si la condición del paciente cambia, llámeme de nuevo."
+          ],
+          "referencias": []
+        }
+      ]
+    },
+    {
+      "id": "obstruccion_via_aerea",
+      "categoria": "300",
+      "nombre": "Obstrucción de vía aérea",
+      "numero_tarjeta": 11,
+      "diapositiva_preguntas": 106,
+      "diapositivas_pre_arribo": [
+        107
+      ],
+      "preguntas": [
+        {
+          "tipo": "pregunta",
+          "texto": "¿El paciente está alerta?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Es capaz de hablar o llorar?"
+        },
+        {
+          "tipo": "texto",
+          "texto": "Describa cómo respira."
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿El pecho se eleva?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿El aire entra libremente?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿El paciente se está tornando azul?"
+        }
+      ],
+      "notas": [],
+      "despacho": [
+        {
+          "codigo": "321",
+          "descripcion": "No responde"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Incapaz de hablar o llorar"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Capaz de hablar o llorar"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Se torna azul"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Sin dificultad respiratoria"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Vía aérea despejada"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Dificultad respiratoria"
+        }
+      ],
+      "referencias": [],
+      "pre_arribo": [
+        {
+          "diapositiva": 107,
+          "titulo_diapositiva": "Obstrucción de vía aérea – instrucciones pre-arribo",
+          "lineas": [
+            "El Cuerpo de Bomberos está siendo despachado, a continuación le diré qué debe hacer.",
+            "Ir a la tarjeta apropiada de acuerdo con el grupo de edad:",
+            "Mayor a 8 años",
+            "Entre 1 y 8 años",
+            "Menor a 1 año"
+          ],
+          "referencias": [
+            {
+              "texto": "Instrucción para ADULTO",
+              "diapositiva": 108,
+              "destino": {
+                "tipo": "procedimiento",
+                "grupo": "ovace_adulto",
+                "nodo": 108
+              }
+            },
+            {
+              "texto": "Instrucción para NIÑO",
+              "diapositiva": 116,
+              "destino": {
+                "tipo": "procedimiento",
+                "grupo": "ovace_nino",
+                "nodo": 116
+              }
+            },
+            {
+              "texto": "Instrucción para INFANTE",
+              "diapositiva": 124,
+              "destino": {
+                "tipo": "procedimiento",
+                "grupo": "ovace_infante",
+                "nodo": 124
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "enfermedad_infecciosa",
+      "categoria": "300",
+      "nombre": "Enfermedad Infecciosa",
+      "numero_tarjeta": 26,
+      "diapositiva_preguntas": 130,
+      "diapositivas_pre_arribo": [
+        131
+      ],
+      "preguntas": [
+        {
+          "tipo": "pregunta",
+          "texto": "¿El paciente sufre de fiebre, dolor de cabeza, cansancio, tos, dolor de garganta, secreción nasal o congestión nasal, dolor de cuerpo, diarrea o vómitos?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Está con dificultad para respirar o es incapaz de hablar frases completas?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Tiene sangrado inusual en alguna parte del cuerpo?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "SI: ¿Dónde?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Tiene una erupción o ampollas en su cuerpo?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "SI: ¿Dónde?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿El paciente es sensible a la luz?"
+        }
+      ],
+      "notas": [],
+      "despacho": [
+        {
+          "codigo": "321",
+          "descripcion": "Dificultad respiratoria"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Disminución del nivel de consciencia"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Sin síntomas críticos"
+        },
+        {
+          "codigo": "321",
+          "descripcion": "Hemorragia no controlada"
+        }
+      ],
+      "referencias": [
+        {
+          "texto": "Alerta COVID-19",
+          "diapositiva": 138,
+          "destino": {
+            "tipo": "procedimiento",
+            "grupo": "alertas_infecciosas",
+            "nodo": 138
+          }
+        },
+        {
+          "texto": "Alerta Dengue",
+          "diapositiva": 139,
+          "destino": {
+            "tipo": "procedimiento",
+            "grupo": "alertas_infecciosas",
+            "nodo": 139
+          }
+        },
+        {
+          "texto": "Alerta Tuberculosis",
+          "diapositiva": 140,
+          "destino": {
+            "tipo": "procedimiento",
+            "grupo": "alertas_infecciosas",
+            "nodo": 140
+          }
+        }
+      ],
+      "pre_arribo": [
+        {
+          "diapositiva": 131,
+          "titulo_diapositiva": "Enfermedad infecciosa– instrucciones pre-arribo",
+          "lineas": [
+            "El Cuerpo de Bomberos está siendo despachado, a continuación le diré qué debe hacer.",
+            "Pídale al paciente que permanezca en el sitio.",
+            "Mantenga al paciente aislado. Prevenga contacto adicional de otras personas.",
+            "Trate de obtener los nombres de las personas que han tenido contacto cercano con el paciente. Si están en el sitio dígales que permanezcan en el sitio hasta que la ambulancia llegue para obtener su información.",
+            "No debe tomar ni comer nada.",
+            "Obtenga los medicamentos del paciente, si es posible.",
+            "Informar a todos los que responden de los signos y síntomas del paciente.",
+            "Transmitirles: “Precauciones Universales Indicadas para el Sitio”."
+          ],
+          "referencias": []
+        }
+      ]
+    },
+    {
+      "id": "persona_encerrada",
+      "categoria": "300",
+      "nombre": "Persona encerrada",
+      "numero_tarjeta": null,
+      "diapositiva_preguntas": 132,
+      "diapositivas_pre_arribo": [
+        133
+      ],
+      "preguntas": [
+        {
+          "tipo": "pregunta",
+          "texto": "¿Exactamente dónde se encuentra la persona encerrada?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Tiene contacto con la persona?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Hay algún peligro para la persona?"
+        },
+        {
+          "tipo": "texto",
+          "texto": "Atrapado en baúl de carro, es quien llama:"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Tiene la llave electrónica con usted? ¿Ha probado abrir el baúl con el botón?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Ha intentado salir a través del asiento trasero?"
+        },
+        {
+          "tipo": "texto",
+          "texto": "Algunos carros tienen asientos traseros que se doblan."
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "No: ¿Puede usted empujar o patear los asientos?"
+        }
+      ],
+      "notas": [],
+      "despacho": [
+        {
+          "codigo": "331",
+          "descripcion": "Dificultad respiratoria"
+        }
+      ],
+      "referencias": [],
+      "pre_arribo": [
+        {
+          "diapositiva": 133,
+          "titulo_diapositiva": "Persona encerrada – instrucciones pre-arribo",
+          "lineas": [
+            "El Cuerpo de Bomberos está siendo despachado, a continuación le diré qué debe hacer.",
+            "Pídale a la persona que permanezca en el sitio, que los bomberos van en camino.",
+            "Niño: Manténgase hablando con el niño para mantenerlo calmado y en un sitio seguro. Dele órdenes claras y precisas de no acercarse a la estufa o a las ventanas.",
+            "Persona atrapada en baúl:",
+            "No ha podido salir: Localice la cruceta que debe estar debajo del tapete u otra herramienta y trate de apalancar la cerradura.",
+            "Vehículo moderno: Si ve un elemento que alumbra en la oscuridad probablemente es la apertura interior del baúl. Hálela y me dice si funciona.",
+            "La persona pudo salir: Espere a los bomberos. Ya van en camino.",
+            "Si la situación cambia, vuélvame a llamar.",
+            "Informar a todos los que responden de la situación actual de la persona."
+          ],
+          "referencias": []
+        }
+      ]
+    },
+    {
+      "id": "rescate_estructura_colapsada",
+      "categoria": "300",
+      "nombre": "Rescate en estructura colapsada",
+      "numero_tarjeta": null,
+      "diapositiva_preguntas": 134,
+      "diapositivas_pre_arribo": [
+        135
+      ],
+      "preguntas": [
+        {
+          "tipo": "texto",
+          "texto": "Persona atrapada es la que llama:"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Dónde se encuentra usted?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Qué puede ver?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Qué puede escuchar?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Hay otros peligros en el sitio donde usted está?"
+        },
+        {
+          "tipo": "texto",
+          "texto": "Persona afuera es la que llama:"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Sabe cuántos están atrapados?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Exactamente dónde estaban en el momento del colapso?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Hay alguien en peligro inmediato?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Cuántos?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Exactamente dónde están localizados?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Hay alguien lesionado?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Cuántos?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Qué tipo de estructura es?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Puede describir el daño?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Cuántos edificios o estructuras están involucradas?"
+        }
+      ],
+      "notas": [],
+      "despacho": [
+        {
+          "codigo": "351",
+          "descripcion": "Persona(s) atrapada(s)"
+        }
+      ],
+      "referencias": [],
+      "pre_arribo": [
+        {
+          "diapositiva": 135,
+          "titulo_diapositiva": "Rescate en estructura colapsada – instrucciones pre-arribo",
+          "lineas": [
+            "El Cuerpo de Bomberos está siendo despachado, a continuación le diré qué debe hacer.",
+            "En terremoto: El Cuerpo de Bomberos está actualmente en modo desastre. No puedo decirle cuándo el Cuerpo de Bomberos podrá llegar allá. Sin embargo haremos todo lo que podamos para asistirlo.",
+            "Persona atrapada es la que llama:",
+            "Haga tanto ruido como pueda para ayudarnos a encontrarlo.",
+            "Si puede hacerlo sin causar ninguna chispa, encuentre un objeto y golpee en las paredes, tuberías o en cualquier otro lado.",
+            "Persona afuera es la que llama:",
+            "Estructura comprometida:",
+            "Asegúrese que todos salgan a un lugar seguro.",
+            "Si es seguro para usted donde se encuentra, permanezca allí. Si no lo es vaya a un lugar seguro.",
+            "No intente ningún rescate si no es completamente seguro para usted hacerlo.",
+            "Llámeme de nuevo si hay algún cambio de la situación.",
+            "Inicie el alistamiento del Equipo USAR",
+            "Si el incidente sobrepasa la capacidad de respuesta inicial, active el Equipo USAR."
+          ],
+          "referencias": []
+        }
+      ]
+    },
+    {
+      "id": "rescate_ascensor",
+      "categoria": "300",
+      "nombre": "Rescate en ascensor",
+      "numero_tarjeta": null,
+      "diapositiva_preguntas": 136,
+      "diapositivas_pre_arribo": [
+        137
+      ],
+      "preguntas": [
+        {
+          "tipo": "texto",
+          "texto": "Persona atrapada es la que llama:"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Hay alguien lesionado?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Ya activó la alarma del ascensor?"
+        },
+        {
+          "tipo": "texto",
+          "texto": "No: Hágalo."
+        },
+        {
+          "tipo": "texto",
+          "texto": "Para el manejo de los pacientes, ir al tipo adecuado."
+        },
+        {
+          "tipo": "texto",
+          "texto": "Persona afuera es la que llama:"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Sabe cuántos están atrapados?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Exactamente en qué piso se encuentran?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Hay alguien en peligro inmediato?"
+        }
+      ],
+      "notas": [],
+      "despacho": [
+        {
+          "codigo": "353",
+          "descripcion": "Con lesiones"
+        },
+        {
+          "codigo": "353",
+          "descripcion": "Sin lesiones"
+        }
+      ],
+      "referencias": [],
+      "pre_arribo": [
+        {
+          "diapositiva": 137,
+          "titulo_diapositiva": "Rescate en ascensor – instrucciones pre-arribo",
+          "lineas": [
+            "El Cuerpo de Bomberos está siendo despachado, a continuación le diré qué debe hacer.",
+            "Persona atrapada es la que llama:",
+            "Permanezca tranquilo, el ascensor tiene ingreso natural de aire por lo que no tendrá problemas para respirar.",
+            "No intente abrir las puertas.",
+            "Tome el teléfono del ascensor (si lo hay) e informe la situación. Dígale que ya llamó a los bomberos y que van en camino.",
+            "Persona afuera es la que llama:",
+            "No intente abrir las puertas.",
+            "Indíquele a las personas dentro del ascensor que no intenten abrir las puertas y que ya llamó a los bomberos.",
+            "Llame al técnico si tiene el número. Si hay vigilante dígale que llame de inmediato al técnico.",
+            "Envíe a alguien para que pueda guiar a los bomberos hasta el ascensor.",
+            "Llámeme de nuevo si hay algún cambio de la situación."
+          ],
+          "referencias": []
+        }
+      ]
+    },
+    {
+      "id": "rescate_alturas",
+      "categoria": "300",
+      "nombre": "Rescate en alturas",
+      "numero_tarjeta": null,
+      "diapositiva_preguntas": 141,
+      "diapositivas_pre_arribo": [
+        142
+      ],
+      "preguntas": [
+        {
+          "tipo": "pregunta",
+          "texto": "¿Se puede llegar hasta donde está la víctima?"
+        },
+        {
+          "tipo": "texto",
+          "texto": "SI: Ir a"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Puede ver a la víctima desde donde usted está?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Hay involucrado un poste o una torre eléctrica?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Qué tan alto (o abajo) está la víctima?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Parece estar en un lugar pequeño, una posición inestable o en un borde?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Parece estar lesionado, enfermo o actuando anormalmente o en peligro de lesionarse?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Parece estar en peligro de caer?"
+        },
+        {
+          "tipo": "texto",
+          "texto": "Trate de preguntarle a la víctima si está herido, enfermo y que describa sus lesiones."
+        }
+      ],
+      "notas": [],
+      "despacho": [
+        {
+          "codigo": "356",
+          "descripcion": "Área urbana\nNo puede ser alcanzado, suspendido"
+        },
+        {
+          "codigo": "356",
+          "descripcion": "Área rural o de interfase\nNo puede ser alcanzado, suspendido"
+        }
+      ],
+      "referencias": [
+        {
+          "texto": "Rescate en alturas B",
+          "diapositiva": null,
+          "destino": {
+            "tipo": "tarjeta",
+            "id": "rescate_alturas_b"
+          }
+        }
+      ],
+      "pre_arribo": [
+        {
+          "diapositiva": 142,
+          "titulo_diapositiva": "Rescate en alturas – instrucciones pre-arribo",
+          "lineas": [
+            "El Cuerpo de Bomberos está siendo despachado, a continuación le diré qué debe hacer.",
+            "Dígale a la víctima que espere donde está y que la ayuda viene en camino.",
+            "Usted, no permanezca directamente debajo de donde está ya que pueden caer rocas u objetos. Tampoco si le pueden caer escombros",
+            "Estamos enviando el equipo de rescate. Hágase en un lugar seguro cerca a la víctima y prepárese para guiar a los rescatistas hasta el lugar.",
+            "Vuelva a decirle a la víctima que permanezca donde está.",
+            "NO trate de llegar a donde está la víctima, podría ser peligroso para usted y para él.",
+            "Si la condición del paciente cambia, llámeme de nuevo."
+          ],
+          "referencias": []
+        }
+      ]
+    },
+    {
+      "id": "rescate_alturas_b",
+      "categoria": "300",
+      "nombre": "Rescate en alturas B",
+      "numero_tarjeta": null,
+      "diapositiva_preguntas": 143,
+      "diapositivas_pre_arribo": [
+        144
+      ],
+      "preguntas": [
+        {
+          "tipo": "pregunta",
+          "texto": "¿Qué tan abajo (o arriba) está la persona hasta donde llegarían los bomberos?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿El paciente está consciente?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿De qué se queja?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Está sangrando mucho?"
+        },
+        {
+          "tipo": "texto",
+          "texto": "SI: Ir a:"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Cree que se requerirán equipos especiales para sacar al paciente?"
+        }
+      ],
+      "notas": [],
+      "despacho": [
+        {
+          "codigo": "356",
+          "descripcion": "No puede ser alcanzado, suspendido"
+        },
+        {
+          "codigo": "356",
+          "descripcion": "Área Farallones de Cali"
+        }
+      ],
+      "referencias": [
+        {
+          "texto": "Hemorragia / laceración",
+          "diapositiva": 16,
+          "destino": {
+            "tipo": "tarjeta",
+            "id": "hemorragia"
+          }
+        }
+      ],
+      "pre_arribo": [
+        {
+          "diapositiva": 144,
+          "titulo_diapositiva": "Rescate en alturas – instrucciones pre-arribo",
+          "lineas": [
+            "El Cuerpo de Bomberos está siendo despachado, a continuación le diré qué debe hacer.",
+            "Dígale a la víctima que espere, que la ayuda va en camino.",
+            "Usted, no permanezca directamente debajo de donde está ya que pueden caer rocas u objetos. Tampoco si le pueden caer escombros. Tampoco se haga arriba de la persona porque si ocasiona caída de objetos puede causarle más lesiones.",
+            "Estamos enviando el equipo de rescate. Hágase en un lugar seguro cerca a la víctima y pídale a alguien que guíe a los rescatistas hasta el lugar.",
+            "Vuelva a decirle a la víctima que permanezca donde está.",
+            "Si la condición del paciente cambia, llámeme de nuevo.",
+            "Si está inconsciente y",
+            "respira, ir a:",
+            "Si está inconsciente y",
+            "no respira, ir a:"
+          ],
+          "referencias": [
+            {
+              "texto": "Control V.A. - NO TRAUMA",
+              "diapositiva": 100,
+              "destino": {
+                "tipo": "procedimiento",
+                "grupo": "via_aerea",
+                "nodo": 100
+              }
+            },
+            {
+              "texto": "Control V.A. - TRAUMA",
+              "diapositiva": 102,
+              "destino": {
+                "tipo": "procedimiento",
+                "grupo": "via_aerea",
+                "nodo": 102
+              }
+            },
+            {
+              "texto": "Instrucciones RCP - ADULTO",
+              "diapositiva": 58,
+              "destino": {
+                "tipo": "procedimiento",
+                "grupo": "rcp_adulto",
+                "nodo": 58
+              }
+            },
+            {
+              "texto": "Instrucciones RCP - NIÑO",
+              "diapositiva": 68,
+              "destino": {
+                "tipo": "procedimiento",
+                "grupo": "rcp_nino",
+                "nodo": 68
+              }
+            },
+            {
+              "texto": "Instrucciones RCP - INFANTE",
+              "diapositiva": 78,
+              "destino": {
+                "tipo": "procedimiento",
+                "grupo": "rcp_infante",
+                "nodo": 78
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "extraviado_zona_rural",
+      "categoria": "300",
+      "nombre": "Extraviado o requiriendo ayuda en zona rural",
+      "numero_tarjeta": null,
+      "diapositiva_preguntas": 145,
+      "diapositivas_pre_arribo": [
+        146
+      ],
+      "preguntas": [
+        {
+          "tipo": "pregunta",
+          "texto": "(1ª persona) ¿Sabe aproximadamente dónde está?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "No: ¿Por dónde ingresó al área?"
+        },
+        {
+          "tipo": "texto",
+          "texto": "Si: Describa el lugar donde se encuentra justo ahora."
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "(3ª persona) ¿Dónde fue visto por última vez?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Cuál era el destino?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Cuál era la ruta planeada?"
+        },
+        {
+          "tipo": "texto",
+          "texto": "Necesito nombre, edad y una buena descripción."
+        },
+        {
+          "tipo": "texto",
+          "texto": "Necesito la descripción de la ropa, principalmente colores."
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Tiene alguna condición médica?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Con qué equipo cuenta?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Está en un grupo?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Dónde estacionó su vehículo (si aplica)?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Qué nivel de experiencia de montañismo tiene?"
+        }
+      ],
+      "notas": [],
+      "despacho": [
+        {
+          "codigo": "341",
+          "descripcion": "Área Farallones de Cali"
+        }
+      ],
+      "referencias": [],
+      "pre_arribo": [
+        {
+          "diapositiva": 146,
+          "titulo_diapositiva": "Extraviado en zona rural – instrucciones pre-arribo",
+          "lineas": [
+            "1ª persona",
+            "El Cuerpo de Bomberos está siendo despachado, a continuación le diré qué debe hacer.",
+            "Permanezca en el sitio donde está. Es importante que no se mueva de allí mientras que nuestra gente lo busca.",
+            "Protéjase del clima (permanezca en la sombra, cubierto de la lluvia y el viento).",
+            "Si ve o escucha a alguien, hágase visible y grítele.",
+            "Si debe cambiar de lugar o si alguien lo encuentra llámeme de nuevo inmediatamente.",
+            "Si tiene forma de enviarme su posición por su celular, hágalo.",
+            "Trate de conservar la batería de su celular. Si tiene baja carga dígame a qué hora nos comunicamos de nuevo y apague su celular. A esa hora nos comunicaremos.",
+            "3ª persona",
+            "El cuerpo de bomberos va en camino.",
+            "Llámenos de nuevo si algo cambia o si obtiene nueva información."
+          ],
+          "referencias": []
+        }
+      ]
+    },
+    {
+      "id": "vehiculo_en_agua",
+      "categoria": "300",
+      "nombre": "Vehículo en el agua",
+      "numero_tarjeta": null,
+      "diapositiva_preguntas": 147,
+      "diapositivas_pre_arribo": [
+        148
+      ],
+      "preguntas": [
+        {
+          "tipo": "pregunta",
+          "texto": "¿En dónde cayó? ¿Río, lago, vía inundada?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿El vehículo se está hundiendo?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Puede abrir las puertas?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "NO: ¿Puede abrir las ventanas?"
+        },
+        {
+          "tipo": "texto",
+          "texto": "NO:"
+        },
+        {
+          "tipo": "texto",
+          "texto": "El que llama es un testigo:"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Puede darle instrucciones a los ocupantes del vehículo?"
+        },
+        {
+          "tipo": "texto",
+          "texto": "SI:"
+        }
+      ],
+      "notas": [],
+      "despacho": [
+        {
+          "codigo": "363",
+          "descripcion": "Vehículo hundiéndose, sumergido o atrapado en agua que se mueve rápido"
+        },
+        {
+          "codigo": "363",
+          "descripcion": "Vehículo en agua quieta, no hundiéndose, agua no subiendo"
+        }
+      ],
+      "referencias": [],
+      "pre_arribo": [
+        {
+          "diapositiva": 148,
+          "titulo_diapositiva": "VEHÍCULO EN EL AGUA – Instrucciones pre-arribo",
+          "lineas": [
+            "El Cuerpo de Bomberos está siendo despachado, a continuación le diré qué debe hacer.",
+            "Vehículo aun en el agua:",
+            "Abra las puertas o las ventanas, salga y nade a la orilla.",
+            "Si es incapaz de nadar a la orilla:",
+            "Salga del vehículo y hágase sobre el techo.",
+            "Vehículo en el agua y hundiéndose:",
+            "Quítese el cinturón de seguridad y abra las ventanas. Si sus ventanas no abren, trate de romperlas. Golpee la esquina con una llave, cinturón o el poste metálico del apoya cabezas. Salga por la ventana y hágase sobre el techo del vehículo.",
+            "Vehículo bajo el agua:",
+            "Si no puede abrir una ventana tendrá suficiente aire por un minuto o dos, prepárese para escapar. Cuando el carro esté casi lleno de agua, tome una respiración profunda y abra una puerta empujándola, es posible que le toque hacerlo con los pies. Exhale lentamente mientras sube a la superficie."
+          ],
+          "referencias": []
+        }
+      ]
+    },
+    {
+      "id": "caida_en_rio",
+      "categoria": "300",
+      "nombre": "Caída en río",
+      "numero_tarjeta": null,
+      "diapositiva_preguntas": 149,
+      "diapositivas_pre_arribo": [
+        150
+      ],
+      "preguntas": [
+        {
+          "tipo": "pregunta",
+          "texto": "¿Hace cuánto cayó al río?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Lo ve todavía?"
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Dónde fue visto por última vez?"
+        },
+        {
+          "tipo": "texto",
+          "texto": "Necesito una buena descripción de la persona."
+        },
+        {
+          "tipo": "texto",
+          "texto": "Necesito la descripción de la ropa, principalmente colores."
+        },
+        {
+          "tipo": "pregunta",
+          "texto": "¿Tiene alguna condición médica?"
+        }
+      ],
+      "notas": [],
+      "despacho": [
+        {
+          "codigo": "342",
+          "descripcion": "Búsqueda de persona en agua"
+        }
+      ],
+      "referencias": [],
+      "pre_arribo": [
+        {
+          "diapositiva": 150,
+          "titulo_diapositiva": "Caída en río – instrucciones pre-arribo",
+          "lineas": [
+            "El cuerpo de bomberos va en camino.",
+            "Llámeme de nuevo si algo cambia o si obtiene nueva información."
+          ],
+          "referencias": []
+        }
+      ]
+    }
+  ]
+}

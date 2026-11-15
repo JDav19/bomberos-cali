@@ -1,0 +1,311 @@
+{
+  "fuente": "Despacho V4.ppsm.pptx",
+  "categorias": [
+    {
+      "codigo": "100",
+      "nombre": "Incendios",
+      "archivo": "100_incendios.json",
+      "tarjetas": [
+        {
+          "id": "incendio_edificacion",
+          "nombre": "Incendio en edificación"
+        },
+        {
+          "id": "incendio_edificio_alto",
+          "nombre": "Incendio en edificio alto"
+        },
+        {
+          "id": "incendio_concentracion_masiva",
+          "nombre": "Incendio en lugar de concentración masiva"
+        },
+        {
+          "id": "incendio_no_edificacion",
+          "nombre": "Incendio en no edificación"
+        },
+        {
+          "id": "incendio_basuras_edificacion",
+          "nombre": "Incendio de basuras dentro de edificación"
+        },
+        {
+          "id": "incendio_vehiculo_pasajeros",
+          "nombre": "Incendio en vehículo de pasajeros"
+        },
+        {
+          "id": "incendio_vehiculo_carga",
+          "nombre": "Incendio en vehículo de carga"
+        },
+        {
+          "id": "incendio_tren",
+          "nombre": "Incendio en tren"
+        },
+        {
+          "id": "incendio_aeronave",
+          "nombre": "Incendio en aeronave"
+        },
+        {
+          "id": "incendio_bosque",
+          "nombre": "Incendio en bosque"
+        },
+        {
+          "id": "incendio_arbustos_pastos",
+          "nombre": "Incendio en arbustos y pastos"
+        },
+        {
+          "id": "incendio_lote_urbano",
+          "nombre": "Incendio en lote urbano"
+        },
+        {
+          "id": "incendio_basuras_exterior",
+          "nombre": "Incendio de basuras en exterior"
+        },
+        {
+          "id": "incendio_cultivos",
+          "nombre": "Incendio en cultivos"
+        },
+        {
+          "id": "incendio_almacenaje_exterior",
+          "nombre": "Incendio de almacenaje en exterior"
+        },
+        {
+          "id": "incendio_equipos_exterior",
+          "nombre": "Incendio de equipos en exterior"
+        }
+      ]
+    },
+    {
+      "codigo": "200",
+      "nombre": "Explosión o ruptura sin incendio",
+      "archivo": "200_explosion.json",
+      "tarjetas": [
+        {
+          "id": "explosion_gas_vapor",
+          "nombre": "Explosión de gas o vapor sin fuego sostenido"
+        },
+        {
+          "id": "ruptura_explosion",
+          "nombre": "Ruptura o explosión sin incendio"
+        }
+      ]
+    },
+    {
+      "codigo": "300",
+      "nombre": "Rescates y emergencias médicas",
+      "archivo": "300_rescates_medicas.json",
+      "tarjetas": [
+        {
+          "id": "accidente_transito",
+          "nombre": "Accidente de tránsito"
+        },
+        {
+          "id": "accidente_industrial",
+          "nombre": "Accidente industrial"
+        },
+        {
+          "id": "asalto_violencia",
+          "nombre": "Asalto / Violencia Doméstica o Sexual"
+        },
+        {
+          "id": "caidas",
+          "nombre": "Caídas"
+        },
+        {
+          "id": "exposicion_calor_frio",
+          "nombre": "Exposición a calor o frío"
+        },
+        {
+          "id": "hemorragia",
+          "nombre": "Hemorragia / laceración"
+        },
+        {
+          "id": "mordedura_animal",
+          "nombre": "Mordedura de animal"
+        },
+        {
+          "id": "ojos",
+          "nombre": "Ojos: lesiones o problemas"
+        },
+        {
+          "id": "punalada_arma_fuego",
+          "nombre": "Puñalada / lesión por arma de fuego"
+        },
+        {
+          "id": "quemaduras",
+          "nombre": "Quemaduras"
+        },
+        {
+          "id": "trauma",
+          "nombre": "Trauma"
+        },
+        {
+          "id": "acv",
+          "nombre": "ACV"
+        },
+        {
+          "id": "convulsiones",
+          "nombre": "Ataques / convulsiones"
+        },
+        {
+          "id": "alergias_picaduras",
+          "nombre": "Alergias / picaduras"
+        },
+        {
+          "id": "diabetes",
+          "nombre": "Diabetes"
+        },
+        {
+          "id": "dolor_abdominal",
+          "nombre": "Dolor abdominal"
+        },
+        {
+          "id": "dolor_cabeza",
+          "nombre": "Dolor de cabeza"
+        },
+        {
+          "id": "dolor_espalda",
+          "nombre": "Dolor de espalda"
+        },
+        {
+          "id": "dolor_pecho",
+          "nombre": "Dolor en pecho / problemas cardiacos"
+        },
+        {
+          "id": "enfermo",
+          "nombre": "Enfermo"
+        },
+        {
+          "id": "envenenamiento",
+          "nombre": "Envenenamiento / sobredosis / ingestión"
+        },
+        {
+          "id": "persona_caida",
+          "nombre": "Persona caída / desconocido"
+        },
+        {
+          "id": "problemas_respiratorios",
+          "nombre": "Problemas respiratorios"
+        },
+        {
+          "id": "psiquiatrico",
+          "nombre": "Psiquiátrico / conductual"
+        },
+        {
+          "id": "ahogamiento",
+          "nombre": "Ahogamiento (posible)"
+        },
+        {
+          "id": "ataque_cardiaco",
+          "nombre": "Ataque cardiaco"
+        },
+        {
+          "id": "electrocucion",
+          "nombre": "Electrocución"
+        },
+        {
+          "id": "embarazo_parto",
+          "nombre": "Embarazo / parto"
+        },
+        {
+          "id": "inconsciente",
+          "nombre": "Inconsciente / desmayado"
+        },
+        {
+          "id": "inhalaciones",
+          "nombre": "Inhalaciones HazMat, CO, QBRN"
+        },
+        {
+          "id": "obstruccion_via_aerea",
+          "nombre": "Obstrucción de vía aérea"
+        },
+        {
+          "id": "enfermedad_infecciosa",
+          "nombre": "Enfermedad Infecciosa"
+        },
+        {
+          "id": "persona_encerrada",
+          "nombre": "Persona encerrada"
+        },
+        {
+          "id": "rescate_estructura_colapsada",
+          "nombre": "Rescate en estructura colapsada"
+        },
+        {
+          "id": "rescate_ascensor",
+          "nombre": "Rescate en ascensor"
+        },
+        {
+          "id": "rescate_alturas",
+          "nombre": "Rescate en alturas"
+        },
+        {
+          "id": "rescate_alturas_b",
+          "nombre": "Rescate en alturas B"
+        },
+        {
+          "id": "extraviado_zona_rural",
+          "nombre": "Extraviado o requiriendo ayuda en zona rural"
+        },
+        {
+          "id": "vehiculo_en_agua",
+          "nombre": "Vehículo en el agua"
+        },
+        {
+          "id": "caida_en_rio",
+          "nombre": "Caída en río"
+        }
+      ]
+    },
+    {
+      "codigo": "400",
+      "nombre": "Condiciones peligrosas sin incendio",
+      "archivo": "400_condiciones_peligrosas.json",
+      "tarjetas": [
+        {
+          "id": "fuga_gas",
+          "nombre": "Fuga de gas (GNC o GLP)"
+        },
+        {
+          "id": "olor_desconocido",
+          "nombre": "Olor desconocido"
+        },
+        {
+          "id": "hazmat",
+          "nombre": "HazMat"
+        },
+        {
+          "id": "derrame_liquido",
+          "nombre": "Derrame de líquido combustible o inflamable"
+        },
+        {
+          "id": "linea_electrica_caida",
+          "nombre": "Línea eléctrica caída"
+        },
+        {
+          "id": "corto_circuito",
+          "nombre": "Corto circuito"
+        },
+        {
+          "id": "estructura_colapsada_sin_atrapados",
+          "nombre": "Estructura colapsada o debilitada – sin atrapados"
+        }
+      ]
+    },
+    {
+      "codigo": "500",
+      "nombre": "Llamadas de servicio",
+      "archivo": "500_servicio.json",
+      "tarjetas": []
+    },
+    {
+      "codigo": "800",
+      "nombre": "Clima severo y desastres naturales",
+      "archivo": "800_clima_desastres.json",
+      "tarjetas": []
+    },
+    {
+      "codigo": "900",
+      "nombre": "Tipo de incidente especial, no clasificado",
+      "archivo": "900_especial.json",
+      "tarjetas": []
+    }
+  ]
+}
