@@ -1,0 +1,78 @@
+rules_version = '2';
+
+// Reglas de Cloud Firestore para Bomberos Cali.
+//   - El ciudadano solo lee y escribe sus propios reportes.
+//   - El radio operador lee todo y cambia estados.
+// Publicar con:  firebase deploy --only firestore:rules
+// (o pegar este contenido en Firebase Console > Firestore > Reglas).
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    function signedIn() {
+      return request.auth != null;
+    }
+
+    function isOperador() {
+      return signedIn()
+        && exists(/databases/$(database)/documents/usuarios/$(request.auth.uid))
+        && get(/databases/$(database)/documents/usuarios/$(request.auth.uid)).data.rol == 'operador';
+    }
+
+    // Solo para la demostracion: permite que la cuenta de demostracion del
+    // operador se cree a si misma con rol 'operador'. QUITAR ESTA FUNCION Y SU
+    // USO ANTES DE UN DESPLIEGUE REAL; el rol se debe asignar desde la consola
+    // o con el SDK de administracion.
+    function esCuentaOperadorDemo() {
+      return signedIn()
+        && request.auth.token.email == 'operador.demo@bomberoscali.app'
+        && request.resource.data.rol == 'operador';
+    }
+
+    // ---------- Perfiles ----------
+    match /usuarios/{uid} {
+      allow read: if signedIn() && (request.auth.uid == uid || isOperador());
+
+      // Un usuario solo crea su propio perfil y siempre como ciudadano.
+      allow create: if signedIn() && request.auth.uid == uid
+        && (request.resource.data.rol == 'ciudadano' || esCuentaOperadorDemo());
+
+      // Puede editar nombre y telefono, nunca su rol.
+      allow update: if signedIn() && request.auth.uid == uid
+        && request.resource.data.rol == resource.data.rol;
+    }
+
+    // ---------- Reportes ----------
+    match /reportes/{radicado} {
+
+      // El ciudadano lee solo los suyos; el operador lee todos.
+      allow read: if signedIn() && (resource.data.uid == request.auth.uid || isOperador());
+
+      // El ciudadano crea un reporte propio, siempre en estado 'recibido'.
+      // El operador tambien puede crear (registrar una llamada del 119 y datos de demostracion).
+      allow create: if signedIn() && (
+        (request.resource.data.uid == request.auth.uid
+          && request.resource.data.estado == 'recibido'
+          && request.resource.data.radicado == radicado
+          && request.resource.data.categoria in ['100', '200', '300', '400', '500', '800', '900'])
+        || isOperador()
+      );
+
+      // El operador puede cambiar cualquier campo (estado, prioridad, nota,
+      // videollamada). El ciudadano solo puede agregar lo que le corresponde:
+      // archivos, respuestas del cuestionario y contestar la videollamada.
+      // No puede cambiar estado, dueno, ubicacion ni datos de contacto.
+      allow update: if isOperador() || (
+        signedIn() && resource.data.uid == request.auth.uid
+        && request.resource.data.diff(resource.data).affectedKeys().hasOnly([
+          'media', 'mediaPendiente', 'respuestas', 'cuestionarioCompleto',
+          'prioridad', 'prioridadPeso', 'videollamada'
+        ])
+        && request.resource.data.estado == resource.data.estado
+        && request.resource.data.uid == resource.data.uid
+      );
+
+      // Nadie borra reportes desde la app.
+      allow delete: if false;
+    }
+  }
+}
