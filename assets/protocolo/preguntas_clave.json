@@ -1,0 +1,1800 @@
+{
+  "nota": "Generado por tools/gen_preguntas_clave.py. Cada 'texto' es una oracion literal del protocolo (solo se quito la numeracion '6.', '7.', '8.' de la diapositiva 5). Los 'efecto' son criterio de la app para la prioridad, no del protocolo.",
+  "por_tarjeta": {
+    "incendio_edificacion": [
+      {
+        "clave": "atrapados",
+        "tipo": "si_no",
+        "texto": "¿Hay personas o animales atrapados?",
+        "fuente": 151,
+        "efecto": {
+          "sube": {
+            "si": 1
+          }
+        }
+      },
+      {
+        "clave": "lesionados",
+        "tipo": "si_no",
+        "texto": "¿Hay alguien lesionado?",
+        "fuente": 151,
+        "efecto": {
+          "sube": {
+            "si": 1
+          }
+        }
+      }
+    ],
+    "incendio_edificio_alto": [
+      {
+        "clave": "atrapados",
+        "tipo": "si_no",
+        "texto": "¿Hay personas o animales atrapados?",
+        "fuente": 153,
+        "efecto": {
+          "sube": {
+            "si": 1
+          }
+        }
+      },
+      {
+        "clave": "lesionados",
+        "tipo": "si_no",
+        "texto": "¿Hay alguien lesionado?",
+        "fuente": 153,
+        "efecto": {
+          "sube": {
+            "si": 1
+          }
+        }
+      }
+    ],
+    "incendio_concentracion_masiva": [
+      {
+        "clave": "atrapados",
+        "tipo": "si_no",
+        "texto": "¿Hay personas atrapadas?",
+        "fuente": 158,
+        "efecto": {
+          "sube": {
+            "si": 1
+          }
+        }
+      },
+      {
+        "clave": "lesionados",
+        "tipo": "si_no",
+        "texto": "¿Hay alguien lesionado?",
+        "fuente": 158,
+        "efecto": {
+          "sube": {
+            "si": 1
+          }
+        }
+      }
+    ],
+    "incendio_no_edificacion": [
+      {
+        "clave": "atrapados",
+        "tipo": "si_no",
+        "texto": "¿Hay personas o animales atrapados?",
+        "fuente": 163,
+        "efecto": {
+          "sube": {
+            "si": 1
+          }
+        }
+      },
+      {
+        "clave": "lesionados",
+        "tipo": "si_no",
+        "texto": "¿Hay alguien lesionado?",
+        "fuente": 163,
+        "efecto": {
+          "sube": {
+            "si": 1
+          }
+        }
+      }
+    ],
+    "incendio_basuras_edificacion": [
+      {
+        "clave": "lesionados",
+        "tipo": "si_no",
+        "texto": "¿Hay alguien lesionado?",
+        "fuente": 165,
+        "efecto": {
+          "sube": {
+            "si": 1
+          }
+        }
+      }
+    ],
+    "incendio_vehiculo_pasajeros": [
+      {
+        "clave": "atrapados",
+        "tipo": "si_no",
+        "texto": "¿Hay ocupantes atrapados?",
+        "fuente": 167,
+        "efecto": {
+          "sube": {
+            "si": 1
+          }
+        }
+      }
+    ],
+    "incendio_vehiculo_carga": [
+      {
+        "clave": "atrapados",
+        "tipo": "si_no",
+        "texto": "¿Hay ocupantes atrapados?",
+        "fuente": 169,
+        "efecto": {
+          "sube": {
+            "si": 1
+          }
+        }
+      }
+    ],
+    "incendio_tren": [
+      {
+        "clave": "otro_incendio",
+        "tipo": "si_no",
+        "texto": "¿El fuego del tren ha iniciado algún otro incendio?",
+        "fuente": 171,
+        "efecto": {
+          "sube": {
+            "si": 1
+          }
+        }
+      }
+    ],
+    "incendio_aeronave": [
+      {
+        "clave": "atrapados",
+        "tipo": "si_no",
+        "texto": "¿Se observan personas atrapadas?",
+        "fuente": 173,
+        "efecto": {
+          "sube": {
+            "si": 1
+          }
+        }
+      }
+    ],
+    "incendio_bosque": [
+      {
+        "clave": "atrapados",
+        "tipo": "si_no",
+        "texto": "¿Hay personas atrapadas o en peligro inmediato?",
+        "fuente": 175,
+        "efecto": {
+          "sube": {
+            "si": 1
+          }
+        }
+      },
+      {
+        "clave": "propagacion",
+        "tipo": "si_no",
+        "texto": "¿El incendio se está propagando rápidamente?",
+        "fuente": 175,
+        "efecto": {
+          "sube": {
+            "si": 1
+          }
+        }
+      },
+      {
+        "clave": "lesionados",
+        "tipo": "si_no",
+        "texto": "¿Hay alguien lesionado?",
+        "fuente": 175,
+        "efecto": {
+          "sube": {
+            "si": 1
+          }
+        }
+      }
+    ],
+    "incendio_arbustos_pastos": [
+      {
+        "clave": "atrapados",
+        "tipo": "si_no",
+        "texto": "¿Hay personas atrapadas o en peligro inmediato?",
+        "fuente": 177,
+        "efecto": {
+          "sube": {
+            "si": 1
+          }
+        }
+      },
+      {
+        "clave": "propagacion",
+        "tipo": "si_no",
+        "texto": "¿El incendio se está propagando rápidamente?",
+        "fuente": 177,
+        "efecto": {
+          "sube": {
+            "si": 1
+          }
+        }
+      },
+      {
+        "clave": "lesionados",
+        "tipo": "si_no",
+        "texto": "¿Hay alguien lesionado?",
+        "fuente": 177,
+        "efecto": {
+          "sube": {
+            "si": 1
+          }
+        }
+      }
+    ],
+    "incendio_lote_urbano": [
+      {
+        "clave": "atrapados",
+        "tipo": "si_no",
+        "texto": "¿Hay personas atrapadas o en peligro inmediato?",
+        "fuente": 179,
+        "efecto": {
+          "sube": {
+            "si": 1
+          }
+        }
+      },
+      {
+        "clave": "propagacion",
+        "tipo": "si_no",
+        "texto": "¿El incendio se está propagando rápidamente?",
+        "fuente": 179,
+        "efecto": {
+          "sube": {
+            "si": 1
+          }
+        }
+      },
+      {
+        "clave": "lesionados",
+        "tipo": "si_no",
+        "texto": "¿Hay alguien lesionado?",
+        "fuente": 179,
+        "efecto": {
+          "sube": {
+            "si": 1
+          }
+        }
+      }
+    ],
+    "incendio_basuras_exterior": [
+      {
+        "clave": "atrapados",
+        "tipo": "si_no",
+        "texto": "¿Hay personas atrapadas o en peligro inmediato?",
+        "fuente": 181,
+        "efecto": {
+          "sube": {
+            "si": 1
+          }
+        }
+      },
+      {
+        "clave": "propagacion",
+        "tipo": "si_no",
+        "texto": "¿El incendio se está propagando rápidamente?",
+        "fuente": 181,
+        "efecto": {
+          "sube": {
+            "si": 1
+          }
+        }
+      },
+      {
+        "clave": "lesionados",
+        "tipo": "si_no",
+        "texto": "¿Hay alguien lesionado?",
+        "fuente": 181,
+        "efecto": {
+          "sube": {
+            "si": 1
+          }
+        }
+      }
+    ],
+    "incendio_cultivos": [
+      {
+        "clave": "atrapados",
+        "tipo": "si_no",
+        "texto": "¿Hay personas atrapadas o en peligro inmediato?",
+        "fuente": 183,
+        "efecto": {
+          "sube": {
+            "si": 1
+          }
+        }
+      },
+      {
+        "clave": "propagacion",
+        "tipo": "si_no",
+        "texto": "¿El incendio se está propagando rápidamente?",
+        "fuente": 183,
+        "efecto": {
+          "sube": {
+            "si": 1
+          }
+        }
+      },
+      {
+        "clave": "lesionados",
+        "tipo": "si_no",
+        "texto": "¿Hay alguien lesionado?",
+        "fuente": 183,
+        "efecto": {
+          "sube": {
+            "si": 1
+          }
+        }
+      }
+    ],
+    "incendio_almacenaje_exterior": [
+      {
+        "clave": "atrapados",
+        "tipo": "si_no",
+        "texto": "¿Hay personas atrapadas o en peligro inmediato?",
+        "fuente": 185,
+        "efecto": {
+          "sube": {
+            "si": 1
+          }
+        }
+      },
+      {
+        "clave": "propagacion",
+        "tipo": "si_no",
+        "texto": "¿El incendio se está propagando rápidamente?",
+        "fuente": 185,
+        "efecto": {
+          "sube": {
+            "si": 1
+          }
+        }
+      },
+      {
+        "clave": "lesionados",
+        "tipo": "si_no",
+        "texto": "¿Hay alguien lesionado?",
+        "fuente": 185,
+        "efecto": {
+          "sube": {
+            "si": 1
+          }
+        }
+      }
+    ],
+    "incendio_equipos_exterior": [
+      {
+        "clave": "atrapados",
+        "tipo": "si_no",
+        "texto": "¿Hay personas atrapadas o en peligro inmediato?",
+        "fuente": 187,
+        "efecto": {
+          "sube": {
+            "si": 1
+          }
+        }
+      },
+      {
+        "clave": "propagacion",
+        "tipo": "si_no",
+        "texto": "¿El incendio se está propagando rápidamente?",
+        "fuente": 187,
+        "efecto": {
+          "sube": {
+            "si": 1
+          }
+        }
+      },
+      {
+        "clave": "lesionados",
+        "tipo": "si_no",
+        "texto": "¿Hay alguien lesionado?",
+        "fuente": 187,
+        "efecto": {
+          "sube": {
+            "si": 1
+          }
+        }
+      }
+    ],
+    "explosion_gas_vapor": [
+      {
+        "clave": "lesionados",
+        "tipo": "si_no",
+        "texto": "¿Hay personas lesionadas?",
+        "fuente": 189,
+        "efecto": {
+          "sube": {
+            "si": 1
+          }
+        }
+      }
+    ],
+    "ruptura_explosion": [
+      {
+        "clave": "atrapados",
+        "tipo": "si_no",
+        "texto": "¿Hay personas atrapadas?",
+        "fuente": 205,
+        "efecto": {
+          "sube": {
+            "si": 1
+          }
+        }
+      },
+      {
+        "clave": "peligro",
+        "tipo": "si_no",
+        "texto": "¿Hay alguien en peligro inmediato?",
+        "fuente": 205,
+        "efecto": {
+          "sube": {
+            "si": 1
+          }
+        }
+      },
+      {
+        "clave": "lesionados",
+        "tipo": "si_no",
+        "texto": "¿Hay alguien lesionado?",
+        "fuente": 205,
+        "efecto": {
+          "sube": {
+            "si": 1
+          }
+        }
+      }
+    ],
+    "accidente_transito": [
+      {
+        "clave": "consciente",
+        "tipo": "si_no",
+        "texto": "¿El paciente está consciente (es capaz de hablar)?",
+        "fuente": 5,
+        "efecto": {
+          "critica": [
+            "no"
+          ]
+        }
+      },
+      {
+        "clave": "respira",
+        "tipo": "si_no",
+        "texto": "¿El paciente respira de forma normal?",
+        "fuente": 5,
+        "efecto": {
+          "critica": [
+            "no"
+          ]
+        }
+      },
+      {
+        "clave": "edad_sexo",
+        "tipo": "texto",
+        "texto": "¿Sexo y edad del paciente?",
+        "fuente": 5,
+        "efecto": {}
+      },
+      {
+        "clave": "heridos_numero",
+        "tipo": "numero",
+        "texto": "¿Cuántas personas ve que están heridas?",
+        "fuente": 6,
+        "efecto": {
+          "umbral": 3,
+          "sube": {
+            "si": 1
+          }
+        }
+      },
+      {
+        "clave": "atrapados",
+        "tipo": "si_no",
+        "texto": "¿alguien está atrapado en el vehículo?",
+        "fuente": 6,
+        "efecto": {
+          "sube": {
+            "si": 1
+          }
+        }
+      }
+    ],
+    "accidente_industrial": [
+      {
+        "clave": "consciente",
+        "tipo": "si_no",
+        "texto": "¿El paciente está consciente (es capaz de hablar)?",
+        "fuente": 5,
+        "efecto": {
+          "critica": [
+            "no"
+          ]
+        }
+      },
+      {
+        "clave": "respira",
+        "tipo": "si_no",
+        "texto": "¿El paciente respira de forma normal?",
+        "fuente": 5,
+        "efecto": {
+          "critica": [
+            "no"
+          ]
+        }
+      },
+      {
+        "clave": "edad_sexo",
+        "tipo": "texto",
+        "texto": "¿Sexo y edad del paciente?",
+        "fuente": 5,
+        "efecto": {}
+      },
+      {
+        "clave": "atrapados",
+        "tipo": "si_no",
+        "texto": "¿La persona está atrapada en o bajo algún objeto?",
+        "fuente": 8,
+        "efecto": {
+          "sube": {
+            "si": 1
+          }
+        }
+      }
+    ],
+    "asalto_violencia": [
+      {
+        "clave": "consciente",
+        "tipo": "si_no",
+        "texto": "¿El paciente está consciente (es capaz de hablar)?",
+        "fuente": 5,
+        "efecto": {
+          "critica": [
+            "no"
+          ]
+        }
+      },
+      {
+        "clave": "respira",
+        "tipo": "si_no",
+        "texto": "¿El paciente respira de forma normal?",
+        "fuente": 5,
+        "efecto": {
+          "critica": [
+            "no"
+          ]
+        }
+      },
+      {
+        "clave": "edad_sexo",
+        "tipo": "texto",
+        "texto": "¿Sexo y edad del paciente?",
+        "fuente": 5,
+        "efecto": {}
+      }
+    ],
+    "caidas": [
+      {
+        "clave": "consciente",
+        "tipo": "si_no",
+        "texto": "¿El paciente está consciente (es capaz de hablar)?",
+        "fuente": 5,
+        "efecto": {
+          "critica": [
+            "no"
+          ]
+        }
+      },
+      {
+        "clave": "respira",
+        "tipo": "si_no",
+        "texto": "¿El paciente respira de forma normal?",
+        "fuente": 5,
+        "efecto": {
+          "critica": [
+            "no"
+          ]
+        }
+      },
+      {
+        "clave": "edad_sexo",
+        "tipo": "texto",
+        "texto": "¿Sexo y edad del paciente?",
+        "fuente": 5,
+        "efecto": {}
+      }
+    ],
+    "exposicion_calor_frio": [
+      {
+        "clave": "consciente",
+        "tipo": "si_no",
+        "texto": "¿El paciente está consciente (es capaz de hablar)?",
+        "fuente": 5,
+        "efecto": {
+          "critica": [
+            "no"
+          ]
+        }
+      },
+      {
+        "clave": "respira",
+        "tipo": "si_no",
+        "texto": "¿El paciente respira de forma normal?",
+        "fuente": 5,
+        "efecto": {
+          "critica": [
+            "no"
+          ]
+        }
+      },
+      {
+        "clave": "edad_sexo",
+        "tipo": "texto",
+        "texto": "¿Sexo y edad del paciente?",
+        "fuente": 5,
+        "efecto": {}
+      }
+    ],
+    "hemorragia": [
+      {
+        "clave": "consciente",
+        "tipo": "si_no",
+        "texto": "¿El paciente está consciente (es capaz de hablar)?",
+        "fuente": 5,
+        "efecto": {
+          "critica": [
+            "no"
+          ]
+        }
+      },
+      {
+        "clave": "respira",
+        "tipo": "si_no",
+        "texto": "¿El paciente respira de forma normal?",
+        "fuente": 5,
+        "efecto": {
+          "critica": [
+            "no"
+          ]
+        }
+      },
+      {
+        "clave": "edad_sexo",
+        "tipo": "texto",
+        "texto": "¿Sexo y edad del paciente?",
+        "fuente": 5,
+        "efecto": {}
+      }
+    ],
+    "mordedura_animal": [
+      {
+        "clave": "consciente",
+        "tipo": "si_no",
+        "texto": "¿El paciente está consciente (es capaz de hablar)?",
+        "fuente": 5,
+        "efecto": {
+          "critica": [
+            "no"
+          ]
+        }
+      },
+      {
+        "clave": "respira",
+        "tipo": "si_no",
+        "texto": "¿El paciente respira de forma normal?",
+        "fuente": 5,
+        "efecto": {
+          "critica": [
+            "no"
+          ]
+        }
+      },
+      {
+        "clave": "edad_sexo",
+        "tipo": "texto",
+        "texto": "¿Sexo y edad del paciente?",
+        "fuente": 5,
+        "efecto": {}
+      },
+      {
+        "clave": "sangrado",
+        "tipo": "si_no",
+        "texto": "¿El paciente está sangrando mucho?",
+        "fuente": 18,
+        "efecto": {
+          "sube": {
+            "si": 1
+          }
+        }
+      }
+    ],
+    "ojos": [
+      {
+        "clave": "consciente",
+        "tipo": "si_no",
+        "texto": "¿El paciente está consciente (es capaz de hablar)?",
+        "fuente": 5,
+        "efecto": {
+          "critica": [
+            "no"
+          ]
+        }
+      },
+      {
+        "clave": "respira",
+        "tipo": "si_no",
+        "texto": "¿El paciente respira de forma normal?",
+        "fuente": 5,
+        "efecto": {
+          "critica": [
+            "no"
+          ]
+        }
+      },
+      {
+        "clave": "edad_sexo",
+        "tipo": "texto",
+        "texto": "¿Sexo y edad del paciente?",
+        "fuente": 5,
+        "efecto": {}
+      }
+    ],
+    "punalada_arma_fuego": [
+      {
+        "clave": "consciente",
+        "tipo": "si_no",
+        "texto": "¿El paciente está consciente (es capaz de hablar)?",
+        "fuente": 5,
+        "efecto": {
+          "critica": [
+            "no"
+          ]
+        }
+      },
+      {
+        "clave": "respira",
+        "tipo": "si_no",
+        "texto": "¿El paciente respira de forma normal?",
+        "fuente": 5,
+        "efecto": {
+          "critica": [
+            "no"
+          ]
+        }
+      },
+      {
+        "clave": "edad_sexo",
+        "tipo": "texto",
+        "texto": "¿Sexo y edad del paciente?",
+        "fuente": 5,
+        "efecto": {}
+      },
+      {
+        "clave": "sangrado",
+        "tipo": "si_no",
+        "texto": "¿Está sangrando mucho?",
+        "fuente": 22,
+        "efecto": {
+          "sube": {
+            "si": 1
+          }
+        }
+      }
+    ],
+    "quemaduras": [
+      {
+        "clave": "consciente",
+        "tipo": "si_no",
+        "texto": "¿El paciente está consciente (es capaz de hablar)?",
+        "fuente": 5,
+        "efecto": {
+          "critica": [
+            "no"
+          ]
+        }
+      },
+      {
+        "clave": "respira",
+        "tipo": "si_no",
+        "texto": "¿El paciente respira de forma normal?",
+        "fuente": 5,
+        "efecto": {
+          "critica": [
+            "no"
+          ]
+        }
+      },
+      {
+        "clave": "edad_sexo",
+        "tipo": "texto",
+        "texto": "¿Sexo y edad del paciente?",
+        "fuente": 5,
+        "efecto": {}
+      }
+    ],
+    "trauma": [
+      {
+        "clave": "consciente",
+        "tipo": "si_no",
+        "texto": "¿El paciente está consciente (es capaz de hablar)?",
+        "fuente": 5,
+        "efecto": {
+          "critica": [
+            "no"
+          ]
+        }
+      },
+      {
+        "clave": "respira",
+        "tipo": "si_no",
+        "texto": "¿El paciente respira de forma normal?",
+        "fuente": 5,
+        "efecto": {
+          "critica": [
+            "no"
+          ]
+        }
+      },
+      {
+        "clave": "edad_sexo",
+        "tipo": "texto",
+        "texto": "¿Sexo y edad del paciente?",
+        "fuente": 5,
+        "efecto": {}
+      },
+      {
+        "clave": "sangrado",
+        "tipo": "si_no",
+        "texto": "El paciente está sangrando mucho?",
+        "fuente": 26,
+        "efecto": {
+          "sube": {
+            "si": 1
+          }
+        }
+      }
+    ],
+    "acv": [
+      {
+        "clave": "consciente",
+        "tipo": "si_no",
+        "texto": "¿El paciente está consciente (es capaz de hablar)?",
+        "fuente": 5,
+        "efecto": {
+          "critica": [
+            "no"
+          ]
+        }
+      },
+      {
+        "clave": "respira",
+        "tipo": "si_no",
+        "texto": "¿El paciente respira de forma normal?",
+        "fuente": 5,
+        "efecto": {
+          "critica": [
+            "no"
+          ]
+        }
+      },
+      {
+        "clave": "edad_sexo",
+        "tipo": "texto",
+        "texto": "¿Sexo y edad del paciente?",
+        "fuente": 5,
+        "efecto": {}
+      }
+    ],
+    "convulsiones": [
+      {
+        "clave": "consciente",
+        "tipo": "si_no",
+        "texto": "¿El paciente está consciente (es capaz de hablar)?",
+        "fuente": 5,
+        "efecto": {
+          "critica": [
+            "no"
+          ]
+        }
+      },
+      {
+        "clave": "respira",
+        "tipo": "si_no",
+        "texto": "¿El paciente respira de forma normal?",
+        "fuente": 5,
+        "efecto": {
+          "critica": [
+            "no"
+          ]
+        }
+      },
+      {
+        "clave": "edad_sexo",
+        "tipo": "texto",
+        "texto": "¿Sexo y edad del paciente?",
+        "fuente": 5,
+        "efecto": {}
+      },
+      {
+        "clave": "convulsionando",
+        "tipo": "si_no",
+        "texto": "¿El paciente está convulsionando en este momento?",
+        "fuente": 30,
+        "efecto": {
+          "sube": {
+            "si": 1
+          }
+        }
+      }
+    ],
+    "alergias_picaduras": [
+      {
+        "clave": "consciente",
+        "tipo": "si_no",
+        "texto": "¿El paciente está consciente (es capaz de hablar)?",
+        "fuente": 5,
+        "efecto": {
+          "critica": [
+            "no"
+          ]
+        }
+      },
+      {
+        "clave": "respira",
+        "tipo": "si_no",
+        "texto": "¿El paciente respira de forma normal?",
+        "fuente": 5,
+        "efecto": {
+          "critica": [
+            "no"
+          ]
+        }
+      },
+      {
+        "clave": "edad_sexo",
+        "tipo": "texto",
+        "texto": "¿Sexo y edad del paciente?",
+        "fuente": 5,
+        "efecto": {}
+      }
+    ],
+    "diabetes": [
+      {
+        "clave": "consciente",
+        "tipo": "si_no",
+        "texto": "¿El paciente está consciente (es capaz de hablar)?",
+        "fuente": 5,
+        "efecto": {
+          "critica": [
+            "no"
+          ]
+        }
+      },
+      {
+        "clave": "respira",
+        "tipo": "si_no",
+        "texto": "¿El paciente respira de forma normal?",
+        "fuente": 5,
+        "efecto": {
+          "critica": [
+            "no"
+          ]
+        }
+      },
+      {
+        "clave": "edad_sexo",
+        "tipo": "texto",
+        "texto": "¿Sexo y edad del paciente?",
+        "fuente": 5,
+        "efecto": {}
+      }
+    ],
+    "dolor_abdominal": [
+      {
+        "clave": "consciente",
+        "tipo": "si_no",
+        "texto": "¿El paciente está consciente (es capaz de hablar)?",
+        "fuente": 5,
+        "efecto": {
+          "critica": [
+            "no"
+          ]
+        }
+      },
+      {
+        "clave": "respira",
+        "tipo": "si_no",
+        "texto": "¿El paciente respira de forma normal?",
+        "fuente": 5,
+        "efecto": {
+          "critica": [
+            "no"
+          ]
+        }
+      },
+      {
+        "clave": "edad_sexo",
+        "tipo": "texto",
+        "texto": "¿Sexo y edad del paciente?",
+        "fuente": 5,
+        "efecto": {}
+      }
+    ],
+    "dolor_cabeza": [
+      {
+        "clave": "consciente",
+        "tipo": "si_no",
+        "texto": "¿El paciente está consciente (es capaz de hablar)?",
+        "fuente": 5,
+        "efecto": {
+          "critica": [
+            "no"
+          ]
+        }
+      },
+      {
+        "clave": "respira",
+        "tipo": "si_no",
+        "texto": "¿El paciente respira de forma normal?",
+        "fuente": 5,
+        "efecto": {
+          "critica": [
+            "no"
+          ]
+        }
+      },
+      {
+        "clave": "edad_sexo",
+        "tipo": "texto",
+        "texto": "¿Sexo y edad del paciente?",
+        "fuente": 5,
+        "efecto": {}
+      }
+    ],
+    "dolor_espalda": [
+      {
+        "clave": "consciente",
+        "tipo": "si_no",
+        "texto": "¿El paciente está consciente (es capaz de hablar)?",
+        "fuente": 5,
+        "efecto": {
+          "critica": [
+            "no"
+          ]
+        }
+      },
+      {
+        "clave": "respira",
+        "tipo": "si_no",
+        "texto": "¿El paciente respira de forma normal?",
+        "fuente": 5,
+        "efecto": {
+          "critica": [
+            "no"
+          ]
+        }
+      },
+      {
+        "clave": "edad_sexo",
+        "tipo": "texto",
+        "texto": "¿Sexo y edad del paciente?",
+        "fuente": 5,
+        "efecto": {}
+      }
+    ],
+    "dolor_pecho": [
+      {
+        "clave": "consciente",
+        "tipo": "si_no",
+        "texto": "¿El paciente está consciente (es capaz de hablar)?",
+        "fuente": 5,
+        "efecto": {
+          "critica": [
+            "no"
+          ]
+        }
+      },
+      {
+        "clave": "respira",
+        "tipo": "si_no",
+        "texto": "¿El paciente respira de forma normal?",
+        "fuente": 5,
+        "efecto": {
+          "critica": [
+            "no"
+          ]
+        }
+      },
+      {
+        "clave": "edad_sexo",
+        "tipo": "texto",
+        "texto": "¿Sexo y edad del paciente?",
+        "fuente": 5,
+        "efecto": {}
+      }
+    ],
+    "enfermo": [
+      {
+        "clave": "consciente",
+        "tipo": "si_no",
+        "texto": "¿El paciente está consciente (es capaz de hablar)?",
+        "fuente": 5,
+        "efecto": {
+          "critica": [
+            "no"
+          ]
+        }
+      },
+      {
+        "clave": "respira",
+        "tipo": "si_no",
+        "texto": "¿El paciente respira de forma normal?",
+        "fuente": 5,
+        "efecto": {
+          "critica": [
+            "no"
+          ]
+        }
+      },
+      {
+        "clave": "edad_sexo",
+        "tipo": "texto",
+        "texto": "¿Sexo y edad del paciente?",
+        "fuente": 5,
+        "efecto": {}
+      }
+    ],
+    "envenenamiento": [
+      {
+        "clave": "consciente",
+        "tipo": "si_no",
+        "texto": "¿El paciente está consciente (es capaz de hablar)?",
+        "fuente": 5,
+        "efecto": {
+          "critica": [
+            "no"
+          ]
+        }
+      },
+      {
+        "clave": "respira",
+        "tipo": "si_no",
+        "texto": "¿El paciente respira de forma normal?",
+        "fuente": 5,
+        "efecto": {
+          "critica": [
+            "no"
+          ]
+        }
+      },
+      {
+        "clave": "edad_sexo",
+        "tipo": "texto",
+        "texto": "¿Sexo y edad del paciente?",
+        "fuente": 5,
+        "efecto": {}
+      }
+    ],
+    "persona_caida": [
+      {
+        "clave": "consciente",
+        "tipo": "si_no",
+        "texto": "¿El paciente está consciente (es capaz de hablar)?",
+        "fuente": 5,
+        "efecto": {
+          "critica": [
+            "no"
+          ]
+        }
+      },
+      {
+        "clave": "respira",
+        "tipo": "si_no",
+        "texto": "¿El paciente respira de forma normal?",
+        "fuente": 5,
+        "efecto": {
+          "critica": [
+            "no"
+          ]
+        }
+      },
+      {
+        "clave": "edad_sexo",
+        "tipo": "texto",
+        "texto": "¿Sexo y edad del paciente?",
+        "fuente": 5,
+        "efecto": {}
+      }
+    ],
+    "problemas_respiratorios": [
+      {
+        "clave": "consciente",
+        "tipo": "si_no",
+        "texto": "¿El paciente está consciente (es capaz de hablar)?",
+        "fuente": 5,
+        "efecto": {
+          "critica": [
+            "no"
+          ]
+        }
+      },
+      {
+        "clave": "respira",
+        "tipo": "si_no",
+        "texto": "¿El paciente respira de forma normal?",
+        "fuente": 5,
+        "efecto": {
+          "critica": [
+            "no"
+          ]
+        }
+      },
+      {
+        "clave": "edad_sexo",
+        "tipo": "texto",
+        "texto": "¿Sexo y edad del paciente?",
+        "fuente": 5,
+        "efecto": {}
+      },
+      {
+        "clave": "habla_frases",
+        "tipo": "si_no",
+        "texto": "¿Es capaz de hablar frases completas?",
+        "fuente": 50,
+        "efecto": {
+          "sube": {
+            "no": 1
+          }
+        }
+      }
+    ],
+    "psiquiatrico": [
+      {
+        "clave": "consciente",
+        "tipo": "si_no",
+        "texto": "¿El paciente está consciente (es capaz de hablar)?",
+        "fuente": 5,
+        "efecto": {
+          "critica": [
+            "no"
+          ]
+        }
+      },
+      {
+        "clave": "respira",
+        "tipo": "si_no",
+        "texto": "¿El paciente respira de forma normal?",
+        "fuente": 5,
+        "efecto": {
+          "critica": [
+            "no"
+          ]
+        }
+      },
+      {
+        "clave": "edad_sexo",
+        "tipo": "texto",
+        "texto": "¿Sexo y edad del paciente?",
+        "fuente": 5,
+        "efecto": {}
+      }
+    ],
+    "ahogamiento": [
+      {
+        "clave": "consciente",
+        "tipo": "si_no",
+        "texto": "¿El paciente está consciente (es capaz de hablar)?",
+        "fuente": 5,
+        "efecto": {
+          "critica": [
+            "no"
+          ]
+        }
+      },
+      {
+        "clave": "respira",
+        "tipo": "si_no",
+        "texto": "¿El paciente respira de forma normal?",
+        "fuente": 5,
+        "efecto": {
+          "critica": [
+            "no"
+          ]
+        }
+      },
+      {
+        "clave": "edad_sexo",
+        "tipo": "texto",
+        "texto": "¿Sexo y edad del paciente?",
+        "fuente": 5,
+        "efecto": {}
+      },
+      {
+        "clave": "fuera_del_agua",
+        "tipo": "si_no",
+        "texto": "¿El paciente ya fue sacado del agua?",
+        "fuente": 54,
+        "efecto": {
+          "critica": [
+            "no"
+          ]
+        }
+      }
+    ],
+    "ataque_cardiaco": [
+      {
+        "clave": "consciente",
+        "tipo": "si_no",
+        "texto": "¿El paciente está consciente (es capaz de hablar)?",
+        "fuente": 5,
+        "efecto": {
+          "critica": [
+            "no"
+          ]
+        }
+      },
+      {
+        "clave": "respira",
+        "tipo": "si_no",
+        "texto": "¿El paciente respira de forma normal?",
+        "fuente": 5,
+        "efecto": {
+          "critica": [
+            "no"
+          ]
+        }
+      },
+      {
+        "clave": "edad_sexo",
+        "tipo": "texto",
+        "texto": "¿Sexo y edad del paciente?",
+        "fuente": 5,
+        "efecto": {}
+      }
+    ],
+    "electrocucion": [
+      {
+        "clave": "consciente",
+        "tipo": "si_no",
+        "texto": "¿El paciente está consciente (es capaz de hablar)?",
+        "fuente": 5,
+        "efecto": {
+          "critica": [
+            "no"
+          ]
+        }
+      },
+      {
+        "clave": "respira",
+        "tipo": "si_no",
+        "texto": "¿El paciente respira de forma normal?",
+        "fuente": 5,
+        "efecto": {
+          "critica": [
+            "no"
+          ]
+        }
+      },
+      {
+        "clave": "edad_sexo",
+        "tipo": "texto",
+        "texto": "¿Sexo y edad del paciente?",
+        "fuente": 5,
+        "efecto": {}
+      },
+      {
+        "clave": "contacto_electricidad",
+        "tipo": "si_no",
+        "texto": "¿El paciente aun está en contacto con la electricidad?",
+        "fuente": 84,
+        "efecto": {
+          "sube": {
+            "si": 1
+          }
+        }
+      }
+    ],
+    "embarazo_parto": [
+      {
+        "clave": "consciente",
+        "tipo": "si_no",
+        "texto": "¿El paciente está consciente (es capaz de hablar)?",
+        "fuente": 5,
+        "efecto": {
+          "critica": [
+            "no"
+          ]
+        }
+      },
+      {
+        "clave": "respira",
+        "tipo": "si_no",
+        "texto": "¿El paciente respira de forma normal?",
+        "fuente": 5,
+        "efecto": {
+          "critica": [
+            "no"
+          ]
+        }
+      },
+      {
+        "clave": "edad_sexo",
+        "tipo": "texto",
+        "texto": "¿Sexo y edad del paciente?",
+        "fuente": 5,
+        "efecto": {}
+      }
+    ],
+    "inconsciente": [
+      {
+        "clave": "consciente",
+        "tipo": "si_no",
+        "texto": "¿El paciente está consciente (es capaz de hablar)?",
+        "fuente": 5,
+        "efecto": {
+          "critica": [
+            "no"
+          ]
+        }
+      },
+      {
+        "clave": "respira",
+        "tipo": "si_no",
+        "texto": "¿El paciente respira de forma normal?",
+        "fuente": 5,
+        "efecto": {
+          "critica": [
+            "no"
+          ]
+        }
+      },
+      {
+        "clave": "edad_sexo",
+        "tipo": "texto",
+        "texto": "¿Sexo y edad del paciente?",
+        "fuente": 5,
+        "efecto": {}
+      }
+    ],
+    "inhalaciones": [
+      {
+        "clave": "consciente",
+        "tipo": "si_no",
+        "texto": "¿El paciente está consciente (es capaz de hablar)?",
+        "fuente": 5,
+        "efecto": {
+          "critica": [
+            "no"
+          ]
+        }
+      },
+      {
+        "clave": "respira",
+        "tipo": "si_no",
+        "texto": "¿El paciente respira de forma normal?",
+        "fuente": 5,
+        "efecto": {
+          "critica": [
+            "no"
+          ]
+        }
+      },
+      {
+        "clave": "edad_sexo",
+        "tipo": "texto",
+        "texto": "¿Sexo y edad del paciente?",
+        "fuente": 5,
+        "efecto": {}
+      }
+    ],
+    "obstruccion_via_aerea": [
+      {
+        "clave": "consciente",
+        "tipo": "si_no",
+        "texto": "¿El paciente está consciente (es capaz de hablar)?",
+        "fuente": 5,
+        "efecto": {
+          "critica": [
+            "no"
+          ]
+        }
+      },
+      {
+        "clave": "respira",
+        "tipo": "si_no",
+        "texto": "¿El paciente respira de forma normal?",
+        "fuente": 5,
+        "efecto": {
+          "critica": [
+            "no"
+          ]
+        }
+      },
+      {
+        "clave": "edad_sexo",
+        "tipo": "texto",
+        "texto": "¿Sexo y edad del paciente?",
+        "fuente": 5,
+        "efecto": {}
+      },
+      {
+        "clave": "capaz_hablar",
+        "tipo": "si_no",
+        "texto": "¿Es capaz de hablar o llorar?",
+        "fuente": 106,
+        "efecto": {
+          "critica": [
+            "no"
+          ]
+        }
+      }
+    ],
+    "enfermedad_infecciosa": [
+      {
+        "clave": "consciente",
+        "tipo": "si_no",
+        "texto": "¿El paciente está consciente (es capaz de hablar)?",
+        "fuente": 5,
+        "efecto": {
+          "critica": [
+            "no"
+          ]
+        }
+      },
+      {
+        "clave": "respira",
+        "tipo": "si_no",
+        "texto": "¿El paciente respira de forma normal?",
+        "fuente": 5,
+        "efecto": {
+          "critica": [
+            "no"
+          ]
+        }
+      },
+      {
+        "clave": "edad_sexo",
+        "tipo": "texto",
+        "texto": "¿Sexo y edad del paciente?",
+        "fuente": 5,
+        "efecto": {}
+      }
+    ],
+    "persona_encerrada": [
+      {
+        "clave": "peligro_persona",
+        "tipo": "si_no",
+        "texto": "¿Hay algún peligro para la persona?",
+        "fuente": 132,
+        "efecto": {
+          "sube": {
+            "si": 1
+          }
+        }
+      }
+    ],
+    "rescate_estructura_colapsada": [
+      {
+        "clave": "peligro",
+        "tipo": "si_no",
+        "texto": "¿Hay alguien en peligro inmediato?",
+        "fuente": 134,
+        "efecto": {
+          "sube": {
+            "si": 1
+          }
+        }
+      },
+      {
+        "clave": "lesionados",
+        "tipo": "si_no",
+        "texto": "¿Hay alguien lesionado?",
+        "fuente": 134,
+        "efecto": {
+          "sube": {
+            "si": 1
+          }
+        }
+      }
+    ],
+    "rescate_ascensor": [
+      {
+        "clave": "peligro",
+        "tipo": "si_no",
+        "texto": "¿Hay alguien en peligro inmediato?",
+        "fuente": 136,
+        "efecto": {
+          "sube": {
+            "si": 1
+          }
+        }
+      },
+      {
+        "clave": "lesionados",
+        "tipo": "si_no",
+        "texto": "¿Hay alguien lesionado?",
+        "fuente": 136,
+        "efecto": {
+          "sube": {
+            "si": 1
+          }
+        }
+      }
+    ],
+    "rescate_alturas": [
+      {
+        "clave": "peligro_caer",
+        "tipo": "si_no",
+        "texto": "¿Parece estar en peligro de caer?",
+        "fuente": 141,
+        "efecto": {
+          "sube": {
+            "si": 1
+          }
+        }
+      }
+    ],
+    "rescate_alturas_b": [
+      {
+        "clave": "sangrado",
+        "tipo": "si_no",
+        "texto": "¿Está sangrando mucho?",
+        "fuente": 143,
+        "efecto": {
+          "sube": {
+            "si": 1
+          }
+        }
+      }
+    ],
+    "extraviado_zona_rural": [],
+    "vehiculo_en_agua": [
+      {
+        "clave": "hundiendo",
+        "tipo": "si_no",
+        "texto": "¿El vehículo se está hundiendo?",
+        "fuente": 147,
+        "efecto": {
+          "critica": [
+            "si"
+          ]
+        }
+      }
+    ],
+    "caida_en_rio": [
+      {
+        "clave": "lo_ve",
+        "tipo": "si_no",
+        "texto": "¿Lo ve todavía?",
+        "fuente": 149,
+        "efecto": {
+          "sube": {
+            "no": 1
+          }
+        }
+      }
+    ],
+    "fuga_gas": [
+      {
+        "clave": "se_siente_mal",
+        "tipo": "si_no",
+        "texto": "¿Alguien se siente mal o está lesionado?",
+        "fuente": 191,
+        "efecto": {
+          "sube": {
+            "si": 1
+          }
+        }
+      }
+    ],
+    "olor_desconocido": [
+      {
+        "clave": "afectados",
+        "tipo": "si_no",
+        "texto": "¿Hay alguien enfermo o lesionado?",
+        "fuente": 193,
+        "efecto": {
+          "sube": {
+            "si": 1
+          }
+        }
+      }
+    ],
+    "hazmat": [
+      {
+        "clave": "peligro",
+        "tipo": "si_no",
+        "texto": "¿Hay alguien en peligro inmediato?",
+        "fuente": 195,
+        "efecto": {
+          "sube": {
+            "si": 1
+          }
+        }
+      },
+      {
+        "clave": "afectados",
+        "tipo": "si_no",
+        "texto": "¿Hay alguien enfermo o lesionado?",
+        "fuente": 195,
+        "efecto": {
+          "sube": {
+            "si": 1
+          }
+        }
+      }
+    ],
+    "derrame_liquido": [
+      {
+        "clave": "peligro",
+        "tipo": "si_no",
+        "texto": "¿Hay alguien en peligro inmediato?",
+        "fuente": 197,
+        "efecto": {
+          "sube": {
+            "si": 1
+          }
+        }
+      }
+    ],
+    "linea_electrica_caida": [
+      {
+        "clave": "peligro",
+        "tipo": "si_no",
+        "texto": "¿Hay personas en peligro inmediato?",
+        "fuente": 199,
+        "efecto": {
+          "sube": {
+            "si": 1
+          }
+        }
+      }
+    ],
+    "corto_circuito": [
+      {
+        "clave": "peligro",
+        "tipo": "si_no",
+        "texto": "¿Hay personas en peligro inmediato?",
+        "fuente": 201,
+        "efecto": {
+          "sube": {
+            "si": 1
+          }
+        }
+      }
+    ],
+    "estructura_colapsada_sin_atrapados": [
+      {
+        "clave": "peligro",
+        "tipo": "si_no",
+        "texto": "¿Hay alguien en peligro inmediato?",
+        "fuente": 203,
+        "efecto": {
+          "sube": {
+            "si": 1
+          }
+        }
+      },
+      {
+        "clave": "lesionados",
+        "tipo": "si_no",
+        "texto": "¿Hay alguien lesionado?",
+        "fuente": 203,
+        "efecto": {
+          "sube": {
+            "si": 1
+          }
+        }
+      }
+    ]
+  }
+}
