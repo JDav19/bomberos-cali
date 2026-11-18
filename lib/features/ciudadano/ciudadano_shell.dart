@@ -11,6 +11,7 @@ import '../videollamada/llamada_entrante_screen.dart';
 import 'cuenta_screen.dart';
 import 'inicio_screen.dart';
 import 'mis_reportes_screen.dart';
+import 'reporte_rapido.dart';
 
 class CiudadanoShell extends StatefulWidget {
   const CiudadanoShell({super.key});
@@ -22,6 +23,14 @@ class CiudadanoShell extends StatefulWidget {
 class _CiudadanoShellState extends State<CiudadanoShell> {
   int _i = 0;
   bool _mostrandoLlamada = false;
+
+  @override
+  void initState() {
+    super.initState();
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (mounted) recuperarFotoPerdida(context);
+    });
+  }
 
   void _revisarLlamada(BuildContext context) {
     final r = context.read<MisReportes>().llamadaEntrante;

@@ -12,6 +12,7 @@ import '../reportes/mis_reportes.dart';
 import '../reportes/models.dart';
 import 'ciudadano_shell.dart';
 import 'detalle_reporte_screen.dart';
+import 'reporte_rapido.dart';
 import 'tipo_emergencia_screen.dart';
 
 class InicioScreen extends StatelessWidget {
@@ -31,11 +32,11 @@ class InicioScreen extends StatelessWidget {
           padding: const EdgeInsets.fromLTRB(Space.gutter, Space.xl, Space.gutter, Space.gutter),
           child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
             Aparece(
-              child: Text('¿Qué está pasando?', style: t.displaySmall),
+              child: Text('¿Hay una emergencia?', style: t.displaySmall),
             ),
             const SizedBox(height: Space.s),
             Text(
-              'Su ubicación se envía sola. Si hay peligro inmediato para la vida, llame también al 119.',
+              'Tome una foto: se envía sola con su ubicación. Los detalles los completa después.',
               style: t.bodyLarge,
             ),
             const Spacer(),
@@ -48,7 +49,17 @@ class InicioScreen extends StatelessWidget {
               const SizedBox(height: Space.l),
             ],
             // La accion principal queda abajo, al alcance del pulgar.
-            const _BotonReportar(),
+            const _BotonFotoRapida(),
+            const SizedBox(height: Space.m),
+            OutlinedButton.icon(
+              onPressed: () =>
+                  Navigator.of(context).push(MaterialPageRoute<void>(builder: (_) => const TipoEmergenciaScreen())),
+              icon: const PhosphorIcon(PhosphorIconsBold.plus),
+              label: const Text('Reportar con más detalle'),
+            ),
+            const SizedBox(height: Space.s),
+            Text('Tómela desde un lugar seguro: no se arriesgue por una foto.',
+                style: t.bodySmall, textAlign: TextAlign.center),
           ]),
         ),
       ),
@@ -56,47 +67,46 @@ class InicioScreen extends StatelessWidget {
   }
 }
 
-class _BotonReportar extends StatelessWidget {
-  const _BotonReportar();
+class _BotonFotoRapida extends StatelessWidget {
+  const _BotonFotoRapida();
 
   @override
   Widget build(BuildContext context) {
     final t = Theme.of(context).textTheme;
     return Semantics(
       button: true,
-      label: 'Reportar una emergencia',
+      label: 'Tomar una foto y enviar el reporte con su ubicación',
       child: Material(
         color: Palette.rojo,
         borderRadius: BorderRadius.circular(Radii.l),
-        elevation: 0,
         child: InkWell(
           borderRadius: BorderRadius.circular(Radii.l),
-          onTap: () => Navigator.of(context).push(MaterialPageRoute<void>(builder: (_) => const TipoEmergenciaScreen())),
+          onTap: () => iniciarReporteRapido(context),
           child: Container(
-            constraints: const BoxConstraints(minHeight: 112),
+            constraints: const BoxConstraints(minHeight: 132),
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(Radii.l),
+              border: Border.all(color: Palette.brasa, width: 3),
               boxShadow: Elevations.raised,
             ),
             padding: const EdgeInsets.symmetric(horizontal: Space.xl, vertical: Space.l),
             child: Row(children: [
               Container(
-                width: 56,
-                height: 56,
-                decoration: const BoxDecoration(color: Palette.ceniza, shape: BoxShape.circle),
-                child: const Center(child: BrandMark(size: 34, color: Palette.rojo, inner: Palette.ambar)),
+                width: 68,
+                height: 68,
+                decoration: const BoxDecoration(color: Palette.brasa, shape: BoxShape.circle),
+                child: const Center(child: PhosphorIcon(PhosphorIconsBold.camera, color: Palette.carbon, size: 38)),
               ),
               const SizedBox(width: Space.l),
               Expanded(
                 child: Column(mainAxisSize: MainAxisSize.min, crossAxisAlignment: CrossAxisAlignment.start, children: [
-                  Text('REPORTAR EMERGENCIA',
-                      style: t.headlineMedium?.copyWith(color: Colors.white, letterSpacing: 0.6, height: 1.05)),
-                  const SizedBox(height: 2),
-                  Text('Tipo, ubicación y fotos',
-                      style: t.bodyMedium?.copyWith(color: Colors.white.withValues(alpha: 0.9))),
+                  Text('FOTO Y ENVIAR',
+                      style: t.headlineLarge?.copyWith(color: Colors.white, letterSpacing: 0.6, height: 1.0)),
+                  const SizedBox(height: Space.xs),
+                  Text('Sale sola con su ubicación',
+                      style: t.bodyMedium?.copyWith(color: Colors.white.withValues(alpha: 0.95))),
                 ]),
               ),
-              const PhosphorIcon(PhosphorIconsBold.caretRight, color: Colors.white, size: 28),
             ]),
           ),
         ),

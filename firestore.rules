@@ -59,14 +59,19 @@ service cloud.firestore {
 
       // El operador puede cambiar cualquier campo (estado, prioridad, nota,
       // videollamada). El ciudadano solo puede agregar lo que le corresponde:
-      // archivos, respuestas del cuestionario y contestar la videollamada.
-      // No puede cambiar estado, dueno, ubicacion ni datos de contacto.
+      // archivos, respuestas del cuestionario, contestar la videollamada y
+      // completar los detalles del reporte rapido (tipo, descripcion,
+      // referencia y datos de contacto).
+      // No puede cambiar estado, dueno, ubicacion ni fecha.
       allow update: if isOperador() || (
         signedIn() && resource.data.uid == request.auth.uid
         && request.resource.data.diff(resource.data).affectedKeys().hasOnly([
           'media', 'mediaPendiente', 'respuestas', 'cuestionarioCompleto',
-          'prioridad', 'prioridadPeso', 'videollamada'
+          'prioridad', 'prioridadPeso', 'videollamada',
+          'nombre', 'telefono', 'categoria', 'categoriaNombre',
+          'tarjetaId', 'tarjetaNombre', 'referencia', 'descripcion'
         ])
+        && request.resource.data.categoria in ['100', '200', '300', '400', '500', '800', '900']
         && request.resource.data.estado == resource.data.estado
         && request.resource.data.uid == resource.data.uid
       );

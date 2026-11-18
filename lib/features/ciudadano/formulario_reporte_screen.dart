@@ -2,7 +2,6 @@ import 'dart:io';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:image_picker/image_picker.dart';
 import 'package:permission_handler/permission_handler.dart';
 import 'package:bomberos_cali/core/icons/phosphor.dart';
 import 'package:provider/provider.dart';
@@ -19,7 +18,8 @@ import '../protocolo/protocolo.dart';
 import '../reportes/envio_controller.dart';
 import '../reportes/models.dart';
 import 'confirmacion_screen.dart';
-import 'hoja_recomendaciones.dart';
+import 'captura_medios.dart';
+import 'reporte_rapido.dart' show mostrarLimiteExcedido;
 
 enum _EstadoUbic { buscando, ok, necesitaPermiso, gpsApagado, bloqueada, sinSenal }
 
@@ -34,14 +34,12 @@ class FormularioReporteScreen extends StatefulWidget {
 
 class _FormularioReporteScreenState extends State<FormularioReporteScreen> {
   static const _maxArchivos = 6;
-  static const _extVideo = {'.mp4', '.mov', '.3gp', '.mkv', '.webm', '.avi', '.m4v'};
 
   final _form = GlobalKey<FormState>();
   final _desc = TextEditingController();
   final _ref = TextEditingController();
   final _nombre = TextEditingController();
   final _tel = TextEditingController();
-  final _picker = ImagePicker();
 
   Tarjeta? _tarjeta;
   Ubicacion? _ubic;
@@ -127,60 +125,19 @@ class _FormularioReporteScreenState extends State<FormularioReporteScreen> {
 
   // ---------- Medios ----------
 
-  Future<bool> _permisoCamara() => pedirPermisoConExplicacion(
-        context,
-        permiso: Permission.camera,
-        titulo: 'Usar la cámara',
-        motivo: 'Para tomar fotos o grabar un video de la emergencia y enviarlos a los Bomberos.',
-        icono: PhosphorIconsBold.camera,
-        siNiega: 'Puede elegir fotos de la galería sin dar este permiso.',
-      );
-
-  bool _esVideo(String ruta) => _extVideo.contains(ruta.toLowerCase().substring(ruta.lastIndexOf('.').clamp(0, ruta.length)));
-
   Future<void> _agregarMedios() async {
-    if (_archivos.length >= _maxArchivos) {
-      avisar(context, 'Puede enviar hasta $_maxArchivos archivos por reporte.');
-      return;
-    }
-    final fuente = await mostrarHojaRecomendaciones(context);
-    if (fuente == null || !mounted) return;
-    try {
-      switch (fuente) {
-        case FuenteMedia.foto:
-          if (!await _permisoCamara()) return;
-          final x = await _picker.pickImage(source: ImageSource.camera);
-          if (x != null) _agregarArchivo(x.path, TipoMedia.foto);
-        case FuenteMedia.video:
-          if (!await _permisoCamara()) return;
-          final x = await _picker.pickVideo(source: ImageSource.camera, maxDuration: const Duration(seconds: 60));
-          if (x != null) _agregarArchivo(x.path, TipoMedia.video);
-        case FuenteMedia.galeria:
-          final restantes = _maxArchivos - _archivos.length;
-          final xs = restantes >= 2
-              ? await _picker.pickMultipleMedia(limit: restantes)
-              : [?await _picker.pickMedia()];
-          for (final x in xs) {
-            _agregarArchivo(x.path, _esVideo(x.path) ? TipoMedia.video : TipoMedia.foto);
-          }
-      }
-    } on PlatformException {
-      if (mounted) avisar(context, 'No se pudo abrir la cámara o la galería. Revise los permisos del teléfono.');
-    }
-  }
-
-  void _agregarArchivo(String ruta, TipoMedia tipo) {
-    if (!mounted || _archivos.length >= _maxArchivos) return;
-    setState(() => _archivos.add(ArchivoElegido(ruta, tipo)));
+    final nuevos = await capturarMedios(context, restantes: _maxArchivos - _archivos.length);
+    if (!mounted || nuevos.isEmpty) return;
+    setState(() => _archivos.addAll(nuevos.take(_maxArchivos - _archivos.length)));
   }
 
   // ---------- Tipo especifico ----------
 
   Future<void> _elegirTarjeta() async {
-    final r = await showModalBottomSheet<_EleccionTarjeta>(
+    final r = await showModalBottomSheet<EleccionTarjeta>(
       context: context,
       isScrollControlled: true,
-      builder: (_) => _HojaTarjetas(categoria: widget.categoria, actual: _tarjeta),
+      builder: (_) => HojaTarjetas(categoria: widget.categoria, actual: _tarjeta),
     );
     if (r != null) setState(() => _tarjeta = r.tarjeta);
   }
@@ -214,33 +171,12 @@ class _FormularioReporteScreenState extends State<FormularioReporteScreen> {
     } on LimiteExcedido catch (e) {
       if (!mounted) return;
       setState(() => _enviando = false);
-      await _mostrarLimite(e.espera);
+      await mostrarLimiteExcedido(context, e.espera);
     } catch (_) {
       if (!mounted) return;
       setState(() => _enviando = false);
       avisar(context, 'No se pudo guardar el reporte. Intente de nuevo o llame al 119.');
     }
-  }
-
-  Future<void> _mostrarLimite(Duration espera) {
-    final min = (espera.inSeconds / 60).ceil().clamp(1, 60);
-    return showDialog<void>(
-      context: context,
-      builder: (ctx) => AlertDialog(
-        title: const Text('Ya envió varios reportes'),
-        content: Text('Desde este teléfono se enviaron 3 reportes en los últimos 10 minutos. '
-            'Podrá enviar otro en $min ${min == 1 ? 'minuto' : 'minutos'}.\n\n'
-            'Si es una emergencia nueva y urgente, llame al 119.'),
-        actions: [
-          TextButton(onPressed: () => Navigator.pop(ctx), child: const Text('Entendido')),
-          FilledButton(
-            style: Estilos.emergencia(alto: Sizes.touch),
-            onPressed: () => Enlaces.llamar('119'),
-            child: const Text('LLAMAR 119'),
-          ),
-        ],
-      ),
-    );
   }
 
   // ---------- Interfaz ----------
@@ -302,7 +238,7 @@ class _FormularioReporteScreenState extends State<FormularioReporteScreen> {
           ),
           const SizedBox(height: Space.l),
           EncabezadoSeccion('Fotos y video', trailing: Text('${_archivos.length}/$_maxArchivos', style: t.labelLarge)),
-          _SeccionMedios(
+          SeccionMedios(
             archivos: _archivos,
             alAgregar: _agregarMedios,
             alQuitar: (i) => setState(() => _archivos.removeAt(i)),
@@ -498,8 +434,8 @@ class _TarjetaUbicacion extends StatelessWidget {
   }
 }
 
-class _SeccionMedios extends StatelessWidget {
-  const _SeccionMedios({required this.archivos, required this.alAgregar, required this.alQuitar});
+class SeccionMedios extends StatelessWidget {
+  const SeccionMedios({super.key, required this.archivos, required this.alAgregar, required this.alQuitar});
 
   final List<ArchivoElegido> archivos;
   final VoidCallback alAgregar;
@@ -615,21 +551,21 @@ class _ResumenContacto extends StatelessWidget {
   }
 }
 
-class _EleccionTarjeta {
-  const _EleccionTarjeta(this.tarjeta);
+class EleccionTarjeta {
+  const EleccionTarjeta(this.tarjeta);
   final Tarjeta? tarjeta;
 }
 
-class _HojaTarjetas extends StatefulWidget {
-  const _HojaTarjetas({required this.categoria, required this.actual});
+class HojaTarjetas extends StatefulWidget {
+  const HojaTarjetas({super.key, required this.categoria, required this.actual});
   final Categoria categoria;
   final Tarjeta? actual;
 
   @override
-  State<_HojaTarjetas> createState() => _HojaTarjetasState();
+  State<HojaTarjetas> createState() => HojaTarjetasState();
 }
 
-class _HojaTarjetasState extends State<_HojaTarjetas> {
+class HojaTarjetasState extends State<HojaTarjetas> {
   String _q = '';
 
   static String _plano(String s) => s
@@ -673,7 +609,7 @@ class _HojaTarjetasState extends State<_HojaTarjetas> {
                 minTileHeight: Sizes.touch + 8,
                 title: Text('No estoy seguro', style: t.titleMedium),
                 subtitle: const Text('Se envía solo la categoría'),
-                onTap: () => Navigator.pop(context, const _EleccionTarjeta(null)),
+                onTap: () => Navigator.pop(context, const EleccionTarjeta(null)),
               ),
               const Divider(),
               for (final x in lista)
@@ -681,7 +617,7 @@ class _HojaTarjetasState extends State<_HojaTarjetas> {
                   minTileHeight: Sizes.touch + 8,
                   title: Text(x.nombre, style: t.titleMedium),
                   trailing: widget.actual?.id == x.id ? const PhosphorIcon(PhosphorIconsBold.check, color: Palette.verde) : null,
-                  onTap: () => Navigator.pop(context, _EleccionTarjeta(x)),
+                  onTap: () => Navigator.pop(context, EleccionTarjeta(x)),
                 ),
               if (lista.isEmpty)
                 Padding(

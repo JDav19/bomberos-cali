@@ -44,7 +44,7 @@ class _VistaState extends State<_Vista> {
             padding: const EdgeInsets.only(right: Space.l),
             child: Center(
               child: Text('RADIO OPERADOR',
-                  style: Theme.of(context).textTheme.labelMedium?.copyWith(color: Palette.oxido, letterSpacing: 1)),
+                  style: Theme.of(context).textTheme.labelMedium?.copyWith(color: Palette.ambar, letterSpacing: 1)),
             ),
           ),
         ],

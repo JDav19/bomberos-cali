@@ -57,3 +57,10 @@ Proyecto de Firebase, clave de Google Maps con SHA-1, upload preset de Cloudinar
 - [x] Fase 4 Radio operador y videollamada
 - [x] Fase 5 Pruebas y documentación
 - [ ] Fase 6 APK (ver el cierre de la conversación)
+
+## Cambios posteriores a las fases
+
+- Reporte rápido de un toque (foto y GPS), con los detalles después sobre el mismo reporte (ver `DECISIONES.md`, sección 10).
+- Paleta del escudo de los Bomberos de Cali (negro, rojo y amarillo), con ícono y splash regenerados.
+- Recuperación de la foto si Android cierra la app, sumar fotos a un reporte ya enviado y aviso de datos personales.
+- Lista de limitaciones conocidas en `DECISIONES.md`, sección 11.

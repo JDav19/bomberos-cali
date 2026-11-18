@@ -212,6 +212,9 @@ class Reporte {
   final String? operadorUid;
   final String? nota;
 
+  /// Reporte rapido: solo foto y ubicacion, sin ningun detalle escrito todavia.
+  bool get esRapido => descripcion == null && tarjetaId == null && referencia == null && !cuestionarioCompleto;
+
   Reporte copyWith({
     EstadoReporte? estado,
     Prioridad? prioridad,
@@ -223,19 +226,28 @@ class Reporte {
     List<CambioEstado>? historial,
     String? operadorUid,
     String? nota,
+    String? nombre,
+    String? telefono,
+    String? categoria,
+    String? categoriaNombre,
+    String? tarjetaId,
+    String? tarjetaNombre,
+    String? referencia,
+    String? descripcion,
+    bool sinTarjeta = false,
   }) =>
       Reporte(
         radicado: radicado,
         uid: uid,
-        nombre: nombre,
-        telefono: telefono,
-        categoria: categoria,
-        categoriaNombre: categoriaNombre,
-        tarjetaId: tarjetaId,
-        tarjetaNombre: tarjetaNombre,
+        nombre: nombre ?? this.nombre,
+        telefono: telefono ?? this.telefono,
+        categoria: categoria ?? this.categoria,
+        categoriaNombre: categoriaNombre ?? this.categoriaNombre,
+        tarjetaId: sinTarjeta ? null : (tarjetaId ?? this.tarjetaId),
+        tarjetaNombre: sinTarjeta ? null : (tarjetaNombre ?? this.tarjetaNombre),
         ubicacion: ubicacion,
-        referencia: referencia,
-        descripcion: descripcion,
+        referencia: referencia ?? this.referencia,
+        descripcion: descripcion ?? this.descripcion,
         estado: estado ?? this.estado,
         prioridad: prioridad ?? this.prioridad,
         creadoEn: creadoEn,

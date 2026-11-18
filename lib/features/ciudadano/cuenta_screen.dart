@@ -8,6 +8,7 @@ import '../../core/util/formatters.dart';
 import '../../core/widgets/comunes.dart';
 import '../auth/auth_service.dart';
 import 'acceso_screen.dart';
+import 'privacidad_screen.dart';
 
 class CuentaScreen extends StatelessWidget {
   const CuentaScreen({super.key});
@@ -44,6 +45,8 @@ class _SinCuenta extends StatelessWidget {
             .push(MaterialPageRoute<void>(builder: (_) => const AccesoScreen(registro: false))),
         child: const Text('Ya tengo cuenta'),
       ),
+      const SizedBox(height: Space.xl),
+      const _EnlacePrivacidad(),
     ]);
   }
 }
@@ -131,6 +134,20 @@ class _PerfilRegistradoState extends State<_PerfilRegistrado> {
       ),
       const SizedBox(height: Space.m),
       OutlinedButton(onPressed: () => context.read<AuthService>().salir(), child: const Text('Cerrar sesión')),
+      const SizedBox(height: Space.m),
+      const _EnlacePrivacidad(),
     ]);
   }
+}
+
+class _EnlacePrivacidad extends StatelessWidget {
+  const _EnlacePrivacidad();
+
+  @override
+  Widget build(BuildContext context) => TextButton.icon(
+        onPressed: () =>
+            Navigator.of(context).push(MaterialPageRoute<void>(builder: (_) => const PrivacidadScreen())),
+        icon: const PhosphorIcon(PhosphorIconsBold.eye),
+        label: const Text('Qué datos recoge la aplicación'),
+      );
 }

@@ -84,6 +84,10 @@ class ReportesRepository implements EnvioBackend {
     }
   }
 
+  /// Suma archivos por subir a un reporte que ya esta en la nube.
+  Future<void> sumarPendientes(String radicado, int cantidad) =>
+      _col.doc(radicado).update({'mediaPendiente': FieldValue.increment(cantidad)});
+
   /// Complemento: respuestas del cuestionario. Se agregan al mismo reporte.
   Future<void> guardarRespuestas(
     String radicado,
@@ -95,6 +99,21 @@ class ReportesRepository implements EnvioBackend {
         'cuestionarioCompleto': true,
         'prioridad': prioridad.name,
         'prioridadPeso': prioridad.peso,
+      });
+
+  /// Complemento: tipo, descripcion, referencia y contacto, que el ciudadano
+  /// completa despues de enviar el reporte rapido.
+  Future<void> actualizarDetalles(Reporte r) => _col.doc(r.radicado).update({
+        'nombre': r.nombre,
+        'telefono': r.telefono,
+        'categoria': r.categoria,
+        'categoriaNombre': r.categoriaNombre,
+        'tarjetaId': r.tarjetaId,
+        'tarjetaNombre': r.tarjetaNombre,
+        'referencia': r.referencia,
+        'descripcion': r.descripcion,
+        'prioridad': r.prioridad.name,
+        'prioridadPeso': r.prioridad.peso,
       });
 
   Future<void> responderVideollamada(String radicado, EstadoLlamada estado) =>

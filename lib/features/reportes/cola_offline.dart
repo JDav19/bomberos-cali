@@ -163,6 +163,28 @@ class ColaOffline extends ChangeNotifier {
     return true;
   }
 
+  /// Agrega archivos a un reporte que ya existe: si todavia esta en la cola se
+  /// suman a ese item; si ya llego a la nube se crea un item solo de archivos.
+  /// Devuelve `true` cuando el documento remoto ya existe y hay que sumar los
+  /// pendientes alla; si el reporte aun esta en el telefono, el contador viaja
+  /// dentro del propio reporte.
+  Future<bool> agregarArchivos(Reporte r, List<ArchivoPendiente> nuevos) async {
+    final i = porRadicado(r.radicado);
+    var remoto = true;
+    if (i == null) {
+      _items.add(ItemCola(reporte: r, archivos: nuevos, documentoEnviado: true));
+    } else {
+      i.archivos.addAll(nuevos);
+      if (!i.documentoEnviado) {
+        i.reporte = i.reporte.copyWith(mediaPendiente: i.reporte.mediaPendiente + nuevos.length);
+        remoto = false;
+      }
+    }
+    await _guardar();
+    notifyListeners();
+    return remoto;
+  }
+
   /// Guarda el reporte localmente y lo deja listo para enviar.
   Future<void> encolar(Reporte r, List<ArchivoPendiente> archivos) async {
     _items.add(ItemCola(reporte: r, archivos: archivos));

@@ -9,11 +9,12 @@ from PIL import Image, ImageDraw
 OUT = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "assets", "brand")
 os.makedirs(OUT, exist_ok=True)
 
-EMBER = (232, 89, 12, 255)
-ASH = (246, 239, 231, 255)
-AMBER = (242, 163, 58, 255)
-RUST = (138, 59, 18, 255)
-CHAR = (31, 26, 23, 255)
+# Paleta del escudo de los Bomberos Voluntarios de Cali: negro, rojo y amarillo.
+GOLD = (255, 194, 14, 255)
+RED = (200, 16, 46, 255)
+ASH = (248, 246, 241, 255)
+CHAR = (18, 18, 18, 255)
+EMBER, AMBER, RUST = GOLD, GOLD, CHAR
 
 # Curvas cubicas en un cuadro de 100x100: (inicio, c1, c2, fin)
 FLAME = [
@@ -46,7 +47,7 @@ def poly(segs):
         pts += bez(s)
     return pts
 
-def draw_flame(img, cx, cy, size, outer=ASH, inner=AMBER):
+def draw_flame(img, cx, cy, size, outer=GOLD, inner=RED):
     """Dibuja la llama centrada en (cx,cy) ocupando `size` px de alto."""
     k = size / 100.0
     ox, oy = cx - 50 * k, cy - 51 * k
@@ -65,19 +66,20 @@ def stripes(img, color, width, gap, angle_px):
         x += width + gap
 
 S = 1024
-# Icono legacy: fondo brasa, franja inferior con rayas, llama.
-icon = Image.new("RGBA", (S, S), EMBER)
+# Icono legacy: fondo negro, franja inferior amarilla con rayas negras, llama
+# amarilla con el centro rojo.
+icon = Image.new("RGBA", (S, S), CHAR)
 band = Image.new("RGBA", (S, S), (0, 0, 0, 0))
 bd = ImageDraw.Draw(band)
-bd.rectangle([0, int(S * 0.82), S, S], fill=RUST)
-stripes(band, ASH, 70, 70, 120)
+bd.rectangle([0, int(S * 0.82), S, S], fill=GOLD)
+stripes(band, CHAR, 70, 70, 120)
 icon.alpha_composite(band)
-draw_flame(icon, S / 2, S * 0.46, S * 0.62)
+draw_flame(icon, S / 2, S * 0.46, S * 0.62, GOLD, RED)
 icon.save(os.path.join(OUT, "icon.png"))
 
 # Adaptativo: solo la llama dentro de la zona segura (66%).
 fg = Image.new("RGBA", (S, S), (0, 0, 0, 0))
-draw_flame(fg, S / 2, S / 2, S * 0.5)
+draw_flame(fg, S / 2, S / 2, S * 0.5, GOLD, RED)
 fg.save(os.path.join(OUT, "icon_foreground.png"))
 
 def splash(name, bg, outer, inner, size=1152, flame=0.5):
@@ -85,8 +87,9 @@ def splash(name, bg, outer, inner, size=1152, flame=0.5):
     draw_flame(im, size / 2, size / 2, size * flame, outer, inner)
     im.save(os.path.join(OUT, name))
 
-splash("splash.png", None, EMBER, AMBER, 768, 0.62)
-splash("splash_dark.png", None, EMBER, AMBER, 768, 0.62)
-splash("splash_android12.png", None, EMBER, AMBER, 1152, 0.42)
-splash("splash_android12_dark.png", None, EMBER, AMBER, 1152, 0.42)
+# Fondo claro: llama roja con el centro amarillo. Fondo oscuro: al reves.
+splash("splash.png", None, RED, GOLD, 768, 0.62)
+splash("splash_dark.png", None, GOLD, RED, 768, 0.62)
+splash("splash_android12.png", None, RED, GOLD, 1152, 0.42)
+splash("splash_android12_dark.png", None, GOLD, RED, 1152, 0.42)
 print("brand ok")

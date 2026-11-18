@@ -49,7 +49,7 @@ No use Firebase Storage ni Cloud Functions: exigen el plan Blaze. Con el plan gr
    - *Signing mode*: **Unsigned**.
    - *Folder*: `reportes`.
    - *Allowed formats*: `jpg,jpeg,png,heic,mp4,mov,3gp,webm`.
-   - Guarde y anote el nombre del preset.
+   - Guarde y anote el nombre del preset (distingue mayúsculas: `Bomberos` no es lo mismo que `bomberos`).
 3. Pegue `CLOUDINARY_CLOUD_NAME` y `CLOUDINARY_UPLOAD_PRESET` en `config/app_config.json`. No hay clave secreta en la app: es la razón de usar subida unsigned.
 
 ## 4. Videollamada (Agora)

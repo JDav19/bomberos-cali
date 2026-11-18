@@ -106,10 +106,67 @@ class EnvioController extends ChangeNotifier {
 
     await cola.encolar(r, archivos);
     await dispositivo.guardarEnvios([...limite.podar(previos, ahora), ahora]);
-    await dispositivo.recordarContacto(r.nombre, r.telefono);
+    if (r.nombre.isNotEmpty && r.telefono.isNotEmpty) await dispositivo.recordarContacto(r.nombre, r.telefono);
     unawaited(cola.procesar(ignorarEspera: true));
     notifyListeners();
     return r;
+  }
+
+  /// Agrega fotos o videos a un reporte ya enviado. Se guardan en la cola del
+  /// telefono y se suben solos, igual que los del primer envio.
+  Future<void> agregarArchivos(Reporte r, List<ArchivoElegido> elegidos) async {
+    if (elegidos.isEmpty) return;
+    final nuevos = <ArchivoPendiente>[];
+    for (final a in elegidos) {
+      nuevos.add(ArchivoPendiente(ruta: await media.guardarParaCola(a.ruta), tipo: a.tipo));
+    }
+    final remoto = await cola.agregarArchivos(r, nuevos);
+    if (remoto) {
+      try {
+        await repo.sumarPendientes(r.radicado, nuevos.length).timeout(const Duration(seconds: 6));
+      } on TimeoutException {
+        // Queda pendiente en el SDK y se envia solo al volver la red.
+      }
+    }
+    unawaited(cola.procesar(ignorarEspera: true));
+    notifyListeners();
+  }
+
+  /// Completa un reporte ya enviado (normalmente uno rapido): tipo, descripcion,
+  /// referencia y datos de contacto. La prioridad solo puede subir; si el
+  /// operador la bajo o la subio a mano, no se le pisa hacia abajo.
+  Future<Reporte> actualizarDetalles(
+    Reporte r, {
+    required String nombre,
+    required String telefono,
+    required Categoria categoria,
+    Tarjeta? tarjeta,
+    String? descripcion,
+    String? referencia,
+  }) async {
+    final base = prioridadBase(categoria.codigo, tarjeta?.id);
+    final nuevo = r.copyWith(
+      nombre: nombre.trim(),
+      telefono: normalizarTel(telefono),
+      categoria: categoria.codigo,
+      categoriaNombre: categoria.nombre,
+      tarjetaId: tarjeta?.id,
+      tarjetaNombre: tarjeta?.nombre,
+      sinTarjeta: tarjeta == null,
+      descripcion: _vacioANulo(descripcion),
+      referencia: _vacioANulo(referencia),
+      prioridad: base.peso < r.prioridad.peso ? base : r.prioridad,
+    );
+    if (nuevo.nombre.isNotEmpty && nuevo.telefono.isNotEmpty) {
+      await dispositivo.recordarContacto(nuevo.nombre, nuevo.telefono);
+    }
+    if (await cola.reemplazarSiPendiente(nuevo)) return nuevo;
+    try {
+      await repo.actualizarDetalles(nuevo).timeout(const Duration(seconds: 6));
+    } on TimeoutException {
+      // Queda pendiente en el SDK y se envia solo al volver la red.
+    }
+    return nuevo;
   }
 
   /// Agrega las respuestas del cuestionario al mismo reporte y recalcula la

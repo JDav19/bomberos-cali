@@ -126,10 +126,10 @@ Sin Cloud Functions no hay quién envíe FCM. Se usa un listener de Firestore so
 
 ## 8. Diseño
 
-- **Paleta cálida con contraste medido.** El naranja brasa `#E8590C` sobre ceniza no alcanza AA con texto blanco (3,6:1), así que los botones primarios llevan texto carbón (4,8:1) y el texto de acento usa un naranja más oscuro (`#B8430A`, 4,8:1 sobre ceniza). Texto principal 15:1. El **rojo `#B3261E`** se reserva para reportar, el 119, la prioridad crítica y finalizar una llamada. El verde solo aparece en "atendido" y en la ubicación obtenida.
+- **Paleta del escudo de los Bomberos Voluntarios de Cali: negro, rojo y amarillo.** La primera versión era naranja y ceniza; se cambió para que la app se reconozca como de los Bomberos de Cali. El **amarillo `#FFC20E`** es el color primario y siempre lleva texto negro (12:1). El **rojo `#C8102E`** se reserva para reportar, el 119, la prioridad crítica y finalizar una llamada, y lleva texto blanco (5,9:1). Texto principal `#121212` sobre fondo `#F8F6F1` (17:1) y rojo oscuro `#A8101C` para texto de acento (7:1). La barra superior es negra con un filete amarillo. El verde solo aparece en "atendido" y en la ubicación obtenida. Los contrastes están verificados en `test/reporte_rapido_test.dart`. No se usa el escudo como logo: la marca de la app sigue siendo la llama propia (amarilla con el centro rojo).
 - **Tipografía**: Barlow Condensed para títulos (rotulación de máquina de bomberos) y Barlow para texto, **empaquetadas** (licencia OFL). No dependen de internet, algo importante cuando la red está mala.
 - **Motivos**: franja reflectiva diagonal (inicio, confirmación y configuración), separador en forma de manguera y una llama como emblema, ícono de la app y splash propios. Íconos Phosphor, uno por categoría del protocolo.
-- **Bajo estrés**: el botón de reportar está en la mitad inferior de la pantalla de inicio (alcance con el pulgar); el 119 está siempre en la barra superior; áreas táctiles de al menos 48 dp; el texto respeta el tamaño de fuente del sistema; estados de carga (esqueletos), error con reintento y sin conexión (franja que explica que el reporte no se pierde); animaciones breves (trazo de la confirmación, aparición de la lista, expansión de grupos) que se reducen si el usuario desactiva las animaciones.
+- **Bajo estrés**: el botón **FOTO Y ENVIAR** está en la mitad inferior de la pantalla de inicio (alcance con el pulgar); el 119 está siempre en la barra superior; áreas táctiles de al menos 48 dp; el texto respeta el tamaño de fuente del sistema; estados de carga (esqueletos), error con reintento y sin conexión (franja que explica que el reporte no se pierde); animaciones breves (trazo de la confirmación, aparición de la lista, expansión de grupos) que se reducen si el usuario desactiva las animaciones.
 - **Texto**: español colombiano, de usted, frases cortas, sin emojis ni relleno.
 
 ## 9. Android
@@ -137,6 +137,47 @@ Sin Cloud Functions no hay quién envíe FCM. Se usa un listener de Firestore so
 `applicationId` `co.edu.usbcali.bomberos119`, `minSdk` 24 (lo exigen Firebase, Maps y Agora), `compileSdk` 37 (lo exige `flutter_local_notifications`). Permisos pedidos al usarse con explicación previa: ubicación (formulario), cámara (fotos y video), micrófono y cámara (videollamada), notificaciones (confirmación). Si se niegan, la app ofrece una salida: escribir la dirección, elegir de la galería, o abrir los ajustes si el permiso quedó bloqueado. Para llamar al 119 y al ciudadano se abre el marcador del teléfono (`tel:`), que no requiere permiso de llamadas.
 
 El release se firma con un keystore propio. La plantilla pedía 8 GB de memoria a Gradle; en este equipo (7,7 GB) hacía caer la compilación, se bajó a 2,5 GB en `android/gradle.properties`. El compresor de video inicial (`light_compressor`) era incompatible con el Gradle actual (sin `namespace`, dependía de Jitpack) y se cambió por `video_compress`.
+
+## 10. Reporte rápido: la foto y la ubicación van primero
+
+**Decisión.** Reportar es un toque: **FOTO Y ENVIAR** abre la cámara, y al volver la app toma el GPS y envía. Sin formulario. El tipo de emergencia, la descripción, el punto de referencia y el teléfono se completan después en "Agregar detalles", sobre el **mismo reporte** (mismo radicado). El formulario completo sigue disponible como "Reportar con más detalle".
+
+**Por qué.** El enunciado dice que muchas preguntas se pueden responder con una foto, y una persona nerviosa no debería tener que clasificar la emergencia antes de pedir ayuda. Lo que el operador necesita para despachar es dónde y qué se ve.
+
+| Alternativa | Por qué no |
+|---|---|
+| Formulario primero (la primera versión) | Seis campos antes de enviar; más toques y más abandono bajo estrés |
+| Enviar solo la ubicación, sin foto | Se pierde lo que hace útil al reporte; con foto el operador ve la escena |
+| Preguntar el tipo antes de la cámara | Un toque más y obliga a decidir bajo presión |
+
+**Cómo funciona.**
+- La búsqueda del GPS arranca **mientras se abre la cámara**, para que al volver ya esté lista. Si pasan 12 s sin señal, el reporte sale igual sin coordenadas y "Agregar detalles" pide entonces la dirección.
+- El reporte nace como categoría **900 (Especial / no clasificado)** con prioridad **media**: es lo más neutro que dice el protocolo cuando no se sabe qué es. Al elegir el tipo exacto la prioridad **solo puede subir** (por ejemplo, incendio en edificio alto pasa a crítica); si un operador ya la cambió a mano, no se le baja.
+- Nombre y teléfono salen de la cuenta o del último reporte; si no existen, el nombre queda "Sin identificar" y se pide después. Los datos del contacto no impiden enviar.
+- "Agregar detalles" también permite **sumar fotos y video** al reporte ya enviado. Se guardan en la cola del teléfono y se suben solos; el contador de archivos pendientes en Firestore se suma con `FieldValue.increment`.
+- **Foto perdida por memoria.** Si Android cierra la app mientras está abierta la cámara, la foto queda guardada por el sistema. Al abrir la app se recupera (`retrieveLostData`) y se envía como reporte rápido.
+
+**Reglas.** El ciudadano puede actualizar nombre, teléfono, tipo, descripción y referencia de **su** reporte, con la categoría limitada a los siete códigos del protocolo. Sigue sin poder cambiar estado, dueño, ubicación ni fecha.
+
+## 11. Limitaciones conocidas y cómo se resolverían
+
+Lo que **no** está resuelto, dicho sin rodeos.
+
+| Tema | Situación | Qué haría con más tiempo o presupuesto |
+|---|---|---|
+| Notificaciones con la app cerrada | Solo llegan con el proceso vivo (sección 7) | FCM con plan Blaze |
+| Límite de 3 reportes por 10 min | Es del lado del teléfono; quien llame directo a la API lo salta | Validación en servidor (Cloud Functions) o App Check |
+| Cuenta de operador de demostración | La regla `esCuentaOperadorDemo` deja que ese correo se cree como operador | Quitarla y asignar el rol desde la consola o el SDK de administración, antes de un uso real |
+| Identidad de la app | Cualquier cliente con las llaves de Firebase puede hablar con el proyecto; las reglas limitan el daño | Activar App Check con Play Integrity |
+| Preset de Cloudinary sin firma | Quien lo conozca puede subir archivos | Limitar formatos y tamaño en el preset; firmar desde un servidor |
+| Agrupación de reportes | Se calcula en el teléfono del operador; sirve para cientos, no miles | Paginar y mover el cálculo al servidor |
+| Cuotas del plan gratuito (Spark) | El operador escucha los 400 reportes más recientes; con mucha actividad se agotarían las lecturas diarias | Paginación y listeners por zona |
+| Aviso sonoro al operador | No suena si la app no está al frente | Servicio en primer plano o FCM |
+| Videollamada | Si Agora exige token, el temporal vence a las 24 h | Servidor de tokens |
+| Tamaño del APK | El universal pesa unos 250 MB por Agora, Maps y los compresores | Se distribuyen los APK por arquitectura (`--split-per-abi`); queda pendiente probar la reducción de código con R8 y reglas para Agora |
+| Pruebas de reglas | Las reglas no se probaron con el emulador de Firestore | Pruebas con `@firebase/rules-unit-testing` |
+| Datos personales | Hay un aviso en Mi cuenta, pero no hay política formal ni canal de borrado | Política de tratamiento de datos (Ley 1581 de 2012) y un canal con los Bomberos |
+| Accesibilidad | Probada con texto al doble en pruebas automáticas, no con TalkBack en el teléfono | Revisión con lector de pantalla |
 
 ## Fuentes consultadas (15 de noviembre de 2026)
 - Agora, precios y minutos gratis: <https://docs.agora.io/en/video-calling/overview/pricing> y <https://docs.agora.io/en/faq/billing_free>

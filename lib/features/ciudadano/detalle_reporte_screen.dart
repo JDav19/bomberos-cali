@@ -16,6 +16,7 @@ import '../reportes/mis_reportes.dart';
 import '../reportes/models.dart';
 import '../videollamada/llamada_entrante_screen.dart';
 import 'cuestionario_screen.dart';
+import 'detalles_reporte_screen.dart';
 import 'pre_arribo_screen.dart';
 
 /// Detalle de un reporte del ciudadano, en tiempo real.
@@ -104,6 +105,15 @@ class DetalleReporteScreen extends StatelessWidget {
             if (r.respuestas[q.clave] != null) _Respuesta(pregunta: q, valor: r.respuestas[q.clave]!),
         ],
         const SizedBox(height: Space.xl),
+        if (r.estado.activo) ...[
+          (r.esRapido ? FilledButton.icon : OutlinedButton.icon)(
+            onPressed: () => Navigator.of(context)
+                .push(MaterialPageRoute<void>(builder: (_) => DetallesReporteScreen(reporte: r))),
+            icon: const PhosphorIcon(PhosphorIconsBold.clipboardText),
+            label: Text(r.esRapido ? 'AGREGAR DETALLES' : 'Editar detalles'),
+          ),
+          const SizedBox(height: Space.s),
+        ],
         if (claves.isNotEmpty && !r.cuestionarioCompleto)
           FilledButton.icon(
             onPressed: () => Navigator.of(context).push(MaterialPageRoute<void>(builder: (_) => CuestionarioScreen(reporte: r))),

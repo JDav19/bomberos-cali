@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 import 'tokens.dart';
 
@@ -50,13 +51,14 @@ abstract final class AppTheme {
       splashFactory: InkRipple.splashFactory,
       materialTapTargetSize: MaterialTapTargetSize.padded,
       appBarTheme: AppBarTheme(
-        backgroundColor: Palette.ceniza,
-        foregroundColor: Palette.carbon,
+        backgroundColor: Palette.carbon,
+        foregroundColor: Palette.ceniza,
         elevation: 0,
         scrolledUnderElevation: 0,
         centerTitle: false,
-        titleTextStyle: text.titleLarge,
-        shape: const Border(bottom: BorderSide(color: Palette.arenaOscura, width: 1)),
+        systemOverlayStyle: SystemUiOverlayStyle.light,
+        titleTextStyle: text.titleLarge?.copyWith(color: Palette.ceniza),
+        shape: const Border(bottom: BorderSide(color: Palette.brasa, width: 3)),
       ),
       cardTheme: CardThemeData(
         color: Palette.arena,

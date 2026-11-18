@@ -16,6 +16,7 @@ import '../reportes/cola_offline.dart';
 import '../reportes/mis_reportes.dart';
 import '../reportes/models.dart';
 import 'cuestionario_screen.dart';
+import 'detalles_reporte_screen.dart';
 import 'pre_arribo_screen.dart';
 
 /// Respuesta automatica al ciudadano: confirma que el reporte quedo recibido
@@ -136,7 +137,18 @@ class _ConfirmacionScreenState extends State<ConfirmacionScreen> with SingleTick
                 _InvitarAvisos(alActivar: _activarAvisos),
               ],
               const SeparadorManguera(vertical: Space.xl),
-              if (r.categoria != '' && !protocolo.categoria(r.categoria)!.tieneTarjetas)
+              if (r.esRapido) ...[
+                FilledButton.icon(
+                  onPressed: () => Navigator.of(context).push(MaterialPageRoute<void>(
+                    builder: (_) => DetallesReporteScreen(reporte: r),
+                  )),
+                  icon: const PhosphorIcon(PhosphorIconsBold.clipboardText),
+                  label: const Text('AGREGAR DETALLES'),
+                ),
+                const SizedBox(height: Space.s),
+                Text('Tipo de emergencia, qué ocurre y su teléfono. Es opcional y puede hacerlo después '
+                    'desde "Mis reportes".', style: t.bodySmall, textAlign: TextAlign.center),
+              ] else if (!protocolo.categoria(r.categoria)!.tieneTarjetas)
                 Text('Para este tipo de reporte el protocolo no tiene preguntas ni instrucciones. '
                     'Si cambia la situación, llame al 119.', style: t.bodyMedium)
               else ...[

@@ -4,7 +4,7 @@ import '../theme/tokens.dart';
 
 /// Llama del emblema. Mismas curvas que tools/gen_brand.py (cuadro de 100x100).
 class BrandMark extends StatelessWidget {
-  const BrandMark({super.key, this.size = 40, this.color = Palette.brasa, this.inner = Palette.ambar});
+  const BrandMark({super.key, this.size = 40, this.color = Palette.rojo, this.inner = Palette.ambar});
 
   final double size;
   final Color color;
@@ -63,7 +63,7 @@ class FranjaReflectiva extends StatelessWidget {
     super.key,
     this.height = 10,
     this.colorA = Palette.brasa,
-    this.colorB = Palette.ceniza,
+    this.colorB = Palette.carbon,
   });
 
   final double height;
@@ -145,14 +145,14 @@ class _HosePainter extends CustomPainter {
 
 /// Sello de la app en las cabeceras: llama y nombre en tipografia de rotulo.
 class Sello extends StatelessWidget {
-  const Sello({super.key, this.claro = false});
+  const Sello({super.key, this.claro = true});
   final bool claro;
 
   @override
   Widget build(BuildContext context) {
     final t = Theme.of(context).textTheme;
     return Row(mainAxisSize: MainAxisSize.min, children: [
-      const BrandMark(size: 30),
+      const BrandMark(size: 30, color: Palette.rojo, inner: Palette.ambar),
       const SizedBox(width: Space.s),
       Text('BOMBEROS CALI',
           style: t.titleLarge?.copyWith(letterSpacing: 1.2, color: claro ? Palette.ceniza : Palette.carbon)),

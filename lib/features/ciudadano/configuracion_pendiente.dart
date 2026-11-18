@@ -27,7 +27,7 @@ class ConfiguracionPendienteApp extends StatelessWidget {
                     padding: const EdgeInsets.all(Space.gutter),
                     child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
                       const SizedBox(height: Space.xl),
-                      const Sello(),
+                      const Sello(claro: false),
                       const SizedBox(height: Space.xxl),
                       Text('Falta configurar la aplicación', style: t.headlineMedium),
                       const SizedBox(height: Space.m),
