@@ -173,7 +173,7 @@ Lo que **no** está resuelto, dicho sin rodeos.
 | Agrupación de reportes | Se calcula en el teléfono del operador; sirve para cientos, no miles | Paginar y mover el cálculo al servidor |
 | Cuotas del plan gratuito (Spark) | El operador escucha los 400 reportes más recientes; con mucha actividad se agotarían las lecturas diarias | Paginación y listeners por zona |
 | Aviso sonoro al operador | No suena si la app no está al frente | Servicio en primer plano o FCM |
-| Videollamada | Si Agora exige token, el temporal vence a las 24 h | Servidor de tokens |
+| Videollamada | Los proyectos de Agora nacen en modo seguro y exigen token por canal. Cada teléfono firma el suyo con el certificado del proyecto (`token_agora.dart`), así que el certificado viaja dentro del APK. El audio del PC al celular no se logró verificar en la prueba con un solo teléfono | Servidor que emita los tokens; repetir la prueba con dos teléfonos |
 | Tamaño del APK | El universal pesa unos 250 MB por Agora, Maps y los compresores | Se distribuyen los APK por arquitectura (`--split-per-abi`); queda pendiente probar la reducción de código con R8 y reglas para Agora |
 | Pruebas de reglas | Las reglas no se probaron con el emulador de Firestore | Pruebas con `@firebase/rules-unit-testing` |
 | Datos personales | Hay un aviso en Mi cuenta, pero no hay política formal ni canal de borrado | Política de tratamiento de datos (Ley 1581 de 2012) y un canal con los Bomberos |
