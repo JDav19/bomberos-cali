@@ -42,3 +42,8 @@ Clase *.docx
 # Binarios del protocolo original se versionan en docs/ (ver docs/)
 .DS_Store
 __pycache__/
+
+# Registros de fallos de la JVM y de compilacion
+hs_err_pid*.log
+replay_pid*.log
+build_*.log

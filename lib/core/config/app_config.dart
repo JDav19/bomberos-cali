@@ -12,6 +12,7 @@ abstract final class AppConfig {
   static const cloudinaryPreset = String.fromEnvironment('CLOUDINARY_UPLOAD_PRESET');
   static const agoraAppId = String.fromEnvironment('AGORA_APP_ID');
   static const agoraTempToken = String.fromEnvironment('AGORA_TEMP_TOKEN');
+  static const agoraCertificado = String.fromEnvironment('AGORA_APP_CERTIFICATE');
 
   static const _placeholder = 'PEGUE_AQUI';
 

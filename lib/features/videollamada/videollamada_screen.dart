@@ -9,6 +9,7 @@ import 'package:provider/provider.dart';
 import '../../core/config/app_config.dart';
 import '../../core/theme/estilos.dart';
 import '../../core/theme/tokens.dart';
+import 'token_agora.dart';
 import '../../core/widgets/permisos.dart';
 import '../reportes/models.dart';
 import '../reportes/reportes_repository.dart';
@@ -31,6 +32,7 @@ class _VideollamadaScreenState extends State<VideollamadaScreen> {
   RtcEngine? _engine;
   int? _remoto;
   bool _unido = false;
+  int _nivelRemoto = 0; // volumen de la voz que llega del otro lado (0-255)
   bool _micApagado = false;
   bool _camaraApagada = false;
   String? _error;
@@ -50,13 +52,15 @@ class _VideollamadaScreenState extends State<VideollamadaScreen> {
       setState(() => _error = 'La videollamada no está configurada (falta AGORA_APP_ID).');
       return;
     }
-    final cam = await pedirPermisoConExplicacion(
-      context,
-      permiso: Permission.camera,
-      titulo: 'Usar la cámara',
-      motivo: 'Para que los Bomberos vean en tiempo real lo que ocurre en el lugar.',
-      icono: PhosphorIconsBold.videoCamera,
-    );
+    // El operador solo escucha y mira: la camara es de quien esta en la emergencia.
+    final cam = widget.esOperador ||
+        await pedirPermisoConExplicacion(
+          context,
+          permiso: Permission.camera,
+          titulo: 'Usar la cámara',
+          motivo: 'Para que los Bomberos vean en tiempo real lo que ocurre en el lugar.',
+          icono: PhosphorIconsBold.videoCamera,
+        );
     if (!mounted) return;
     final mic = await pedirPermisoConExplicacion(
       context,
@@ -84,6 +88,13 @@ class _VideollamadaScreenState extends State<VideollamadaScreen> {
         onUserJoined: (conn, uid, elapsed) {
           if (mounted) setState(() => _remoto = uid);
         },
+        onAudioVolumeIndication: (conn, speakers, total, totalVolume) {
+          var n = 0;
+          for (final sp in speakers) {
+            if ((sp.uid ?? 0) != 0 && (sp.volume ?? 0) > n) n = sp.volume!;
+          }
+          if (mounted && (n > 0) != (_nivelRemoto > 0)) setState(() => _nivelRemoto = n);
+        },
         onUserOffline: (conn, uid, reason) {
           if (mounted) {
             setState(() => _remoto = null);
@@ -96,19 +107,38 @@ class _VideollamadaScreenState extends State<VideollamadaScreen> {
       ));
       await e.enableVideo();
       await e.enableAudio();
-      await e.startPreview();
+      await _opcional(() => e.enableAudioVolumeIndication(interval: 400, smooth: 3, reportVad: false));
+      if (!widget.esOperador) {
+        // Camara trasera por defecto: la que apunta a la escena, no a la persona.
+        await _opcional(() => e.setCameraCapturerConfiguration(
+              const CameraCapturerConfiguration(cameraDirection: CameraDirection.cameraRear),
+            ));
+        await e.startPreview();
+      }
+      // Quien reporta lleva el celular en la mano filmando: el audio sale por
+      // el altavoz desde el inicio. Con audifonos conectados Android los usa.
+      await _opcional(() => e.setDefaultAudioRouteToSpeakerphone(true));
       await e.joinChannel(
-        token: AppConfig.agoraTempToken,
+        token: AppConfig.agoraCertificado.isNotEmpty
+            ? generarTokenAgora(
+                appId: AppConfig.agoraAppId,
+                certificado: AppConfig.agoraCertificado,
+                canal: widget.radicado,
+                uid: _uidLocal,
+              )
+            : AppConfig.agoraTempToken,
         channelId: widget.radicado,
         uid: _uidLocal,
-        options: const ChannelMediaOptions(
+        options: ChannelMediaOptions(
           clientRoleType: ClientRoleType.clientRoleBroadcaster,
           publishMicrophoneTrack: true,
-          publishCameraTrack: true,
+          publishCameraTrack: !widget.esOperador,
           autoSubscribeAudio: true,
           autoSubscribeVideo: true,
         ),
       );
+      await _opcional(() => e.setEnableSpeakerphone(true));
+      await _opcional(() => e.adjustPlaybackSignalVolume(200));
       _engine = e;
       if (!mounted) return;
       // Si el otro lado corta (finalizada o rechazada), se cierra solo.
@@ -119,7 +149,18 @@ class _VideollamadaScreenState extends State<VideollamadaScreen> {
         }
       });
     } catch (e) {
-      if (mounted) setState(() => _error = 'No se pudo iniciar la videollamada. Revise su conexión.');
+      debugPrint('Videollamada: $e');
+      if (mounted) setState(() => _error = 'No se pudo iniciar la videollamada. Revise su conexión. ($e)');
+    }
+  }
+
+  /// Ajustes que mejoran la llamada pero no son indispensables: si alguno falla
+  /// en un telefono concreto, la llamada sigue.
+  Future<void> _opcional(Future<void> Function() ajuste) async {
+    try {
+      await ajuste();
+    } catch (err) {
+      debugPrint('Ajuste de llamada omitido: $err');
     }
   }
 
@@ -141,7 +182,7 @@ class _VideollamadaScreenState extends State<VideollamadaScreen> {
         await e.release();
       } catch (_) {}
     }
-    if (mounted) Navigator.of(context).maybePop();
+    if (mounted) Navigator.of(context).pop();
   }
 
   @override
@@ -182,7 +223,10 @@ class _VideollamadaScreenState extends State<VideollamadaScreen> {
                 )
               : Stack(children: [
                   Positioned.fill(
-                    child: (e != null && _remoto != null)
+                    child: (e != null && !widget.esOperador && _unido && !_camaraApagada)
+                        // El ciudadano ve lo mismo que esta filmando, a pantalla completa.
+                        ? AgoraVideoView(controller: VideoViewController(rtcEngine: e, canvas: const VideoCanvas(uid: 0)))
+                        : (e != null && _remoto != null && widget.esOperador)
                         ? AgoraVideoView(
                             controller: VideoViewController.remote(
                               rtcEngine: e,
@@ -197,22 +241,30 @@ class _VideollamadaScreenState extends State<VideollamadaScreen> {
                               Text(
                                 widget.esOperador
                                     ? (_unido ? 'Esperando que el ciudadano conteste…' : 'Conectando…')
-                                    : 'Conectando con los Bomberos…',
+                                    : (_unido ? 'Cámara apagada' : 'Conectando con los Bomberos…'),
                                 style: t.titleMedium?.copyWith(color: Palette.ceniza),
                               ),
                             ]),
                           ),
                   ),
-                  if (e != null && _unido && !_camaraApagada)
+                  if (_unido)
                     Positioned(
-                      right: Space.l,
                       top: Space.l,
-                      width: 110,
-                      height: 150,
-                      child: ClipRRect(
-                        borderRadius: Radii.card,
-                        child: AgoraVideoView(
-                          controller: VideoViewController(rtcEngine: e, canvas: const VideoCanvas(uid: 0)),
+                      left: 0,
+                      right: 0,
+                      child: Center(
+                        child: Container(
+                          padding: const EdgeInsets.symmetric(horizontal: Space.m, vertical: Space.s),
+                          decoration: BoxDecoration(
+                            color: Palette.carbon.withValues(alpha: 0.75),
+                            borderRadius: BorderRadius.circular(24),
+                          ),
+                          child: Text(
+                            _nivelRemoto > 0
+                                ? (widget.esOperador ? 'Habla el ciudadano' : 'Habla el operador')
+                                : (_remoto != null ? 'En llamada' : 'Esperando al otro lado…'),
+                            style: t.labelLarge?.copyWith(color: _nivelRemoto > 0 ? Palette.brasa : Palette.ceniza),
+                          ),
                         ),
                       ),
                     ),
@@ -245,7 +297,8 @@ class _VideollamadaScreenState extends State<VideollamadaScreen> {
                           child: const PhosphorIcon(PhosphorIconsFill.phoneDisconnect, size: 32),
                         ),
                       ),
-                      const SizedBox(width: Space.l),
+                      if (!widget.esOperador) const SizedBox(width: Space.l),
+                      if (!widget.esOperador)
                       _Control(
                         icono: _camaraApagada ? PhosphorIconsBold.videoCameraSlash : PhosphorIconsBold.videoCamera,
                         etiqueta: _camaraApagada ? 'Activar cámara' : 'Apagar cámara',
@@ -259,7 +312,7 @@ class _VideollamadaScreenState extends State<VideollamadaScreen> {
                       ),
                     ]),
                   ),
-                  if (e != null)
+                  if (e != null && !widget.esOperador)
                     Positioned(
                       left: Space.l,
                       top: Space.l,

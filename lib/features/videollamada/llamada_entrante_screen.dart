@@ -64,7 +64,7 @@ class _LlamadaEntranteScreenState extends State<LlamadaEntranteScreen> with Sing
       WidgetsBinding.instance.addPostFrameCallback((_) {
         if (mounted && !_respondida) {
           _respondida = true;
-          Navigator.of(context).maybePop();
+          Navigator.of(context).pop();
         }
       });
     }
